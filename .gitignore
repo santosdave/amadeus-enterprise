@@ -1,0 +1,9 @@
+composer.phar
+/vendor/
+/build/
+.idea/
+!/conf
+/conf/*
+!conf/.gitkeep
+phpunit.xml
+launch.json
