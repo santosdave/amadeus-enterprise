@@ -20,7 +20,7 @@
     "ext-soap": "*",
     "ext-dom": "*",
     "ext-xsl": "*",
-    "psr/log": "^1.1.0"
+    "psr/log": "*"
     
   },
   "require-dev": {
