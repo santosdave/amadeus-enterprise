@@ -76,6 +76,14 @@ class MpBaseOptions extends Base
     public $nrOfRequestedResults;
 
     /**
+     * Maximum number of NDC recommendations requested
+     *
+     * @var int
+     */
+    public $nrOfRequestedNDCResults;
+
+
+    /**
      * Passenger info
      *
      * @var Fare\MPPassenger[]

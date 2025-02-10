@@ -43,7 +43,7 @@ class NumberOfUnit
      * @param int|null $requestedResults
      * @param MultiTicketWeights|null $multiTicketWeights
      */
-    public function __construct($requestedPax, $requestedResults, $multiTicketWeights)
+    public function __construct($requestedPax, $requestedResults, $multiTicketWeights, $nrOfRequestedNDCResults = 0)
     {
         if (is_int($requestedPax)) {
             $this->unitNumberDetail[] = new UnitNumberDetail(
@@ -55,6 +55,12 @@ class NumberOfUnit
             $this->unitNumberDetail[] = new UnitNumberDetail(
                 $requestedResults,
                 UnitNumberDetail::TYPE_RESULTS
+            );
+        }
+        if (is_int($nrOfRequestedNDCResults)) {
+            $this->unitNumberDetail[] = new UnitNumberDetail(
+                $nrOfRequestedNDCResults,
+                UnitNumberDetail::TYPE_NDC_RESULTS
             );
         }
 

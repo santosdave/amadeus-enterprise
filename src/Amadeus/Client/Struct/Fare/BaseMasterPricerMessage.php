@@ -109,12 +109,14 @@ class BaseMasterPricerMessage extends BaseWsMessage
         if (
             is_int($options->nrOfRequestedPassengers) ||
             is_int($options->nrOfRequestedResults) ||
+            is_int($options->nrOfRequestedNDCResults) ||
             $options->multiTicketWeights instanceof MultiTicketWeights
         ) {
             $this->numberOfUnit = new MasterPricer\NumberOfUnit(
                 $options->nrOfRequestedPassengers,
                 $options->nrOfRequestedResults,
-                $options->multiTicketWeights
+                $options->multiTicketWeights,
+                $options->nrOfRequestedNDCResults,
             );
         }
     }
