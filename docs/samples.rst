@@ -4110,31 +4110,31 @@ Offer Price: Validate and confirm pricing for a specific offer
 .. code-block:: php
 
 
-$opt = new Travel\TravelOfferPriceOptions([
-    'passengers' => [
-        new Travel\PaxOption([
-            'paxId' => 'P1',
-            'ptc' => 'ADT',
-            'paxRefId' => 'P1.1',
-        ]),
-        // Add more passengers as needed
-    ],
-    'selectedOffers' => [
-        new Travel\SelectedOfferOption([
-            'OfferRefID' => 'UNIQUE_OFFER_REFERENCE',
-            'OwnerCode' => 'AIRLINE_CODE',
-            'SelectedOfferItem' => [
-                new Travel\SelectedOfferItem([
-                    'OfferItemRefID' => 'OFFER_ITEM_ID',
-                    'PaxRefID' => ['P1'],
-                    'OwnerCode' => 'AIRLINE_CODE',
-                ])
-            ]
-        ])
-    ],
-]);
+    $opt = new Travel\TravelOfferPriceOptions([
+        'passengers' => [
+            new Travel\PaxOption([
+                'paxId' => 'P1',
+                'ptc' => 'ADT',
+                'paxRefId' => 'P1.1',
+            ]),
+            // Add more passengers as needed
+        ],
+        'selectedOffers' => [
+            new Travel\SelectedOfferOption([
+                'OfferRefID' => 'UNIQUE_OFFER_REFERENCE',
+                'OwnerCode' => 'AIRLINE_CODE',
+                'SelectedOfferItem' => [
+                    new Travel\SelectedOfferItem([
+                        'OfferItemRefID' => 'OFFER_ITEM_ID',
+                        'PaxRefID' => ['P1'],
+                        'OwnerCode' => 'AIRLINE_CODE',
+                    ])
+                ]
+            ])
+        ],
+    ]);
 
-$offerPriceResult = $client->travelOfferPrice($opt);
+    $offerPriceResult = $client->travelOfferPrice($opt);
 
 ----------------------------------
 Travel_OrderCreate  
@@ -4143,31 +4143,31 @@ Order Create: Create an order with passenger and offer details
 
 .. code-block:: php
 
-$opt = new Travel\TravelOrderCreateOptions([
-    'passengers' => [
-        new Travel\OrderCreatePassenger([
-            'paxId' => 'P1',
-            'ptc' => 'ADT',
-            'givenName' => 'John',
-            'surname' => 'Doe',
-            // Add more passenger details
-        ]),
-    ],
-    'selectedOffers' => [
-        new Travel\OrderCreateSelectedOffer([
-            'offerId' => 'UNIQUE_OFFER_ID',
-            'ownerCode' => 'AIRLINE_CODE',
-            'selectedOfferItems' => [
-                new Travel\OrderCreateSelectedOfferItem([
-                    'offerItemId' => 'OFFER_ITEM_ID',
-                    'paxRefIds' => ['P1'],
-                ])
-            ]
-        ])
-    ]
-]);
+    $opt = new Travel\TravelOrderCreateOptions([
+        'passengers' => [
+            new Travel\OrderCreatePassenger([
+                'paxId' => 'P1',
+                'ptc' => 'ADT',
+                'givenName' => 'John',
+                'surname' => 'Doe',
+                // Add more passenger details
+            ]),
+        ],
+        'selectedOffers' => [
+            new Travel\OrderCreateSelectedOffer([
+                'offerId' => 'UNIQUE_OFFER_ID',
+                'ownerCode' => 'AIRLINE_CODE',
+                'selectedOfferItems' => [
+                    new Travel\OrderCreateSelectedOfferItem([
+                        'offerItemId' => 'OFFER_ITEM_ID',
+                        'paxRefIds' => ['P1'],
+                    ])
+                ]
+            ])
+        ]
+    ]);
 
-$orderCreateResult = $client->travelOrderCreate($opt);
+    $orderCreateResult = $client->travelOrderCreate($opt);
 
 
 ----------------------------------
@@ -4175,12 +4175,14 @@ Travel_ServiceList
 ----------------------------------
 Service List: Retrieve available services for the order
 
-$opt = new Travel\TravelServiceListOptions([
-    'orderId' => 'UNIQUE_ORDER_ID',
-    'orderOwnerCode' => 'AIRLINE_CODE'
-]);
+.. code-block:: php
 
-$serviceListResult = $client->travelServiceList($opt);
+    $opt = new Travel\TravelServiceListOptions([
+        'orderId' => 'UNIQUE_ORDER_ID',
+        'orderOwnerCode' => 'AIRLINE_CODE'
+    ]);
+
+    $serviceListResult = $client->travelServiceList($opt);
 
 
 ----------------------------------
@@ -4188,34 +4190,38 @@ Travel_OrderPay
 ----------------------------------
 Order Pay: Complete payment for the order
 
-$opt = new Travel\TravelOrderPayOptions([
-    'orderId' => 'UNIQUE_ORDER_ID',
-    'ownerCode' => 'AIRLINE_CODE',
-    'amount' => 500.00,
-    'currencyCode' => 'USD',
-    'typeCode' => Travel\TravelOrderPayOptions::TYPE_CREDIT_CARD,
-    'paymentMethod' => Travel\TravelOrderPayOptions::METHOD_CREDIT_CARD,
-    'paymentCard' => new Travel\OrderPay\PaymentCard([
-        'creditCardVendorCode' => Travel\OrderPay\PaymentCard::VENDOR_VISA,
-        'cardNumber' => '4111111111111111',
-        'seriesCode' => '123',
-        'expirationDate' => '0726'
-    ])
-]);
+.. code-block:: php
 
-$paymentResult = $client->travelOrderPay($opt);
+    $opt = new Travel\TravelOrderPayOptions([
+        'orderId' => 'UNIQUE_ORDER_ID',
+        'ownerCode' => 'AIRLINE_CODE',
+        'amount' => 500.00,
+        'currencyCode' => 'USD',
+        'typeCode' => Travel\TravelOrderPayOptions::TYPE_CREDIT_CARD,
+        'paymentMethod' => Travel\TravelOrderPayOptions::METHOD_CREDIT_CARD,
+        'paymentCard' => new Travel\OrderPay\PaymentCard([
+            'creditCardVendorCode' => Travel\OrderPay\PaymentCard::VENDOR_VISA,
+            'cardNumber' => '4111111111111111',
+            'seriesCode' => '123',
+            'expirationDate' => '0726'
+        ])
+    ]);
+
+    $paymentResult = $client->travelOrderPay($opt);
 
 ----------------------------------
 Travel_OrderRetrieve     
 ----------------------------------
 Order Retrieve: Fetch order details
 
-$opt = new Travel\TravelOrderRetrieveOptions([
-    'orderId' => 'UNIQUE_ORDER_ID',
-    'ownerCode' => 'AIRLINE_CODE'
-]);
+.. code-block:: php
 
-$orderRetrieveResult = $client->travelOrderRetrieve($opt);
+    $opt = new Travel\TravelOrderRetrieveOptions([
+        'orderId' => 'UNIQUE_ORDER_ID',
+        'ownerCode' => 'AIRLINE_CODE'
+    ]);
+
+    $orderRetrieveResult = $client->travelOrderRetrieve($opt);
 
 
 ----------------------------------
@@ -4223,30 +4229,33 @@ Travel_OrderChange
 ----------------------------------
 Order Change: Modify the order
 
-$opt = Travel\TravelOrderChangeOptions::create([
-    'orderId' => 'ORDER_ID',
-    'ownerCode' => 'AIRLINE_CODE',
-    'selectedOffer' => new Travel\OrderChange\SelectedOffer([
-        'offerId' => 'NEW_OFFER_ID',
+
+.. code-block:: php
+
+    $opt = Travel\TravelOrderChangeOptions::create([
+        'orderId' => 'ORDER_ID',
         'ownerCode' => 'AIRLINE_CODE',
-        'selectedOfferItems' => [
-            new Travel\OrderChange\SelectedOfferItem([
-                'offerItemRefId' => 'NEW_OFFER_ITEM_ID',
-                'paxRefId' => 'PASSENGER_ID'
+        'selectedOffer' => new Travel\OrderChange\SelectedOffer([
+            'offerId' => 'NEW_OFFER_ID',
+            'ownerCode' => 'AIRLINE_CODE',
+            'selectedOfferItems' => [
+                new Travel\OrderChange\SelectedOfferItem([
+                    'offerItemRefId' => 'NEW_OFFER_ITEM_ID',
+                    'paxRefId' => 'PASSENGER_ID'
+                ])
+            ]
+        ]),
+        'passengers' => [
+            new Travel\OrderChange\Pax([
+                'paxId' => 'PASSENGER_ID',
+                'passengerType' => 'ADT',
+                'givenName' => 'Updated',
+                'surname' => 'Name'
             ])
         ]
-    ]),
-    'passengers' => [
-        new Travel\OrderChange\Pax([
-            'paxId' => 'PASSENGER_ID',
-            'passengerType' => 'ADT',
-            'givenName' => 'Updated',
-            'surname' => 'Name'
-        ])
-    ]
-]);
+    ]);
 
-$changeResult = $client->travelOrderChange($opt);
+    $changeResult = $client->travelOrderChange($opt);
 
 ----------------------------------
 Travel_OrderCancel       
@@ -4254,12 +4263,14 @@ Travel_OrderCancel
 Order Cancel: Cancel the order
 
 
-$opt = Travel\TravelOrderCancelOptions::create([
-    'orderId' => 'ORDER_ID',
-    'ownerCode' => 'AIRLINE_CODE'
-]);
+.. code-block:: php
 
-$cancelResult = $client->travelOrderCancel($opt);
+    $opt = Travel\TravelOrderCancelOptions::create([
+        'orderId' => 'ORDER_ID',
+        'ownerCode' => 'AIRLINE_CODE'
+    ]);
+
+    $cancelResult = $client->travelOrderCancel($opt);
 
 
 
