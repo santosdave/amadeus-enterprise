@@ -163,3 +163,4 @@ Message examples
 ****************
 
 See the `list of examples how to send specific messages <samples.rst>`_.
+See the `list of examples how to send NDC messages <ndc-services.rst>`_.

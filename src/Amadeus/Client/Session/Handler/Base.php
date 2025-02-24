@@ -197,11 +197,11 @@ abstract class Base implements HandlerInterface, LoggerAwareInterface
             $this->getActiveVersionFor($messageName)
         );
 
-        $this->prepareForNextMessage($messageName, $messageOptions);
-
         try {
-            $result->responseObject = $this->getSoapClient($messageName)->$messageName($messageBody);
 
+
+            $this->prepareForNextMessage($messageName, $messageOptions);
+            $result->responseObject = $this->getSoapClient($messageName)->$messageName($messageBody);
             $this->logRequestAndResponse($messageName);
 
             $this->handlePostMessage($messageName, $this->getLastResponse($messageName), $messageOptions, $result);
@@ -383,11 +383,13 @@ abstract class Base implements HandlerInterface, LoggerAwareInterface
     {
         $wsdlId = $this->getWsdlIdFor($msgName);
 
+
+
+
         if (!empty($msgName)) {
             if (!isset($this->soapClients[$wsdlId]) || !($this->soapClients[$wsdlId] instanceof \SoapClient)) {
                 $this->soapClients[$wsdlId] = $this->initSoapClient($wsdlId);
             }
-
             return $this->soapClients[$wsdlId];
         } else {
             return null;
@@ -409,6 +411,8 @@ abstract class Base implements HandlerInterface, LoggerAwareInterface
             $this->makeSoapClientOptions(),
             $this->params->logger
         );
+
+
 
         return $client;
     }

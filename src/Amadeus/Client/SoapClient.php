@@ -35,7 +35,7 @@ use Psr\Log;
  * are present in your request.
  *
  * @package Amadeus\Client
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SoapClient extends \SoapClient implements Log\LoggerAwareInterface
 {
@@ -56,6 +56,29 @@ class SoapClient extends \SoapClient implements Log\LoggerAwareInterface
             $logger = new Log\NullLogger();
         }
         $this->setLogger($logger);
+
+        // Force disable WSDL caching
+        ini_set('soap.wsdl_cache_enabled', '0');
+
+        // Default options
+        $defaultOptions = [
+            'trace' => 1,
+            'exceptions' => 1,
+            'soap_version' => 1,
+            'cache_wsdl' => WSDL_CACHE_NONE,
+            'features' => SOAP_SINGLE_ELEMENT_ARRAYS | SOAP_USE_XSI_ARRAY_TYPE,
+            'keep_alive' => false,
+            'connection_timeout' => 180,
+            'stream_context' => stream_context_create([
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                ]
+            ])
+        ];
+
+        $options = array_merge($defaultOptions, $options);
+
 
         parent::__construct($wsdl, $options);
     }
@@ -92,6 +115,7 @@ class SoapClient extends \SoapClient implements Log\LoggerAwareInterface
     {
         $newRequest = null;
 
+
         $xsltFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . self::REMOVE_EMPTY_XSLT_LOCATION;
         if (!is_readable($xsltFile)) {
             throw new Exception('XSLT file "' . $xsltFile . '" is not readable!');
@@ -123,6 +147,8 @@ class SoapClient extends \SoapClient implements Log\LoggerAwareInterface
         }
 
         unset($processor, $xslt, $dom, $transform);
+
+
 
         return $newRequest;
     }

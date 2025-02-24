@@ -161,7 +161,11 @@ class SoapHeader4 extends Base
             $this->sessionData['sequenceNumber']++;
         }
 
+
+
         $headers = $this->createSoapHeaders($this->sessionData, $this->params, $messageName, $messageOptions);
+
+
 
         $this->getSoapClient($messageName)->__setSoapHeaders(null);
         $this->getSoapClient($messageName)->__setSoapHeaders($headers);
@@ -515,11 +519,15 @@ class SoapHeader4 extends Base
     protected function makeSoapClientOptions()
     {
         $options = $this->soapClientOptions;
+
         $options['classmap'] = array_merge(Classmap::$soapheader4map, Classmap::$map);
+
 
         if (!empty($this->params->soapClientOptions)) {
             $options = array_merge($options, $this->params->soapClientOptions);
         }
+
+
 
         return $options;
     }

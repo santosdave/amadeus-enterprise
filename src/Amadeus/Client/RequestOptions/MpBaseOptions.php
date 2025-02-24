@@ -82,7 +82,6 @@ class MpBaseOptions extends Base
      */
     public $nrOfRequestedNDCResults;
 
-
     /**
      * Passenger info
      *

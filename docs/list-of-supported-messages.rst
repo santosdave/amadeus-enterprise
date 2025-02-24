@@ -87,6 +87,16 @@ This is the list of messages that are at least partially supported at this time:
 - SalesReports_DisplayQueryReport
 - SalesReports_DisplayDailyOrSummarizedReport
 - SalesReports_DisplayNetRemitReport
+- Travel_OfferPrice
+- Travel_OrderCreate
+- Travel_OrderCancel
+- Travel_OrderChange
+- Travel_OrderPay
+- Travel_OrderRetrieve
+- Travel_OrderReshop
+- Travel_SeatAvailability
+- Travel_ServiceList
+
 
 **********
 To-do list

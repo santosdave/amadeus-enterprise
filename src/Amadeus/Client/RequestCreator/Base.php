@@ -127,6 +127,7 @@ class Base implements RequestCreatorInterface
             $found = $this->messagesAndVersions[$messageName]['version'];
         }
 
+
         return $found;
     }
 

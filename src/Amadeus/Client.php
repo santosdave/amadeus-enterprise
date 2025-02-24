@@ -1753,6 +1753,182 @@ class Client extends Base
         return $this->callMessage($msgName, $options, $messageOptions);
     }
 
+
+
+    /**
+     * Travel_OfferPrice - Price an offer from a previous shopping or seat availability transaction
+     *
+     * @param RequestOptions\TravelOfferPriceOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelOfferPrice(
+        RequestOptions\Travel\TravelOfferPriceOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_OfferPrice';
+
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+
+    /**
+     * Travel_OrderCreate
+     *
+     * @param RequestOptions\Travel\TravelOrderCreateOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelOrderCreate(
+        RequestOptions\Travel\TravelOrderCreateOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_OrderCreate';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
+     * Travel_OrderPay - Pay and issue an order
+     *
+     * @param RequestOptions\Travel\TravelOrderPayOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelOrderPay(
+        RequestOptions\Travel\TravelOrderPayOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_OrderPay';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
+     * Travel_OrderRetrieve
+     *
+     * @param RequestOptions\Travel\TravelOrderRetrieveOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelOrderRetrieve(
+        RequestOptions\Travel\TravelOrderRetrieveOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_OrderRetrieve';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
+     * Travel_OrderReshop
+     *
+     * @param RequestOptions\Travel\TravelOrderReshopOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelOrderReshop(
+        RequestOptions\Travel\TravelOrderReshopOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_OrderReshop';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
+     * Travel_OrderCancel
+     *
+     * @param RequestOptions\Travel\TravelOrderCancelOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelOrderCancel(
+        RequestOptions\Travel\TravelOrderCancelOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_OrderCancel';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
+     * Travel_OrderChange - Modify an existing order
+     *
+     * @param RequestOptions\Travel\TravelOrderChangeOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelOrderChange(
+        RequestOptions\Travel\TravelOrderChangeOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_OrderChange';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
+     * Travel_SeatAvailability
+     *
+     * @param RequestOptions\Travel\TravelSeatAvailabilityOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelSeatAvailability(
+        RequestOptions\Travel\TravelSeatAvailabilityOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_SeatAvailability';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+
+    /**
+     * Travel_ServiceList - Retrieve service list from an offer or order
+     *
+     * @param RequestOptions\Travel\TravelServiceListOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function travelServiceList(
+        RequestOptions\Travel\TravelServiceListOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Travel_ServiceList';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
     /**
      * Call a message with the given parameters
      *
@@ -1773,6 +1949,8 @@ class Client extends Base
         $messageOptions = $this->makeMessageOptions($messageOptions, $endSession);
 
         $this->lastMessage = $messageName;
+
+
 
         $sendResult = $this->sessionHandler->sendMessage(
             $messageName,
