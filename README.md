@@ -62,7 +62,7 @@ See the [Changelog](CHANGELOG.md).
 - [List of supported messages](docs/list-of-supported-messages.rst)
 - [How to](docs/how-to.rst)
 - [Examples for sending specific messages](docs/samples.rst)
-- [Examples for sending ndc messages](docs/ndc-services.rst>)
+- [Examples for sending ndc messages](docs/ndc-services.md>)
 
 
 ---
