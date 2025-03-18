@@ -41,6 +41,6 @@ class OrderReshopUpdateOrder
      */
     public function __construct(TravelOrderReshopOptions $options)
     {
-        $this->ReshopOrder = new OrderReshopServiceOrder($options);
+        $this->ReshopOrder['ServiceOrder'] = new OrderReshopServiceOrder($options);
     }
 }

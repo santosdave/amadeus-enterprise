@@ -49,7 +49,7 @@ class SelectedOfferOption extends LoadParamsFromArray
      * 
      * @var string
      */
-    public $ShoppingResponseRefID = 'NOT USED';
+    public $ShoppingResponseRefID = '';
 
     /**
      * Selected Offer Items
