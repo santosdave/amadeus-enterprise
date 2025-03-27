@@ -33,18 +33,18 @@ class OrderReshopPricingParameters
     /**
      * Auto Exchange Request Indicator
      * 
-     * @var bool
-     * @xmlAttribute
+     * @var \stdClass
      */
-    public $AutoExchRequestInd = false;
+    public $PricingParameters;
 
     /**
      * OrderReshopPricingParameters constructor
      *
-     * @param bool $autoExchRequestInd
+     * @param bool $autoExchRequestInd Auto Exchange Request Indicator
      */
-    public function __construct($autoExchRequestInd)
+    public function __construct($autoExchRequestInd = false)
     {
-        $this->AutoExchRequestInd = $autoExchRequestInd;
+        $this->PricingParameters = new \stdClass();
+        $this->PricingParameters->AutoExchRequestInd = $autoExchRequestInd;
     }
 }

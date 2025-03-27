@@ -17,30 +17,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @package Amadeus\Client\Struct\Travel\OrderReshop
+ * @package Amadeus\Client\Struct\Travel\OrderChange
  * @license https://opensource.org/licenses/Apache-2.0 Apache 2.0
  */
 
-namespace Amadeus\Client\Struct\Travel\OrderReshop;
+namespace Amadeus\Client\Struct\Travel\OrderChange;
 
-use Amadeus\Client\RequestOptions\Travel\TravelOrderReshopOptions;
-
-class OrderReshopUpdateOrder
+/**
+ * Secure Payment Version 2 details for Travel_OrderChange
+ */
+class OrderChangeSecurePayment
 {
     /**
-     * Reshop Order details
+     * Payment Transaction Channel Code
      * 
-     * @var OrderReshopServiceOrder
+     * @var string
      */
-    public $ReshopOrder;
+    public $PaymentTrxChannelCode;
 
     /**
-     * OrderReshopUpdateOrder constructor
+     * OrderChangeSecurePayment constructor
      *
-     * @param TravelOrderReshopOptions $options
+     * @param string $paymentTrxChannelCode Payment Transaction Channel Code
      */
-    public function __construct(TravelOrderReshopOptions $options)
+    public function __construct($paymentTrxChannelCode)
     {
-        $this->ReshopOrder = new OrderReshopServiceOrder($options);
+        $this->PaymentTrxChannelCode = $paymentTrxChannelCode;
     }
 }

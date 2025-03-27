@@ -17,30 +17,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @package Amadeus\Client\Struct\Travel\OrderReshop
+ * @package Amadeus\Client\Struct\Travel\OrderChange
  * @license https://opensource.org/licenses/Apache-2.0 Apache 2.0
  */
 
-namespace Amadeus\Client\Struct\Travel\OrderReshop;
+namespace Amadeus\Client\Struct\Travel\OrderChange;
 
-use Amadeus\Client\RequestOptions\Travel\TravelOrderReshopOptions;
-
-class OrderReshopUpdateOrder
+/**
+ * Cash Payment details for Travel_OrderChange
+ */
+class OrderChangeCash
 {
     /**
-     * Reshop Order details
+     * Cash Indicator
      * 
-     * @var OrderReshopServiceOrder
+     * @var bool
      */
-    public $ReshopOrder;
+    public $CashInd;
 
     /**
-     * OrderReshopUpdateOrder constructor
+     * OrderChangeCash constructor
      *
-     * @param TravelOrderReshopOptions $options
+     * @param bool $cashIndicator Whether payment is by cash
      */
-    public function __construct(TravelOrderReshopOptions $options)
+    public function __construct($cashIndicator)
     {
-        $this->ReshopOrder = new OrderReshopServiceOrder($options);
+        $this->CashInd = $cashIndicator;
     }
 }

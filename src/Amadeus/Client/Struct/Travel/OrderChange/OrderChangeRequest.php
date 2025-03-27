@@ -59,6 +59,13 @@ class OrderChangeRequest
     public $Parameters;
 
     /**
+     * Payment Information
+     * 
+     * @var OrderChangePaymentInfo
+     */
+    public $PaymentInfo;
+
+    /**
      * OrderChangeRequest constructor
      *
      * @param TravelOrderChangeOptions $options
@@ -69,6 +76,7 @@ class OrderChangeRequest
         $this->loadDataLists($options);
         $this->loadOrder($options);
         $this->loadParameters($options);
+        $this->loadPaymentInfo($options);
     }
 
     /**
@@ -110,6 +118,18 @@ class OrderChangeRequest
     {
         if ($options->invoice) {
             $this->Parameters = new OrderChangeParameters($options->invoice);
+        }
+    }
+
+    /**
+     * Load Payment Information
+     *
+     * @param TravelOrderChangeOptions $options
+     */
+    protected function loadPaymentInfo(TravelOrderChangeOptions $options)
+    {
+        if ($options->paymentInfo) {
+            $this->PaymentInfo = new OrderChangePaymentInfo($options->paymentInfo);
         }
     }
 }

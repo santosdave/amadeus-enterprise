@@ -197,9 +197,9 @@ abstract class Base implements HandlerInterface, LoggerAwareInterface
             $this->getActiveVersionFor($messageName)
         );
 
+        // dd($messageBody);
+
         try {
-
-
             $this->prepareForNextMessage($messageName, $messageOptions);
             $result->responseObject = $this->getSoapClient($messageName)->$messageName($messageBody);
             $this->logRequestAndResponse($messageName);

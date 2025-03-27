@@ -69,6 +69,14 @@ class TravelOrderChangeOptions extends Base
      */
     public $invoice;
 
+
+    /**
+     * Payment Information for the order change
+     * 
+     * @var OrderChange\PaymentInfo
+     */
+    public $paymentInfo;
+
     /**
      * Optional static method for creating preset configurations
      *

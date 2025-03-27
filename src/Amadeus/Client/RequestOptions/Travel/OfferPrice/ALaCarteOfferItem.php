@@ -35,12 +35,12 @@ class ALaCarteOfferItem extends LoadParamsFromArray
      * 
      * @var int
      */
-    public $qty;
+    public $Qty;
 
     /**
      * Seat details (for seat selection)
      * 
      * @var string
      */
-    public $seatInfo;
+    public $SeatInfo;
 }

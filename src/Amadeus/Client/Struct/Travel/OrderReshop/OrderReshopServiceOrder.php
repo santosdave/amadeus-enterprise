@@ -28,25 +28,11 @@ use Amadeus\Client\RequestOptions\Travel\TravelOrderReshopOptions;
 class OrderReshopServiceOrder
 {
     /**
-     * Delete Order Items
+     * Service Order
      * 
-     * @var OrderReshopDeleteOrderItem[]
+     * @var \stdClass
      */
-    public $DeleteOrderItem = [];
-
-    /**
-     * Add Offer Items
-     * 
-     * @var OrderReshopAddOfferItems
-     */
-    public $AddOfferItems;
-
-    /**
-     * Update Passenger Information
-     * 
-     * @var OrderReshopUpdatePax
-     */
-    public $UpdatePax;
+    public $ServiceOrder;
 
     /**
      * OrderReshopServiceOrder constructor
@@ -55,19 +41,25 @@ class OrderReshopServiceOrder
      */
     public function __construct(TravelOrderReshopOptions $options)
     {
+        // Create ServiceOrder as an object
+        $this->ServiceOrder = new \stdClass();
+
+        // Initialize DeleteOrderItem array in ServiceOrder
+        $this->ServiceOrder->DeleteOrderItem = [];
+
         // Handle Delete Order Items
         foreach ($options->deleteOrderItems as $deleteItem) {
-            $this->DeleteOrderItem[] = new OrderReshopDeleteOrderItem($deleteItem);
+            $this->ServiceOrder->DeleteOrderItem[] = new OrderReshopDeleteOrderItem($deleteItem);
         }
 
         // Handle Add Offer Items
         if (!empty($options->addOfferItems)) {
-            $this->AddOfferItems = new OrderReshopAddOfferItems($options->addOfferItems);
+            $this->ServiceOrder->AddOfferItems = new OrderReshopAddOfferItems($options->addOfferItems);
         }
 
         // Handle Update Passenger
         if (!empty($options->updatePax)) {
-            $this->UpdatePax = new OrderReshopUpdatePax($options->updatePax);
+            $this->ServiceOrder->UpdatePax = new OrderReshopUpdatePax($options->updatePax);
         }
     }
 }
