@@ -1758,7 +1758,7 @@ class Client extends Base
     /**
      * Travel_OfferPrice - Price an offer from a previous shopping or seat availability transaction
      *
-     * @param RequestOptions\TravelOfferPriceOptions $options
+     * @param RequestOptions\Travel\TravelOfferPriceOptions
      * @param array $messageOptions (OPTIONAL)
      * @return Result
      * @throws Client\InvalidMessageException
