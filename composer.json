@@ -1,6 +1,6 @@
 {
   "name": "santosdave/amadeus-enterprise",
-  "version": "1.0.2",
+  "version": "2.0.1",
   "type": "library",
   "description": "SOAP Web Service client library for interacting with the Amadeus GDS through its SOAP interface",
   "keywords": [
