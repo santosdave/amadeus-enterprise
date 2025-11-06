@@ -36,7 +36,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Air_MultiAvailability version 15 and below
  *
  * @package Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class MultiAvailability extends BaseWsMessage
 {

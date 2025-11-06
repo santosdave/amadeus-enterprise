@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air\RebookAirSegment;
  * SelectionDetails
  *
  * @package Amadeus\Client\Struct\Air\RebookAirSegment
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class SelectionDetails
 {

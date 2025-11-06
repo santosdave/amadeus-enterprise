@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket;
  * PaxReference
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PaxReference
 {

@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\WsMessageUtility;
  * PaymentModule
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PaymentModule extends WsMessageUtility
 {

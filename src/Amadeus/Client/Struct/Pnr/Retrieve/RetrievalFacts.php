@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\WsMessageUtility;
  * Structure class for the RetrievalFacts message part for PNR_Retrieve messages
  *
  * @package Amadeus\Client\Struct\Pnr\Retrieve
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class RetrievalFacts extends WsMessageUtility
 {

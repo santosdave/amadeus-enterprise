@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * NameChangeOpt
  *
  * @package Amadeus\Client\RequestCreator\Converter\PNR
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class NameChangeConv extends BaseConverter
 {

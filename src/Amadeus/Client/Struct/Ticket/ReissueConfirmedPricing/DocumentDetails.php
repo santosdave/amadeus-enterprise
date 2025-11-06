@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Ticket\ReissueConfirmedPricing;
  * DocumentDetails
  *
  * @package Amadeus\Client\Struct\Ticket\ReissueConfirmedPricing
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class DocumentDetails extends \Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass\DocumentDetails
-{
-}
+class DocumentDetails extends \Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass\DocumentDetails {}

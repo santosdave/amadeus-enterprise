@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\Fop\CreateFormOfPayment\FopGroup14;
  * FOP_CreateFormOfPayment message structure version 15 and up
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CreateFormOfPayment extends BaseWsMessage
 {

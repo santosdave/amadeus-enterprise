@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Queue_List Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Queue
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ListConv extends BaseConverter
 {

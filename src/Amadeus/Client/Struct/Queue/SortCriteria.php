@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Queue;
  * Class SortCriteria
  *
  * @package Amadeus\Client\Struct\Queue
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class SortCriteria
 {

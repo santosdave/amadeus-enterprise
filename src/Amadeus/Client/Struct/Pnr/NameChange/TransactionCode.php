@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\NameChange;
  * TransactionCode
  *
  * @package Amadeus\Client\Struct\Pnr\NameChange
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TransactionCode
 {

@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * GetFareRulesTest
  *
  * @package Test\Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class GetFareRulesTest extends BaseTestCase
 {

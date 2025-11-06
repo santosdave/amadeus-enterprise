@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -13,7 +14,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * FrequentTraveller
  *
  * @package Amadeus\Client\RequestOptions\Air\MultiAvailability
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FrequentTraveller extends LoadParamsFromArray
 {

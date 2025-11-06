@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\Fare\PricePnr13\PricingOptionKey;
  * InformativeBestPricingWithoutPNR13
  *
  * @package Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class InformativeBestPricingWithoutPNR13 extends InformativePricingWithoutPNR13
 {

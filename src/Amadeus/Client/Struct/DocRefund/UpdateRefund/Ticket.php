@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\DocRefund\Ticket as TicketOpt;
  * Ticket
  *
  * @package Amadeus\Client\Struct\DocRefund\UpdateRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Ticket
 {

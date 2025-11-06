@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Pnr\Element\SeatRequest as SeatRequestOpt;
  * SeatGroup
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class SeatGroup
 {

@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Air_MultiAvailability Request options
  *
  * @package Amadeus\Client\RequestCreator\Converter\Air
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class MultiAvailabilityConv extends BaseConverter
 {

@@ -34,8 +34,6 @@ namespace Amadeus\Client\Struct;
  * with data that we can already know is incorrect.
  *
  * @package Amadeus\Client\Struct
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class InvalidArgumentException extends \InvalidArgumentException
-{
-}
+class InvalidArgumentException extends \InvalidArgumentException {}

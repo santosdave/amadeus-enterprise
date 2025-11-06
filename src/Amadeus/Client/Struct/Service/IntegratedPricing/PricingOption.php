@@ -36,7 +36,7 @@ use Amadeus\Client\Struct\Fare\PricePnr13\PaxSegTstReference;
  * PricingOption
  *
  * @package Amadeus\Client\Struct\Service\IntegratedPricing
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PricingOption
 {

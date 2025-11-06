@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * SoapHeader2Test
  *
  * @package Amadeus\Client\Session\Handler
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class SoapHeader2Test extends BaseTestCase
 {

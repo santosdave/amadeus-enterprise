@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Reference - For making passenger & segment association to a PNR segment or PNR element
  *
  * @package Amadeus\Client\RequestOptions\Pnr
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Reference extends LoadParamsFromArray
 {

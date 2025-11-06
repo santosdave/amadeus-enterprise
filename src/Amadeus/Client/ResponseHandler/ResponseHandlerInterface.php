@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * ResponseHandlerInterface
  *
  * @package Amadeus\Client\ResponseHandler
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 interface ResponseHandlerInterface
 {

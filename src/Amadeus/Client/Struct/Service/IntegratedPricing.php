@@ -44,7 +44,7 @@ use Amadeus\Client\Struct\Service\IntegratedPricing\PricingOption;
  * Service_IntegratedPricing request structure
  *
  * @package Amadeus\Client\Struct\Service
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class IntegratedPricing extends BasePricingMessage
 {

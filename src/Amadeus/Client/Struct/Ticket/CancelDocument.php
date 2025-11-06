@@ -35,7 +35,7 @@ use Amadeus\Client\Struct\Ticket\CancelDocument\VoidOption;
  * Ticket_CancelDocument request structure
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CancelDocument extends BaseWsMessage
 {

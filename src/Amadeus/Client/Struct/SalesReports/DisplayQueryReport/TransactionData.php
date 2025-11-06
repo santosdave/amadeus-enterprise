@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\SalesReports\DisplayQueryReport;
  * TransactionData
  *
  * @package Amadeus\Client\Struct\SalesReports\DisplayQueryReport
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TransactionData
 {

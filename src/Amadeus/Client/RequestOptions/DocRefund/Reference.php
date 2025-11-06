@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Reference
  *
  * @package Amadeus\Client\RequestOptions\DocRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Reference extends LoadParamsFromArray
 {

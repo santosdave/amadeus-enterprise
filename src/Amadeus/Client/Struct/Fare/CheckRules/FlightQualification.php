@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\WsMessageUtility;
  * FlightQualificationForRules
  *
  * @package Amadeus\Client\Struct\Fare\CheckRules
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FlightQualification extends WsMessageUtility
 {

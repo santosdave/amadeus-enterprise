@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * TravellerPriorityInfoTest
  *
  * @package Test\Amadeus\Client\Struct\DocRefund\DocRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TravellerPriorityInfoTest extends BaseTestCase
 {

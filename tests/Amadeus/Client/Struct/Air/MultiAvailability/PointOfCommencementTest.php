@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -6,6 +7,7 @@
  */
 
 namespace Test\Amadeus\Client\Struct\Air\MultiAvailability;
+
 use Amadeus\Client\Struct\Air\MultiAvailability\PointOfCommencement;
 use Test\Amadeus\BaseTestCase;
 
@@ -13,7 +15,7 @@ use Test\Amadeus\BaseTestCase;
  * PointOfCommencementTest
  *
  * @package Test\Amadeus\Client\Struct\Air\MultiAvailability
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PointOfCommencementTest extends BaseTestCase
 {

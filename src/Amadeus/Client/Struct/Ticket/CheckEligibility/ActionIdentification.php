@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\CheckEligibility;
  * ActionIdentification
  *
  * @package Amadeus\Client\Struct\Ticket\CheckEligibility
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ActionIdentification
 {

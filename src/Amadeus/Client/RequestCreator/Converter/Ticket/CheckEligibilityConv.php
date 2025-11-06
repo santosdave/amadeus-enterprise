@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * CheckEligibilityConv
  *
  * @package Amadeus\Client\RequestCreator\Converter\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CheckEligibilityConv extends BaseConverter
 {

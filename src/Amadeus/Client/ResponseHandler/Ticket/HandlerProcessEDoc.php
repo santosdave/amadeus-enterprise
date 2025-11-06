@@ -32,7 +32,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerProcessEDoc
  *
  * @package Amadeus\Client\ResponseHandler\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class HandlerProcessEDoc extends StandardResponseHandler
 {

@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerRetrieveAndDisplay
  *
  * @package Amadeus\Client\ResponseHandler\PNR
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class HandlerRetrieveAndDisplay extends StandardResponseHandler
 {

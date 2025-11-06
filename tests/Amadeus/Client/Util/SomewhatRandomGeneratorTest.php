@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * SomewhatRandomGeneratorTest
  *
  * @package Amadeus\Client\Install
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class SomewhatRandomGeneratorTest extends BaseTestCase
 {

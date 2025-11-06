@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -18,7 +19,7 @@ use Test\Amadeus\BaseTestCase;
  * DisplayHistoryTest
  *
  * @package Test\Amadeus\Client\Struct\Pnr
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DisplayHistoryTest extends BaseTestCase
 {

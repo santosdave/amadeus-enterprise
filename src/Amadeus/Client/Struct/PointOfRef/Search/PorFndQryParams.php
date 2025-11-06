@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\PointOfRef\Search;
  * PorFndQryParams
  *
  * @package Amadeus\Client\Struct\PointOfRef\Search
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PorFndQryParams
 {

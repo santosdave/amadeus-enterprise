@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air\RebookAirSegment;
  * BestPricerRecommendation
  *
  * @package Amadeus\Client\Struct\Air\RebookAirSegment
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class BestPricerRecommendation
 {

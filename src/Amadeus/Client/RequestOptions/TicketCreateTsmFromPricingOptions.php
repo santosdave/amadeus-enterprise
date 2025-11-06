@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -11,8 +12,6 @@ namespace Amadeus\Client\RequestOptions;
  * Ticket_CreateTsmFromPricing Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class TicketCreateTsmFromPricingOptions extends TicketCreateTstFromPricingOptions
-{
-}
+class TicketCreateTsmFromPricingOptions extends TicketCreateTstFromPricingOptions {}

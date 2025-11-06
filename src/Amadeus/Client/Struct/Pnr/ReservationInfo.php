@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr;
  * ReservationInfo
  *
  * @package Amadeus\Client\Struct\Pnr
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ReservationInfo
 {

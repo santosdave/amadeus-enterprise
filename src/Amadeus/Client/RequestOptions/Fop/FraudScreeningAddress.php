@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * FraudScreeningAddress
  *
  * @package Amadeus\Client\RequestOptions\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FraudScreeningAddress extends LoadParamsFromArray
 {

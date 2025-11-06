@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Fop\InstallmentsInfo;
  * ExtendedPaymentInfo
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ExtendedPaymentInfo
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Fare\MasterPricer\FFOtherCriteria;
  * OtherPossibleCriteria
  *
  * @package Amadeus\Client\Struct\Fare\MasterPricer
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class OtherPossibleCriteria
 {

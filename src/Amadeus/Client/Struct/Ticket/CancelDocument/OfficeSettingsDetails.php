@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\CancelDocument;
  * OfficeSettingsDetails
  *
  * @package Amadeus\Client\Struct\Ticket\CancelDocument
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class OfficeSettingsDetails
 {

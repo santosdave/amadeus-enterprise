@@ -31,8 +31,6 @@ use Amadeus\Client\Exception;
  * Exception thrown if there is no valid session when trying to send messages.
  *
  * @package Amadeus\Client\Session\Handler
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class InvalidSessionException extends Exception
-{
-}
+class InvalidSessionException extends Exception {}

@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Fop;
  * ExpirationPeriod
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class ExpirationPeriod
-{
-}
+class ExpirationPeriod {}

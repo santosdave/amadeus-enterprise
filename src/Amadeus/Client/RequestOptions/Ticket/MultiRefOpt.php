@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Multiple pax/seg/tst/... references
  *
  * @package Amadeus\Client\RequestOptions\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class MultiRefOpt extends LoadParamsFromArray
 {

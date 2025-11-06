@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\DocRefund\UpdateRefund;
  * FeeGroup
  *
  * @package Amadeus\Client\Struct\DocRefund\UpdateRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class FeeGroup
-{
-}
+class FeeGroup {}

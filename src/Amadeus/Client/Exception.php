@@ -27,8 +27,6 @@ namespace Amadeus\Client;
  * Exception class specific for this library
  *
  * @package Amadeus\Client
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class Exception extends \Exception
-{
-}
+class Exception extends \Exception {}

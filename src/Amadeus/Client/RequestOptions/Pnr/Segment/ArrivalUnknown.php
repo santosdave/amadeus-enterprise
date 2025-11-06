@@ -31,7 +31,7 @@ use Amadeus\Client\RequestOptions\Pnr\Segment;
  * Used when connecting 2 flight segments which have different destination -> departure
  *
  * @package Amadeus\Client\RequestOptions\Pnr\Segment
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ArrivalUnknown extends Segment
 {

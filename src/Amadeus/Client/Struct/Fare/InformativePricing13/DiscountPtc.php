@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\InformativePricing13;
  * DiscountPtc
  *
  * @package Amadeus\Client\Struct\Fare\InformativePricing13
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DiscountPtc
 {

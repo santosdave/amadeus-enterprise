@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\CheckRules;
  * TarifFareRule
  *
  * @package Amadeus\Client\Struct\Fare\CheckRules
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TarifFareRule
 {

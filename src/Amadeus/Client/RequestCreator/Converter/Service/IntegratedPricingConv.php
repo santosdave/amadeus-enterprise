@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Service_IntegratedPricing Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Service
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class IntegratedPricingConv extends BaseConverter
 {

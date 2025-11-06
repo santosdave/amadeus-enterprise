@@ -59,7 +59,7 @@ use Test\Amadeus\BaseTestCase;
  * CreateFormOfPaymentTest
  *
  * @package Test\Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CreateFormOfPaymentTest extends BaseTestCase
 {

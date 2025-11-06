@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * StructuredAddressTest
  *
  * @package Test\Amadeus\Client\Struct\DocRefund\DocRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class StructuredAddressTest extends BaseTestCase
 {

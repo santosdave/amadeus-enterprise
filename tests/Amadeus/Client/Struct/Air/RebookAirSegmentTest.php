@@ -33,7 +33,7 @@ use Test\Amadeus\BaseTestCase;
  * RebookAirSegmentTest
  *
  * @package Test\Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class RebookAirSegmentTest extends BaseTestCase
 {

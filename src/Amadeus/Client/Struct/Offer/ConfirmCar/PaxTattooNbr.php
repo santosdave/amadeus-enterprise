@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer\ConfirmCar;
  * PaxTattooNbr
  *
  * @package Amadeus\Client\Struct\Offer\ConfirmCar
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PaxTattooNbr
 {

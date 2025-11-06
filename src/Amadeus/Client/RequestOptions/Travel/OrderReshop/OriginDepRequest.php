@@ -25,19 +25,26 @@ namespace Amadeus\Client\RequestOptions\Travel\OrderReshop;
 
 use Amadeus\Client\LoadParamsFromArray;
 
-class NewPaxContactInfo extends LoadParamsFromArray
+class OriginDepRequest extends LoadParamsFromArray
 {
     /**
-     * Email Address
+     * IATA Location Code
      * 
      * @var string
      */
-    public $email;
+    public $iataLocationCode;
 
     /**
-     * Phone Number
+     * Departure Date
      * 
      * @var string
      */
-    public $phoneNumber;
+    public $date;
+
+    /**
+     * Departure Time
+     * 
+     * @var string
+     */
+    public $time;
 }

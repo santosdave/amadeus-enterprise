@@ -17,41 +17,46 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @package Amadeus\Client\RequestOptions\Travel\OrderReshop
+ * @package Amadeus\Client\Struct\Travel\OrderReshop
  * @license https://opensource.org/licenses/Apache-2.0 Apache 2.0
  */
 
-namespace Amadeus\Client\RequestOptions\Travel\OrderReshop;
+namespace Amadeus\Client\Struct\Travel\OrderReshop;
 
-use Amadeus\Client\LoadParamsFromArray;
+use Amadeus\Client\RequestOptions\Travel\OrderReshop\OriginDepRequest;
 
-class NewPaxIndividual extends LoadParamsFromArray
+class OrderReshopOriginDepRequest
 {
     /**
-     * Title Name
+     * IATA Location Code
      * 
      * @var string
      */
-    public $titleName;
+    public $IATA_LocationCode;
 
     /**
-     * Given Name
+     * Date
      * 
      * @var string
      */
-    public $givenName;
+    public $Date;
 
     /**
-     * Surname
+     * Time
      * 
      * @var string
      */
-    public $surname;
+    public $Time;
 
     /**
-     * Gender Code
-     * 
-     * @var string
+     * OrderReshopOriginDepRequest constructor
+     *
+     * @param OriginDepRequest $originDep
      */
-    public $genderCode;
+    public function __construct(OriginDepRequest $originDep)
+    {
+        $this->IATA_LocationCode = $originDep->iataLocationCode;
+        $this->Date = $originDep->date;
+        $this->Time = $originDep->time;
+    }
 }

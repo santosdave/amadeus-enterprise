@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\HeaderV4\TransactionFlowLink;
  * Consumer
  *
  * @package Amadeus\Client\Struct\HeaderV4\TransactionFlowLink
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Consumer
 {

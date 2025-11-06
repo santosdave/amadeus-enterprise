@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Queue;
  * HandlerRemoveItem
  *
  * @package Amadeus\Client\ResponseHandler\Queue
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class HandlerRemoveItem extends HandlerList
-{
-}
+class HandlerRemoveItem extends HandlerList {}

@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Air\RetrieveSeatMap;
  * CustomerCharacteristics
  *
  * @package Amadeus\Client\Struct\Air\RetrieveSeatMap
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class CustomerCharacteristics
-{
-}
+class CustomerCharacteristics {}

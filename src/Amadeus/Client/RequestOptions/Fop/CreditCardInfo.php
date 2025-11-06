@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * CreditCardInfo
  *
  * @package Amadeus\Client\RequestOptions\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CreditCardInfo extends LoadParamsFromArray
 {

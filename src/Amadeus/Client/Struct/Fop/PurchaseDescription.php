@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Fop;
  * PurchaseDescription
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class PurchaseDescription
-{
-}
+class PurchaseDescription {}

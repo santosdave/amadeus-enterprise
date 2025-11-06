@@ -33,7 +33,7 @@ use Amadeus\Client\Struct\Pnr\Cancel\Elements;
  * PNR_Cancel message structure
  *
  * @package Amadeus\Client\Struct\Pnr
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Cancel extends BaseWsMessage
 {

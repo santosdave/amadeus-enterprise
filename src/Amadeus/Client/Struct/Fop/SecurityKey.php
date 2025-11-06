@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fop;
  * SecurityKey
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class SecurityKey
 {

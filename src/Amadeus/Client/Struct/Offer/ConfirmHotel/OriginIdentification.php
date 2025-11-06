@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer\ConfirmHotel;
  * OriginIdentification
  *
  * @package Amadeus\Client\Struct\Offer\ConfirmHotel
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class OriginIdentification
 {

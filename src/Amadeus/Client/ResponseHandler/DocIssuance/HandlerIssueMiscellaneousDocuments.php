@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerIssueMiscellaneousDocuments
  *
  * @package Amadeus\Client\ResponseHandler\DocIssuance
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class HandlerIssueMiscellaneousDocuments extends StandardResponseHandler
 {

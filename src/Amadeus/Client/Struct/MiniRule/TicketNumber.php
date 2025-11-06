@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\MiniRule;
  * TicketNumber
  *
  * @package Amadeus\Client\Struct\MiniRule
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TicketNumber
 {

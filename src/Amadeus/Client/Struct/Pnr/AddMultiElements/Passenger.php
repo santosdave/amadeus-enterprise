@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\AddMultiElements;
  * Passenger - Structure class for the passenger message part for PNR_AddMultiElements messages
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Passenger extends \Amadeus\Client\Struct\Pnr\Retrieve\Passenger
 {

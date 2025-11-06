@@ -32,7 +32,7 @@ use Amadeus\Client\RequestOptions\Fop\Payment;
  * PaymentData
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PaymentData
 {

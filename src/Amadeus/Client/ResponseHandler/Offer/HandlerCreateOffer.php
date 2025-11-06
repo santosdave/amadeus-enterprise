@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerCreateOffer
  *
  * @package Amadeus\Client\ResponseHandler\Offer
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class HandlerCreateOffer extends StandardResponseHandler
 {

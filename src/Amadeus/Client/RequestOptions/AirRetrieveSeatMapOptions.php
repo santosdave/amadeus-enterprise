@@ -29,7 +29,7 @@ namespace Amadeus\Client\RequestOptions;
  * Options available for the Air_RetrieveSeatMap message.
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class AirRetrieveSeatMapOptions extends Base
 {

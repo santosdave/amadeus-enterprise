@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Air_RetrieveSeatMap Request options
  *
  * @package Amadeus\Client\RequestCreator\Converter\Air
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class RetrieveSeatMapConv extends BaseConverter
 {

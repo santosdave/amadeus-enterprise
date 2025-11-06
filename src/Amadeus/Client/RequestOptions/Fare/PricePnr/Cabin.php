@@ -28,7 +28,7 @@ use Amadeus\Client\LoadParamsFromArray;
 /**
  * Class Cabin
  * @package Amadeus\Client\RequestOptions\Fare\PricePnr
- * @author  Dieter Devlieghere <dermikagh@gmail.com>
+ * @author  Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Cabin extends LoadParamsFromArray
 {

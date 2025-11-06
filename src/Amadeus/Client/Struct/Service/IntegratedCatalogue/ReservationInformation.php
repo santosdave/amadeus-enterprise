@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Service\IntegratedCatalogue;
  * ReservationInformation
  *
  * @package Amadeus\Client\Struct\Service\IntegratedCatalogue
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ReservationInformation
 {

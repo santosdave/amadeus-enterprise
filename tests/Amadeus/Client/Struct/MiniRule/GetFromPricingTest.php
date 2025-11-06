@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * GetFromPricing
  *
  * @package Test\Amadeus\Client\Struct\MiniRule
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class GetFromPricingTest extends BaseTestCase
 {

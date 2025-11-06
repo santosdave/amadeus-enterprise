@@ -33,8 +33,6 @@ use Amadeus\Client\Exception;
  * For example: enable stateless messages on a legacy soap header WSAP
  *
  * @package Amadeus\Client\Session\Handler
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class UnsupportedOperationException extends Exception
-{
-}
+class UnsupportedOperationException extends Exception {}

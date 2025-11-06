@@ -28,39 +28,53 @@ namespace Amadeus\Client\Struct\Travel\OrderReshop;
 class OrderReshopNewPax
 {
     /**
-     * Passenger ID
-     * 
+     * Passenger ID (optional - for backward compatibility)
+     *
      * @var string
      */
     public $PaxID;
 
     /**
-     * Passenger Type Code
-     * 
+     * Passenger Type Code (optional - for backward compatibility)
+     *
      * @var string
      */
     public $PTC;
 
     /**
      * Individual Details
-     * 
+     *
      * @var OrderReshopIndividual
      */
     public $Individual;
 
     /**
-     * Contact Information
-     * 
-     * @var OrderReshopContactInfo
+     * Contact Information (changed to array to support multiple contacts)
+     *
+     * @var OrderReshopContactInfo[]
      */
-    public $ContactInfo;
+    public $ContactInfo = [];
 
     /**
-     * Identity Document
-     * 
-     * @var OrderReshopIdentityDoc
+     * Identity Documents (changed to array to support multiple documents)
+     *
+     * @var OrderReshopIdentityDoc[]
      */
-    public $IdentityDoc;
+    public $IdentityDoc = [];
+
+    /**
+     * Entitlement Documents (new - for DOCO, Visas, etc.)
+     *
+     * @var OrderReshopEntitlementDocument[]
+     */
+    public $EntitlementDocument = [];
+
+    /**
+     * Redress Program (new - for security programs)
+     *
+     * @var OrderReshopRedressProgram
+     */
+    public $RedressProgram;
 
     /**
      * OrderReshopNewPax constructor
@@ -69,19 +83,80 @@ class OrderReshopNewPax
      */
     public function __construct($newPaxInfo)
     {
-        $this->PaxID = $newPaxInfo->paxId;
-        $this->PTC = $newPaxInfo->ptc;
+        // Handle backward compatibility for existing properties
+        if (isset($newPaxInfo->paxId)) {
+            $this->PaxID = $newPaxInfo->paxId;
+        }
 
+        if (isset($newPaxInfo->ptc)) {
+            $this->PTC = $newPaxInfo->ptc;
+        }
+
+        // Handle Individual information
         if ($newPaxInfo->individual) {
             $this->Individual = new OrderReshopIndividual($newPaxInfo->individual);
         }
 
+        // Handle Contact Information (support both single and multiple)
         if ($newPaxInfo->contactInfo) {
-            $this->ContactInfo = new OrderReshopContactInfo($newPaxInfo->contactInfo);
+            if (is_array($newPaxInfo->contactInfo)) {
+                // New array format
+                foreach ($newPaxInfo->contactInfo as $contact) {
+                    if ($contact instanceof \Amadeus\Client\RequestOptions\Travel\OrderReshop\ContactInfo) {
+                        $this->ContactInfo[] = new OrderReshopContactInfo($contact);
+                    } else {
+                        // Handle array format
+                        $contactObj = new \Amadeus\Client\RequestOptions\Travel\OrderReshop\ContactInfo($contact);
+                        $this->ContactInfo[] = new OrderReshopContactInfo($contactObj);
+                    }
+                }
+            } else {
+                // Backward compatibility - single contact
+                $this->ContactInfo[] = new OrderReshopContactInfo($newPaxInfo->contactInfo);
+            }
         }
 
-        if ($newPaxInfo->identityDoc) {
-            $this->IdentityDoc = new OrderReshopIdentityDoc($newPaxInfo->identityDoc);
+        // Handle Identity Documents (support both single and multiple)
+        if (isset($newPaxInfo->identityDoc)) {
+            // Backward compatibility - single identity document
+            $this->IdentityDoc[] = new OrderReshopIdentityDoc($newPaxInfo->identityDoc);
+        }
+
+        if (isset($newPaxInfo->identityDocs) && is_array($newPaxInfo->identityDocs)) {
+            // New array format
+            foreach ($newPaxInfo->identityDocs as $identityDoc) {
+                if ($identityDoc instanceof \Amadeus\Client\RequestOptions\Travel\OrderReshop\IdentityDoc) {
+                    $this->IdentityDoc[] = new OrderReshopIdentityDoc($identityDoc);
+                } else {
+                    // Handle array format
+                    $identityDocObj = new \Amadeus\Client\RequestOptions\Travel\OrderReshop\IdentityDoc($identityDoc);
+                    $this->IdentityDoc[] = new OrderReshopIdentityDoc($identityDocObj);
+                }
+            }
+        }
+
+        // Handle Entitlement Documents (new feature)
+        if (isset($newPaxInfo->entitlementDocs) && is_array($newPaxInfo->entitlementDocs)) {
+            foreach ($newPaxInfo->entitlementDocs as $entitlementDoc) {
+                if ($entitlementDoc instanceof \Amadeus\Client\RequestOptions\Travel\OrderReshop\EntitlementDocument) {
+                    $this->EntitlementDocument[] = new OrderReshopEntitlementDocument($entitlementDoc);
+                } else {
+                    // Handle array format
+                    $entitlementDocObj = new \Amadeus\Client\RequestOptions\Travel\OrderReshop\EntitlementDocument($entitlementDoc);
+                    $this->EntitlementDocument[] = new OrderReshopEntitlementDocument($entitlementDocObj);
+                }
+            }
+        }
+
+        // Handle Redress Program (new feature)
+        if (isset($newPaxInfo->redressProgram)) {
+            if ($newPaxInfo->redressProgram instanceof \Amadeus\Client\RequestOptions\Travel\OrderReshop\RedressProgram) {
+                $this->RedressProgram = new OrderReshopRedressProgram($newPaxInfo->redressProgram);
+            } else {
+                // Handle array format
+                $redressProgramObj = new \Amadeus\Client\RequestOptions\Travel\OrderReshop\RedressProgram($newPaxInfo->redressProgram);
+                $this->RedressProgram = new OrderReshopRedressProgram($redressProgramObj);
+            }
         }
     }
 }

@@ -37,7 +37,7 @@ use Amadeus\Client\Struct\Pnr\Retrieve\ReservationOrProfileIdentifier;
  * Offer_ConfirmCarOffer
  *
  * @package Amadeus\Client\Struct\Offer
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ConfirmCar extends BaseWsMessage
 {

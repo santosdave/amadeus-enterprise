@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air\MultiAvailability;
  * AvailabilityOptions16
  *
  * @package Amadeus\Client\Struct\Air\MultiAvailability
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class AvailabilityOptions16
 {

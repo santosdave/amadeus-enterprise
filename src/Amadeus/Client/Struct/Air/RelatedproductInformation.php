@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air;
  * RelatedproductInformation
  *
  * @package Amadeus\Client\Struct\Air
- * @author dieter <dermikagh@gmail.com>
+ * @author dieter <santosdave86@gmail.com>
  */
 class RelatedproductInformation
 {

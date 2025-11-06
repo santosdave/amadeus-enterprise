@@ -32,7 +32,7 @@ use Amadeus\Client\RequestOptions\Pnr\Retrieve\Ticket;
  * The options available when doing a PNR_Retrieve call.
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PnrRetrieveOptions extends Base
 {

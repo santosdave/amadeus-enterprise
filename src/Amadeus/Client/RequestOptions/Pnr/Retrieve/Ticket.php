@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Ticket
  *
  * @package Amadeus\Client\RequestOptions\Pnr\Retrieve
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Ticket extends LoadParamsFromArray
 {

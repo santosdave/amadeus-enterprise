@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\PricePnr12;
  * OverrideInformation
  *
  * @package Amadeus\Client\Struct\Fare\PricePnr12
- * @author dieter <dermikagh@gmail.com>
+ * @author dieter <santosdave86@gmail.com>
  */
 class OverrideInformation
 {

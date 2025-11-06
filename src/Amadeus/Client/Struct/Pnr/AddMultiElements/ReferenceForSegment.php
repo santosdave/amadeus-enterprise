@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\AddMultiElements;
  * ReferenceForSegment
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ReferenceForSegment
 {

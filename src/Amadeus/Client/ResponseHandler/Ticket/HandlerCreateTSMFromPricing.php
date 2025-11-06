@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Ticket;
  * HandlerCreateTSMFromPricing
  *
  * @package Amadeus\Client\ResponseHandler\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class HandlerCreateTSMFromPricing extends HandlerCreateTSTFromPricing
-{
-}
+class HandlerCreateTSMFromPricing extends HandlerCreateTSTFromPricing {}

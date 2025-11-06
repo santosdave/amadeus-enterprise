@@ -28,9 +28,15 @@ use Amadeus\Client\LoadParamsFromArray;
 class UpdatePax extends LoadParamsFromArray
 {
     /**
+     * Passenger ID
+     * 
+     * @var string
+     */
+    public $paxID;
+    /**
      * Passenger Information
      * 
      * @var NewPaxInfo
      */
-    public $new;
+    public $newPaxInfo;
 }

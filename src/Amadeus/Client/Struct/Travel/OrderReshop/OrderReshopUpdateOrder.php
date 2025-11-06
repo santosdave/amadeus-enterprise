@@ -30,9 +30,16 @@ class OrderReshopUpdateOrder
     /**
      * Reshop Order details
      * 
-     * @var OrderReshopServiceOrder
+     * @var OrderReshopReshopOrder
      */
     public $ReshopOrder;
+
+    /**
+     * Reuse Tickets (for future implementation)
+     * 
+     * @var OrderReshopReuseTickets
+     */
+    public $ReuseTickets;
 
     /**
      * OrderReshopUpdateOrder constructor
@@ -41,6 +48,11 @@ class OrderReshopUpdateOrder
      */
     public function __construct(TravelOrderReshopOptions $options)
     {
-        $this->ReshopOrder = new OrderReshopServiceOrder($options);
+        $this->ReshopOrder = new OrderReshopReshopOrder($options);
+
+        // Handle Reuse Tickets if implemented
+        if (!empty($options->reuseTickets)) {
+            $this->ReuseTickets = new OrderReshopReuseTickets($options->reuseTickets);
+        }
     }
 }

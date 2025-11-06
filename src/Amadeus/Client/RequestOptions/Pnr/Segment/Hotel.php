@@ -29,8 +29,6 @@ use Amadeus\Client\RequestOptions\Pnr\Segment;
  * Hotel segment - not yet implemented
  *
  * @package Amadeus\Client\RequestOptions\Pnr\Segment
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class Hotel extends Segment
-{
-}
+class Hotel extends Segment {}

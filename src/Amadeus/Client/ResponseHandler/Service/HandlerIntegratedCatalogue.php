@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Service;
  * Response handler for Service_IntegratedCatalogue
  *
  * @package Amadeus\Client\ResponseHandler\Service
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class HandlerIntegratedCatalogue extends HandlerIntegratedPricing
-{
-}
+class HandlerIntegratedCatalogue extends HandlerIntegratedPricing {}

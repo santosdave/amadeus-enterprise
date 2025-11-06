@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer\ConfirmHotel;
  * RoomList
  *
  * @package Amadeus\Client\Struct\Offer\ConfirmHotel
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class RoomList
 {
@@ -65,7 +65,5 @@ class RoomList
     /**
      * RoomList constructor.
      */
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 }

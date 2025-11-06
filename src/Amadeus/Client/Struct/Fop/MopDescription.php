@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\WsMessageUtility;
  * MopDescription
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class MopDescription extends WsMessageUtility
 {

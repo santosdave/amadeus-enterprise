@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Offer_VerifyOffer Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Offer
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class VerifyOfferConv extends BaseConverter
 {

@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * FlightDateTest
  *
  * @package Test\Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FlightDateTest extends BaseTestCase
 {

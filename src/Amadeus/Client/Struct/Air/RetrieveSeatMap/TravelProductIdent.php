@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -18,7 +19,7 @@ use Amadeus\Client\Struct\Air\PointDetails;
  * TravelProductIdent
  *
  * @package Amadeus\Client\Struct\Air\RetrieveSeatMap
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TravelProductIdent
 {

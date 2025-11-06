@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Ticket\AttributeDetails;
  * DeleteMode
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DeleteMode
 {

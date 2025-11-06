@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\CancelDocument;
  * VoidOption
  *
  * @package Amadeus\Client\Struct\Ticket\CancelDocument
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class VoidOption
 {

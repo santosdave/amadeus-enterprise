@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Ticket_CreateTsmFareElement Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TicketCreateTsmFareElOptions extends TicketDisplayTsmFareElOptions
 {

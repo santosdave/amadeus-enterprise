@@ -23,7 +23,8 @@
 
 namespace Amadeus\Client\Struct\Travel\OrderReshop;
 
-use Amadeus\Client\RequestOptions\Travel\OrderReshop\AddOfferItem as AddOfferItemOption;
+
+use Amadeus\Client\RequestOptions\Travel\OrderReshop\SelectedOffer;
 
 
 class OrderReshopSelectedOffer
@@ -57,17 +58,17 @@ class OrderReshopSelectedOffer
     public $SelectedOfferItem = [];
 
     /**
-     * OrderReshopSelectedOffer constructor
+     * OrderReshopSelectedOfferStruct constructor
      *
-     * @param AddOfferItemOption $addOfferItem
+     * @param SelectedOffer $selectedOffer
      */
-    public function __construct(AddOfferItemOption $addOfferItem)
+    public function __construct(SelectedOffer $selectedOffer)
     {
-        $this->OfferRefID = $addOfferItem->offerRefID;
-        $this->OwnerCode = $addOfferItem->ownerCode;
-        $this->ShoppingResponseRefID = $addOfferItem->shoppingResponseRefID;
+        $this->OfferRefID = $selectedOffer->offerRefID;
+        $this->OwnerCode = $selectedOffer->ownerCode;
+        $this->ShoppingResponseRefID = $selectedOffer->shoppingResponseRefID;
 
-        foreach ($addOfferItem->selectedOfferItems as $selectedItem) {
+        foreach ($selectedOffer->selectedOfferItems as $selectedItem) {
             $this->SelectedOfferItem[] = new OrderReshopSelectedOfferItem($selectedItem);
         }
     }

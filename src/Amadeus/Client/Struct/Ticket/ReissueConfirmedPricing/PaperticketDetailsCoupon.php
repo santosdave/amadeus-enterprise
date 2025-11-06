@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\ReissueConfirmedPricing;
  * PaperticketDetailsCoupon
  *
  * @package Amadeus\Client\Struct\Ticket\ReissueConfirmedPricing
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PaperticketDetailsCoupon
 {

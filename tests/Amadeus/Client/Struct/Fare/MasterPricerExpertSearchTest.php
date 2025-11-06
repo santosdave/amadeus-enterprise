@@ -58,7 +58,7 @@ use Test\Amadeus\BaseTestCase;
  * MasterPricerExpertSearch
  *
  * @package Test\Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class MasterPricerExpertSearchTest extends BaseTestCase
 {

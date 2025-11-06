@@ -33,8 +33,6 @@ use Amadeus\Client;
  * - not yet implemented?
  *
  * @package Amadeus\Client\RequestCreator
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class UnsupportedOptionException extends Client\Exception
-{
-}
+class UnsupportedOptionException extends Client\Exception {}

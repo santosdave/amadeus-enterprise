@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\MiniRule;
  * HandlerGetFromETicket
  *
  * @package Amadeus\Client\ResponseHandler\MiniRule
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class HandlerGetFromETicket extends HandlerGetFromPricingRec
-{
-}
+class HandlerGetFromETicket extends HandlerGetFromPricingRec {}

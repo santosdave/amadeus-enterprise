@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Fare_CheckRules Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FareCheckRulesOptions extends Base
 {

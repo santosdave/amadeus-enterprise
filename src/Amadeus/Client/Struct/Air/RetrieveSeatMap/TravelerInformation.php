@@ -31,7 +31,7 @@ use Amadeus\Client\Struct\Air\MultiAvailability\PaxDetails;
  * TravelerInformation
  *
  * @package Amadeus\Client\Struct\Air\RetrieveSeatMap
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TravelerInformation
 {

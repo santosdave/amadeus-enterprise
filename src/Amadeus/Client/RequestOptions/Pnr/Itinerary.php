@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Itinerary - connecting segments grouped together.
  *
  * @package Amadeus\Client\RequestOptions\Pnr
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Itinerary extends LoadParamsFromArray
 {

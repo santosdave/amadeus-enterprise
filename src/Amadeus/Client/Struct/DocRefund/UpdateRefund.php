@@ -56,7 +56,7 @@ use Amadeus\Client\Struct\DocRefund\UpdateRefund\UserIdentification;
  * DocRefund_UpdateRefund request structure
  *
  * @package Amadeus\Client\Struct\DocRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class UpdateRefund extends BaseWsMessage
 {

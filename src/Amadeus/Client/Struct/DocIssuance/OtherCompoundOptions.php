@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\DocIssuance;
  * OtherCompoundOptions
  *
  * @package Amadeus\Client\Struct\DocIssuance
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class OtherCompoundOptions
 {

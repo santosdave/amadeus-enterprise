@@ -27,8 +27,6 @@ namespace Amadeus\Client\RequestOptions;
  * Fare_MasterPricerCalendar request options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class FareMasterPricerCalendarOptions extends FareMasterPricerTbSearch
-{
-}
+class FareMasterPricerCalendarOptions extends FareMasterPricerTbSearch {}

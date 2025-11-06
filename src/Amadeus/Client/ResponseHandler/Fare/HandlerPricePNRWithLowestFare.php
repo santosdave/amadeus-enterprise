@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Fare;
  * HandlerPricePNRWithLowestFare
  *
  * @package Amadeus\Client\ResponseHandler\Fare
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class HandlerPricePNRWithLowestFare extends HandlerPricePNRWithBookingClass
-{
-}
+class HandlerPricePNRWithLowestFare extends HandlerPricePNRWithBookingClass {}

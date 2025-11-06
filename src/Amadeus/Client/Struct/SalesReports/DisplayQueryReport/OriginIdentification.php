@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -11,8 +12,6 @@ namespace Amadeus\Client\Struct\SalesReports\DisplayQueryReport;
  * OriginIdentification
  *
  * @package Amadeus\Client\Struct\SalesReports\DisplayQueryReport
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class OriginIdentification extends \Amadeus\Client\Struct\Offer\ConfirmHotel\OriginIdentification
-{
-}
+class OriginIdentification extends \Amadeus\Client\Struct\Offer\ConfirmHotel\OriginIdentification {}

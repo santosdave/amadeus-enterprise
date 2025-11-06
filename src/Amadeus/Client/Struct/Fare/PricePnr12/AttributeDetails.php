@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\PricePnr12;
  * AttributeDetails
  *
  * @package Amadeus\Client\Struct\Fare\PricePnr12
- * @author dieter <dermikagh@gmail.com>
+ * @author dieter <santosdave86@gmail.com>
  */
 class AttributeDetails
 {

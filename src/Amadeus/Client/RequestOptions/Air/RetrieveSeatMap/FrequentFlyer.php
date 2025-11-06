@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * FrequentFlyer
  *
  * @package Amadeus\Client\RequestOptions\Air\RetrieveSeatMap
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FrequentFlyer extends LoadParamsFromArray
 {

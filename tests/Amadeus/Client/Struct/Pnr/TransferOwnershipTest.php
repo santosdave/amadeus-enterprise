@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * TransferOwnershipTest
  *
  * @package Test\Amadeus\Client\Struct\Pnr
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TransferOwnershipTest extends BaseTestCase
 {

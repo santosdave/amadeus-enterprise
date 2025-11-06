@@ -30,7 +30,7 @@ use Amadeus\Client\Struct\WsMessageUtility;
  * PersonalFacts
  *
  * @package Amadeus\Client\Struct\Pnr\Retrieve
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PersonalFacts extends WsMessageUtility
 {

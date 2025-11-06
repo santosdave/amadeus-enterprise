@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\DisplayTSMFareElement;
  * Reference
  *
  * @package Amadeus\Client\Struct\Ticket\DisplayTSMFareElement
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Reference
 {

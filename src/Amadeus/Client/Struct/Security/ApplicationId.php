@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Security;
  * ApplicationId
  *
  * @package Amadeus\Client\Struct\Security
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ApplicationId
 {

@@ -28,7 +28,9 @@ use Amadeus\Client\RequestOptions\Travel\OrderReshop\DeleteOrderItem;
 use Amadeus\Client\RequestOptions\Travel\OrderReshop\AddOfferItem;
 use Amadeus\Client\RequestOptions\Travel\OrderReshop\UpdatePax;
 use Amadeus\Client\RequestOptions\Travel\OrderReshop\BookingRef;
+use Amadeus\Client\RequestOptions\Travel\OrderReshop\FareWaiver;
 use Amadeus\Client\RequestOptions\Travel\OrderReshop\ReshopParameters;
+use Amadeus\Client\RequestOptions\Travel\OrderReshop\ReuseTicket;
 
 /**
  * Request Options for Travel_OrderReshop service
@@ -73,6 +75,13 @@ class TravelOrderReshopOptions extends Base
     public $reshopParameters;
 
     /**
+     * Fare Waiver codes
+     * 
+     * @var FareWaiver[]
+     */
+    public $fareWaivers = [];
+
+    /**
      * Delete Order Items
      * 
      * @var DeleteOrderItem[]
@@ -92,6 +101,13 @@ class TravelOrderReshopOptions extends Base
      * @var UpdatePax[]
      */
     public $updatePax = [];
+
+    /**
+     * Reuse Tickets
+     * 
+     * @var ReuseTicket[]
+     */
+    public $reuseTickets = [];
 
     /**
      * Optional static method for creating preset configurations

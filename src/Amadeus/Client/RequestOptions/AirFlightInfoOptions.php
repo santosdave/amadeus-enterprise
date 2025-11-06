@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Air_FlightInfo Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class AirFlightInfoOptions extends Base
 {

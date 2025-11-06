@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\ProcessEDoc;
  * FrequentTravellerDetails
  *
  * @package Amadeus\Client\Struct\Ticket\ProcessEDoc
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FrequentTravellerDetails
 {

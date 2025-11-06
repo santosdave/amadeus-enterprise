@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Ticket_DisplayTSMP Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DisplayTSMPConv extends BaseConverter
 {

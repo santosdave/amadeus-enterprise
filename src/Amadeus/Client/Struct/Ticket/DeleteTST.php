@@ -31,7 +31,7 @@ use Amadeus\Client\Struct\Ticket\DeleteTST\DeleteMode;
  * Ticket_DeleteTST
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DeleteTST extends BaseWsMessage
 {

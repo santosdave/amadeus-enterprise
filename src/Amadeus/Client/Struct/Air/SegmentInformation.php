@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Air\SellFromRecommendation\Segment as SegmentO
  * SegmentInformation
  *
  * @package Amadeus\Client\Struct\Air
- * @author dieter <dermikagh@gmail.com>
+ * @author dieter <santosdave86@gmail.com>
  */
 class SegmentInformation
 {

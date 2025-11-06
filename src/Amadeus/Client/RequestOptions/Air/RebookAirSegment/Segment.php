@@ -27,8 +27,6 @@ namespace Amadeus\Client\RequestOptions\Air\RebookAirSegment;
  * Segment
  *
  * @package Amadeus\Client\RequestOptions\Air\RebookAirSegment
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class Segment extends \Amadeus\Client\RequestOptions\Air\SellFromRecommendation\Segment
-{
-}
+class Segment extends \Amadeus\Client\RequestOptions\Air\SellFromRecommendation\Segment {}

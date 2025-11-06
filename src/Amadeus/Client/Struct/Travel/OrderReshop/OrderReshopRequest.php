@@ -43,6 +43,13 @@ class OrderReshopRequest
     public $BookingRef;
 
     /**
+     * Fare Waivers
+     * 
+     * @var OrderReshopFareWaiver[]
+     */
+    public $FareWaiver = [];
+
+    /**
      * Reshop Parameters
      * 
      * @var OrderReshopParameters
@@ -69,6 +76,11 @@ class OrderReshopRequest
             $options->bookingRef ? $options->bookingRef->bookingID : '',
             $options->bookingRef ? $options->bookingRef->airlineDesigCode : null
         );
+
+        // Handle Fare Waivers
+        foreach ($options->fareWaivers as $fareWaiver) {
+            $this->FareWaiver[] = new OrderReshopFareWaiver($fareWaiver);
+        }
 
         $this->ReshopParameters = new OrderReshopParameters(
             $options->reshopParameters ? $options->reshopParameters->autoExchRequestInd : false,

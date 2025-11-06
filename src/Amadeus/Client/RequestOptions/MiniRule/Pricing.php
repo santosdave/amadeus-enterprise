@@ -30,7 +30,7 @@ use Amadeus\Client\RequestOptions\MiniRule\Pricing\FilteringOption;
  * MiniRule Pricing
  *
  * @package Amadeus\Client\RequestOptions\MiniRule
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class Pricing extends LoadParamsFromArray
 {

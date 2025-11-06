@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Pnr\Element;
  * ManualIssuedTicket
  *
  * @package Amadeus\Client\RequestOptions\Pnr\Element
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ManualIssuedTicket extends Element
 {

@@ -46,7 +46,7 @@ use Amadeus\Client\Struct\OptionNotSupportedException;
  * Fare_PricePNRWithBookingClass v 12 and lower structure
  *
  * @package Amadeus\Client\Struct\Fare
- * @author dieter <dermikagh@gmail.com>
+ * @author dieter <santosdave86@gmail.com>
  */
 class PricePNRWithBookingClass12 extends BaseWsMessage
 {

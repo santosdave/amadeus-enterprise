@@ -32,10 +32,10 @@ class BookingRef extends LoadParamsFromArray
      * 
      * @var string
      */
-    public $bookingID;
+    public $bookingID = '';
 
     /**
-     * Booking Entity (Carrier)
+     * Airline Designator Code
      * 
      * @var string
      */

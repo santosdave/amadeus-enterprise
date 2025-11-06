@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass\CouponInformation;
  * PaperInformation
  *
  * @package Amadeus\Client\Struct\Ticket\ReissueConfirmedPricing
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PaperInformation
 {

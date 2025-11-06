@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Command_Cryptic message structure
  *
  * @package Amadeus\Client\Struct\Command
- * @author dieter <dermikagh@gmail.com>
+ * @author dieter <santosdave86@gmail.com>
  */
 class Cryptic extends BaseWsMessage
 {

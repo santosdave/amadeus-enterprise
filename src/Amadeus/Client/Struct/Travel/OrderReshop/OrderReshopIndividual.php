@@ -24,6 +24,7 @@
 namespace Amadeus\Client\Struct\Travel\OrderReshop;
 
 
+use Amadeus\Client\RequestOptions\Travel\OrderReshop\Individual;
 
 class OrderReshopIndividual
 {
@@ -49,6 +50,13 @@ class OrderReshopIndividual
     public $Surname;
 
     /**
+     * Birthplace Text
+     * 
+     * @var string
+     */
+    public $BirthplaceText;
+
+    /**
      * Gender Code
      * 
      * @var string
@@ -56,15 +64,24 @@ class OrderReshopIndividual
     public $GenderCode;
 
     /**
+     * Birth Date
+     * 
+     * @var string
+     */
+    public $BirthDate;
+
+    /**
      * OrderReshopIndividual constructor
      *
-     * @param \Amadeus\Client\RequestOptions\Travel\OrderReshop\NewPaxIndividual $individual
+     * @param Individual $individual
      */
-    public function __construct($individual)
+    public function __construct(Individual $individual)
     {
         $this->TitleName = $individual->titleName;
         $this->GivenName = $individual->givenName;
         $this->Surname = $individual->surname;
+        $this->BirthplaceText = $individual->birthplaceText;
         $this->GenderCode = $individual->genderCode;
+        $this->BirthDate = $individual->birthDate;
     }
 }

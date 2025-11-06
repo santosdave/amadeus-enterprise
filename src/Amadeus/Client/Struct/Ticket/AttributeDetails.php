@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket;
  * AttributeDetails
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class AttributeDetails
 {

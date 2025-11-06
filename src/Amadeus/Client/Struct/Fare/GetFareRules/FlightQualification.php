@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Fare\CheckRules\AdditionalFareDetails;
  * FlightQualification
  *
  * @package Amadeus\Client\Struct\Fare\GetFareRules
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FlightQualification extends \Amadeus\Client\Struct\Fare\CheckRules\FlightQualification
 {

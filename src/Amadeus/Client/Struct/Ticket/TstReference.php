@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Ticket;
  * TstReference
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class TstReference extends ItemReference
-{
-}
+class TstReference extends ItemReference {}

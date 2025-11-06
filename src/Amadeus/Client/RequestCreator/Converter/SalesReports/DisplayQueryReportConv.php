@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * SalesReports_DisplayQueryReport Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\SalesReports
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DisplayQueryReportConv extends BaseConverter
 {

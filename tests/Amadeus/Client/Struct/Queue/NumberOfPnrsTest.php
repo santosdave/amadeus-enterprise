@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * NumberOfPnrsTest
  *
  * @package Test\Amadeus\Client\Struct\Queue
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class NumberOfPnrsTest extends BaseTestCase
 {

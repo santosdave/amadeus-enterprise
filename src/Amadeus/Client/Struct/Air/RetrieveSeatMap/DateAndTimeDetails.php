@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air\RetrieveSeatMap;
  * DateAndTimeDetails
  *
  * @package Amadeus\Client\Struct\Air\RetrieveSeatMap
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DateAndTimeDetails
 {

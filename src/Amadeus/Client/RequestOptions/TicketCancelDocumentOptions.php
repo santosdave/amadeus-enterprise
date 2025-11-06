@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Ticket\SequenceRange;
  * Ticket_CancelDocument request options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TicketCancelDocumentOptions extends Base
 {

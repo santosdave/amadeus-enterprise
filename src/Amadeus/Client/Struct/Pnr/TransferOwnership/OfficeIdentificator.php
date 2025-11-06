@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\TransferOwnership;
  * OfficeIdentificator
  *
  * @package Amadeus\Client\Struct\Pnr\TransferOwnership
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class OfficeIdentificator
 {

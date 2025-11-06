@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Offer_ConfirmCar Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class OfferConfirmCarOptions extends Base
 {

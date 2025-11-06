@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions\Fare\PricePnr;
  * AwardPricing
  *
  * @package Amadeus\Client\RequestOptions\Fare\PricePnr
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class AwardPricing extends TierLevel
 {

@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Fare\GetFareRules;
  * PricingInfo
  *
  * @package Amadeus\Client\Struct\Fare\GetFareRules
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class PricingInfo
-{
-}
+class PricingInfo {}

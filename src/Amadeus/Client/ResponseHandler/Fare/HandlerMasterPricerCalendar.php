@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Fare;
  * HandlerMasterPricerCalendar
  *
  * @package Amadeus\Client\ResponseHandler\Fare
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class HandlerMasterPricerCalendar extends HandlerMasterPricerTravelBoardSearch
-{
-}
+class HandlerMasterPricerCalendar extends HandlerMasterPricerTravelBoardSearch {}

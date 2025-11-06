@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -14,7 +15,7 @@ use Test\Amadeus\BaseTestCase;
  * LanguageTest
  *
  * @package Test\Amadeus\Client\Struct\Info
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class LanguageTest extends BaseTestCase
 {
@@ -27,5 +28,4 @@ class LanguageTest extends BaseTestCase
         $this->assertEquals(Language::QUAL_LANGUAGE_TRANSACTIONAL, $language->languageCodeQualifier);
         $this->assertEquals('EN', $language->languageDetails->languageCode);
     }
-
 }

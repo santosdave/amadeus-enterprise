@@ -36,7 +36,7 @@ use Test\Amadeus\BaseTestCase;
  * PricePNRWithLowestFare13Test
  *
  * @package Test\Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PricePNRWithLowestFare13Test extends BaseTestCase
 {

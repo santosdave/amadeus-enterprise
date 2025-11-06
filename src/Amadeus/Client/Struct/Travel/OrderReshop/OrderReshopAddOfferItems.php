@@ -31,11 +31,18 @@ use Amadeus\Client\RequestOptions\Travel\OrderReshop\AddOfferItem as AddOfferIte
 class OrderReshopAddOfferItems
 {
     /**
-     * Selected Offers
+     * Flight Request (for new itinerary)
+     * 
+     * @var OrderReshopFlightRequest
+     */
+    public $FlightRequest;
+
+    /**
+     * Selected Offers (alternative structure)
      * 
      * @var OrderReshopSelectedOffer[]
      */
-    public $SelectedOffer = [];
+    public $SelectedOfferItems = [];
 
     /**
      * OrderReshopAddOfferItems constructor
@@ -45,7 +52,22 @@ class OrderReshopAddOfferItems
     public function __construct(array $addOfferItems)
     {
         foreach ($addOfferItems as $addOfferItem) {
-            $this->SelectedOffer[] = new OrderReshopSelectedOffer($addOfferItem);
+            // Check if this AddOfferItem has a flight request
+            if (isset($addOfferItem->flightRequest) && $addOfferItem->flightRequest) {
+                $this->FlightRequest = new OrderReshopFlightRequest($addOfferItem->flightRequest);
+            }
+            // Check if this AddOfferItem has selected offer items (use direct SelectedOffer approach)
+            elseif (!empty($addOfferItem->selectedOfferItems) && isset($addOfferItem->offerRefID)) {
+                // Create a SelectedOffer object from AddOfferItem data
+                $selectedOfferObj = new \Amadeus\Client\RequestOptions\Travel\OrderReshop\SelectedOffer([
+                    'offerRefID' => $addOfferItem->offerRefID,
+                    'ownerCode' => $addOfferItem->ownerCode,
+                    'shoppingResponseRefID' => $addOfferItem->shoppingResponseRefID,
+                    'selectedOfferItems' => $addOfferItem->selectedOfferItems
+                ]);
+
+                $this->SelectedOfferItems[] = new OrderReshopSelectedOffer($selectedOfferObj);
+            }
         }
     }
 }

@@ -30,7 +30,7 @@ use Amadeus\Client\RequestOptions\Ticket\FrequentFlyer;
  *
  * @package Amadeus\Client\RequestOptions
  * @author Farah Hourani <farahhourani94@gmail.com>
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TicketProcessEDocOptions extends Base
 {

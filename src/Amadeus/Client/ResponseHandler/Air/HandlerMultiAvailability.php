@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerMultiAvailability
  *
  * @package Amadeus\Client\ResponseHandler\Air
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class HandlerMultiAvailability extends StandardResponseHandler
 {

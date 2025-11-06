@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\MiniRule;
  * HandlerGetFromPricing
  *
  * @package Amadeus\Client\ResponseHandler\MiniRule
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class HandlerGetFromPricing extends HandlerGetFromPricingRec
-{
-}
+class HandlerGetFromPricing extends HandlerGetFromPricingRec {}

@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * CarLocationInfo
  *
  * @package Amadeus\Client\RequestOptions\Offer
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CarLocationInfo extends LoadParamsFromArray
 {

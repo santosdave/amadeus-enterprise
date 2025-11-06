@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Fare\GetFareRules;
  * Routing
  *
  * @package Amadeus\Client\Struct\Fare\GetFareRules
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class Routing
-{
-}
+class Routing {}

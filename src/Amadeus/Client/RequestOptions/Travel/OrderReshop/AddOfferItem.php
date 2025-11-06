@@ -54,4 +54,10 @@ class AddOfferItem extends LoadParamsFromArray
      * @var SelectedOfferItem[]
      */
     public $selectedOfferItems = [];
+    /**
+     * Flight Request details
+     * 
+     * @var FlightRequest
+     */
+    public $flightRequest;
 }

@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Ticket_CancelDocument request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CancelDocumentConv extends BaseConverter
 {

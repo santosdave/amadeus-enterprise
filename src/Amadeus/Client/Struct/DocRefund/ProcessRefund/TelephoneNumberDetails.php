@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\DocRefund\ProcessRefund;
  * TelephoneNumberDetails
  *
  * @package Amadeus\Client\Struct\DocRefund\ProcessRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TelephoneNumberDetails extends \Amadeus\Client\Struct\Offer\ConfirmCar\TelephoneNumberDetails
 {

@@ -31,8 +31,6 @@ use Amadeus\Client\RequestOptions\FarePricePnrWithBookingClassOptions;
  * The pricing options are the same as a Fare_PricePnrWithBookingClassOptions
  *
  * @package Amadeus\Client\RequestOptions\Fare\InformativePricing
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class PricingOptions extends FarePricePnrWithBookingClassOptions
-{
-}
+class PricingOptions extends FarePricePnrWithBookingClassOptions {}

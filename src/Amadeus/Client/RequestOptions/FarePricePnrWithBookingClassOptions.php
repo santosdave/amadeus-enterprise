@@ -38,7 +38,7 @@ use Amadeus\Client\RequestOptions\Fare\PricePnr\ZapOff;
  * Fare_PricePnrWithBookingClass Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FarePricePnrWithBookingClassOptions extends Base
 {

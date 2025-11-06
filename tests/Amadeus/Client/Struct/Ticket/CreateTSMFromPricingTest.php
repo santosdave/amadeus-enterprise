@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -19,7 +20,7 @@ use Test\Amadeus\BaseTestCase;
  * CreateTSMFromPricingTest
  *
  * @package Test\Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CreateTSMFromPricingTest extends BaseTestCase
 {

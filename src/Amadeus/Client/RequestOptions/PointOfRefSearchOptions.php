@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * PointOfRef_Search Request options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PointOfRefSearchOptions extends Base
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Air\SellFromRecommendation\Itinerary;
  * ItineraryDetails
  *
  * @package Amadeus\Client\Struct\Air
- * @author dieter <dermikagh@gmail.com>
+ * @author dieter <santosdave86@gmail.com>
  */
 class ItineraryDetails
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass\CouponDetails as Rep
  * CouponDetails
  *
  * @package Amadeus\Client\Struct\DocRefund\UpdateRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CouponDetails extends RepriceCouponDetails
 {

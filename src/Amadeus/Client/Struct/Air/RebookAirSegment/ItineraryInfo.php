@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Air\SellFromRecommendation\Segment as SegmentO
  * ItineraryInfo
  *
  * @package Amadeus\Client\Struct\Air\RebookAirSegment
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class ItineraryInfo
 {

@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Pnr_NameChange Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PnrNameChangeOptions extends Base
 {

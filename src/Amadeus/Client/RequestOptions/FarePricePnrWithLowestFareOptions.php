@@ -27,8 +27,6 @@ namespace Amadeus\Client\RequestOptions;
  * Fare_PricePnrWithLowestFare Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class FarePricePnrWithLowestFareOptions extends FarePricePnrWithBookingClassOptions
-{
-}
+class FarePricePnrWithLowestFareOptions extends FarePricePnrWithBookingClassOptions {}

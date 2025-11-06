@@ -23,23 +23,23 @@
 
 namespace Amadeus\Client\Struct\Travel\OrderReshop;
 
-
+use Amadeus\Client\RequestOptions\Travel\OrderReshop\IdentityDoc;
 
 class OrderReshopIdentityDoc
 {
     /**
-     * Identity Document ID
+     * Document Type
      * 
      * @var string
      */
-    public $IdentityDocID;
+    public $DocumentType;
 
     /**
-     * Identity Document Type Code
+     * Document Number
      * 
      * @var string
      */
-    public $IdentityDocTypeCode;
+    public $Number;
 
     /**
      * Issuing Country Code
@@ -56,18 +56,23 @@ class OrderReshopIdentityDoc
     public $ExpiryDate;
 
     /**
+     * Issue Date
+     * 
+     * @var string
+     */
+    public $IssueDate;
+
+    /**
      * OrderReshopIdentityDoc constructor
      *
-     * @param \Amadeus\Client\RequestOptions\Travel\OrderReshop\NewPaxIdentityDoc $identityDoc
+     * @param IdentityDoc $identityDoc
      */
-    public function __construct($identityDoc)
+    public function __construct(IdentityDoc $identityDoc)
     {
-        $this->IdentityDocID = $identityDoc->documentId;
-        $this->IdentityDocTypeCode = $identityDoc->documentTypeCode;
+        $this->DocumentType = $identityDoc->documentType;
+        $this->Number = $identityDoc->number;
         $this->IssuingCountryCode = $identityDoc->issuingCountryCode;
-
-        if ($identityDoc->expiryDate instanceof \DateTime) {
-            $this->ExpiryDate = $identityDoc->expiryDate->format('Y-m-d');
-        }
+        $this->ExpiryDate = $identityDoc->expiryDate;
+        $this->IssueDate = $identityDoc->issueDate;
     }
 }

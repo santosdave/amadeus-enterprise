@@ -31,7 +31,7 @@ use Amadeus\Client\RequestOptions\Fare\MPTicketingPriceScheme;
  * For MasterPricer options shared with ATC messages (such as Ticket_CheckEligibility)
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class MpBaseOptions extends Base
 {

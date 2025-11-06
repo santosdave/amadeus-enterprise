@@ -30,7 +30,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Structure class for representing the Queue_RemoveItem request message
  *
  * @package Amadeus\Client\Struct\Queue
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class RemoveItem extends BaseWsMessage
 {

@@ -38,7 +38,7 @@ use Test\Amadeus\BaseTestCase;
  * IntegratedPricingTest
  *
  * @package Test\Amadeus\Client\Struct\Service
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class IntegratedPricingTest extends BaseTestCase
 {

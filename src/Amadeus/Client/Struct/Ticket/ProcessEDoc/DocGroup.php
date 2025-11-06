@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Ticket\ProcessEDoc;
  * DocGroup
  *
  * @package Amadeus\Client\Struct\Ticket\ProcessEDoc
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class DocGroup
-{
-}
+class DocGroup {}

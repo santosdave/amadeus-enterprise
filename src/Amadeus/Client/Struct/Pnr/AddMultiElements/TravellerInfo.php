@@ -30,7 +30,7 @@ use Amadeus\Client\RequestOptions\Pnr\TravellerGroup as TravellerGroupOptions;
  * TravellerInfo
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class TravellerInfo
 {

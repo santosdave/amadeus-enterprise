@@ -29,8 +29,6 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * SignOut
  *
  * @package Amadeus\Client\Struct\Security
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class SignOut extends BaseWsMessage
-{
-}
+class SignOut extends BaseWsMessage {}

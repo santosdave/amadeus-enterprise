@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Fop;
  * WebAccountDetailledData
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class WebAccountDetailledData
-{
-}
+class WebAccountDetailledData {}

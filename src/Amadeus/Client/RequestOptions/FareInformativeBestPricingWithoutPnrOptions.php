@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Fare\InformativeBestPricingWithoutPnr\CabinOpt
  * Fare_InformativeBestPricingWithoutPNR request options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FareInformativeBestPricingWithoutPnrOptions extends FareInformativePricingWithoutPnrOptions
 {

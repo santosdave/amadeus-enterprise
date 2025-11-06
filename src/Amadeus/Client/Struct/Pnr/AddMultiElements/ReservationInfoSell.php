@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Pnr\AddMultiElements;
  * ReservationInfoSell
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class ReservationInfoSell
-{
-}
+class ReservationInfoSell {}

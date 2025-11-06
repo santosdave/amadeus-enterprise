@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * FlightInfo
  *
  * @package Amadeus\Client\RequestOptions\Air\RetrieveSeatMap
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class FlightInfo extends LoadParamsFromArray
 {

@@ -25,34 +25,19 @@ namespace Amadeus\Client\RequestOptions\Travel\OrderReshop;
 
 use Amadeus\Client\LoadParamsFromArray;
 
-
-class NewPaxIdentityDoc extends LoadParamsFromArray
+class FareWaiver extends LoadParamsFromArray
 {
     /**
-     * Identity Document Number
+     * Fare Rule Waiver Code
      * 
      * @var string
      */
-    public $documentId;
+    public $fareRuleWaiverCode;
 
     /**
-     * Document Type Code
+     * Fare Waiver Type Code
      * 
      * @var string
      */
-    public $documentTypeCode;
-
-    /**
-     * Issuing Country Code
-     * 
-     * @var string
-     */
-    public $issuingCountryCode;
-
-    /**
-     * Expiry Date
-     * 
-     * @var \DateTime
-     */
-    public $expiryDate;
+    public $fareWaiverTypeCode;
 }

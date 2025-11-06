@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\DocRefund;
  * StatusDetails
  *
  * @package Amadeus\Client\Struct\DocRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class StatusDetails
 {

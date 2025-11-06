@@ -29,8 +29,6 @@ use Amadeus\Client\RequestOptions\Pnr\Element;
  * Schedule Change
  *
  * @package Amadeus\Client\RequestOptions\Pnr\Element
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class ScheduleChange extends Element
-{
-}
+class ScheduleChange extends Element {}

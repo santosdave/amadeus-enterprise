@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\Fare\PricePnr13;
  * MonetaryInformation
  *
  * @package Amadeus\Client\Struct\Fare\PricePnr13
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class MonetaryInformation
-{
-}
+class MonetaryInformation {}

@@ -37,7 +37,7 @@ use Amadeus\Client\Struct\Fare\MasterPricer;
  * Also used for Fare_MasterPricerCalendar and Ticket_ATCShopperMasterPricerTravelBoardSearch
  *
  * @package Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class MasterPricerTravelBoardSearch extends BaseMasterPricerMessage
 {

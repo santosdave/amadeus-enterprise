@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\PricePnr12;
  * CompanyDetails
  *
  * @package Amadeus\Client\Struct\Fare\PricePnr12
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CompanyDetails
 {

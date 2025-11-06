@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * DataTypeInformationTest
  *
  * @package Test\Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DataTypeInformationTest extends BaseTestCase
 {

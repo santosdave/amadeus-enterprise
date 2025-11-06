@@ -27,32 +27,27 @@ namespace Amadeus\Client\Struct\Travel\OrderReshop;
 class OrderReshopContactInfo
 {
     /**
-     * Phone Information
+     * Contact Type Code
      * 
-     * @var OrderReshopPhone
+     * @var string
      */
-    public $Phone;
+    public $ContactTypeCode;
 
     /**
-     * Email Address
+     * Contact Information
      * 
-     * @var OrderReshopEmailAddress
+     * @var string
      */
-    public $EmailAddress;
+    public $ContactInformation;
 
     /**
      * OrderReshopContactInfo constructor
      *
-     * @param \Amadeus\Client\RequestOptions\Travel\OrderReshop\NewPaxContactInfo $contactInfo
+     * @param $contactInfo
      */
     public function __construct($contactInfo)
     {
-        if ($contactInfo->phoneNumber) {
-            $this->Phone = new OrderReshopPhone($contactInfo->phoneNumber);
-        }
-
-        if ($contactInfo->email) {
-            $this->EmailAddress = new OrderReshopEmailAddress($contactInfo->email);
-        }
+        $this->ContactTypeCode = $contactInfo->contactTypeCode ?? 'Email';
+        $this->ContactInformation = $contactInfo->contactInformation;
     }
 }

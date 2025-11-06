@@ -29,11 +29,11 @@ use Amadeus\Client\RequestOptions\Travel\OrderReshop\UpdatePax as UpdatePaxOptio
 class OrderReshopUpdatePax
 {
     /**
-     * New Passenger Information
+     * Updated Passenger Information
      * 
-     * @var OrderReshopNewPax[]
+     * @var OrderReshopUpdatePaxItem[]
      */
-    public $New = [];
+    public $UpdatePax = [];
 
     /**
      * OrderReshopUpdatePax constructor
@@ -43,9 +43,7 @@ class OrderReshopUpdatePax
     public function __construct(array $updatePaxOptions)
     {
         foreach ($updatePaxOptions as $updatePax) {
-            if ($updatePax->new) {
-                $this->New[] = new OrderReshopNewPax($updatePax->new);
-            }
+            $this->UpdatePax[] = new OrderReshopUpdatePaxItem($updatePax);
         }
     }
 }

@@ -27,8 +27,6 @@ namespace Amadeus\Client\Struct\DocRefund\UpdateRefund;
  * TransactionContext
  *
  * @package Amadeus\Client\Struct\DocRefund\UpdateRefund
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class TransactionContext
-{
-}
+class TransactionContext {}

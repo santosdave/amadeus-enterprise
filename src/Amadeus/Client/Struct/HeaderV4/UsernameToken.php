@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\HeaderV4;
  * UsernameToken
  *
  * @package Amadeus\Client\Struct\HeaderV4
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class UsernameToken
 {

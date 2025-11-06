@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\DisplayHistory;
  * PredicateFreeText
  *
  * @package Amadeus\Client\Struct\Pnr\DisplayHistory
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class PredicateFreeText
 {

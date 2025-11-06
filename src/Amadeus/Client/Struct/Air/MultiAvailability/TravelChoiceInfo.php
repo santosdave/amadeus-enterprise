@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Amadeus
  *
@@ -11,8 +12,6 @@ namespace Amadeus\Client\Struct\Air\MultiAvailability;
  * TravelChoiceInfo
  *
  * @package Amadeus\Client\Struct\Air\MultiAvailability
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
-class TravelChoiceInfo
-{
-}
+class TravelChoiceInfo {}

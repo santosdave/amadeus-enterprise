@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * DepartureDaysTest
  *
  * @package Test\Amadeus\Client\Struct\PriceXplorer
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class DepartureDaysTest extends BaseTestCase
 {

@@ -28,37 +28,37 @@ use Amadeus\Client\LoadParamsFromArray;
 class NewPaxInfo extends LoadParamsFromArray
 {
     /**
-     * Passenger ID
+     * Individual information
      * 
-     * @var string
-     */
-    public $paxId;
-
-    /**
-     * Passenger Type Code
-     * 
-     * @var string
-     */
-    public $ptc = 'ADT';
-
-    /**
-     * Individual Details
-     * 
-     * @var NewPaxIndividual
+     * @var Individual
      */
     public $individual;
 
     /**
-     * Contact Information
+     * Contact information
      * 
-     * @var NewPaxContactInfo
+     * @var ContactInfo[]
      */
-    public $contactInfo;
+    public $contactInfo = [];
 
     /**
-     * Identity Document
+     * Identity Documents
      * 
-     * @var NewPaxIdentityDoc
+     * @var IdentityDoc[]
      */
-    public $identityDoc;
+    public $identityDocs = [];
+
+    /**
+     * Entitlement Documents
+     * 
+     * @var EntitlementDocument[]
+     */
+    public $entitlementDocs = [];
+
+    /**
+     * Redress Program information
+     * 
+     * @var RedressProgram
+     */
+    public $redressProgram;
 }

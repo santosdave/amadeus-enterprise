@@ -44,7 +44,7 @@ use Amadeus\Client\Struct\Ticket\CheckEligibility\TicketChangeInfo;
  * Ticket_CheckEligibility request structure
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <dermikagh@gmail.com>
+ * @author Dieter Devlieghere <santosdave86@gmail.com>
  */
 class CheckEligibility extends BaseMasterPricerMessage
 {
