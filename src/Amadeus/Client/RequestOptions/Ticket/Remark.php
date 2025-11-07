@@ -24,77 +24,57 @@
 namespace Amadeus\Client\RequestOptions\Ticket;
 
 use Amadeus\Client\LoadParamsFromArray;
-use Amadeus\Client\RequestOptions\Fare\PricePnr\AwardPricing;
 
 /**
- * FrequentFlyer
- *
- * @package Amadeus\Client\RequestOptions\Ticket
- * @author Wycliffe Dev <santosdave86@gmail.com>
+ * Remark - Remark Element (RM)
  */
-class FrequentFlyer extends LoadParamsFromArray
+class Remark extends LoadParamsFromArray
 {
 
+    const TYPE_GENERAL = 'RM';
+    const TYPE_CONFIDENTIAL = 'RC';
+    const TYPE_INVOICE = 'RI';
+    const TYPE_ITINERARY = 'RX';
+
     /**
-     * Airline code (2 characters)
+     * Remark type (RM, RC, RI, RX, etc.)
      * 
      * @var string
      */
-    public $airlineCode;
+    public $type;
 
     /**
-     * Frequent flyer card number (up to 25 characters)
+     * Remark category (A-Z or *)
      * 
      * @var string
      */
-    public $cardNumber;
+    public $category;
 
     /**
-     * Card owner last name
+     * Remark content/text (up to 128 characters)
      * 
      * @var string
      */
-    public $lastName;
+    public $content;
 
     /**
-     * Card owner first name
+     * Office ID security
      * 
-     * @var string
+     * @var OfficeIdSecurity[]
      */
-    public $firstName;
+    public $security = [];
 
     /**
-     * Card owner title
-     * 
-     * @var string
-     */
-    public $title;
-
-    /**
-     * Request identifier for mapping
+     * Request identifier
      * 
      * @var string
      */
     public $requestId;
 
     /**
-     * Mileage accrual requests
+     * Associated segments/passengers
      * 
-     * @var MileageRequest[]
+     * @var ElementReference[]
      */
-    public $mileageRequests = [];
-
-    /**
-     * Redemption requests (award bookings)
-     * 
-     * @var RedemptionRequest[]
-     */
-    public $redemptionRequests = [];
-
-    /**
-     * Upgrade requests
-     * 
-     * @var UpgradeRequest[]
-     */
-    public $upgradeRequests = [];
+    public $associations = [];
 }

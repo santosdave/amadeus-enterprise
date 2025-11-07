@@ -1,7 +1,7 @@
 <?php
 
 /**
- * amadeus-enterprise
+ * amadeus-ws-client
  *
  * Copyright 2015 Amadeus Benelux NV
  *
@@ -24,77 +24,66 @@
 namespace Amadeus\Client\RequestOptions\Ticket;
 
 use Amadeus\Client\LoadParamsFromArray;
-use Amadeus\Client\RequestOptions\Fare\PricePnr\AwardPricing;
 
 /**
- * FrequentFlyer
- *
- * @package Amadeus\Client\RequestOptions\Ticket
- * @author Wycliffe Dev <santosdave86@gmail.com>
+ * Address - Address Information
  */
-class FrequentFlyer extends LoadParamsFromArray
+class Address extends LoadParamsFromArray
 {
 
     /**
-     * Airline code (2 characters)
+     * Address line
      * 
      * @var string
      */
-    public $airlineCode;
+    public $line;
 
     /**
-     * Frequent flyer card number (up to 25 characters)
+     * Address complement
      * 
      * @var string
      */
-    public $cardNumber;
+    public $complement;
 
     /**
-     * Card owner last name
+     * Postal/ZIP code
      * 
      * @var string
      */
-    public $lastName;
+    public $zip;
 
     /**
-     * Card owner first name
+     * Country code (2 chars)
      * 
      * @var string
      */
-    public $firstName;
+    public $countryCode;
 
     /**
-     * Card owner title
+     * City name
      * 
      * @var string
      */
-    public $title;
+    public $cityName;
 
     /**
-     * Request identifier for mapping
+     * State code
      * 
      * @var string
      */
-    public $requestId;
+    public $stateCode;
 
     /**
-     * Mileage accrual requests
+     * State name
      * 
-     * @var MileageRequest[]
+     * @var string
      */
-    public $mileageRequests = [];
+    public $stateName;
 
     /**
-     * Redemption requests (award bookings)
+     * Postal box
      * 
-     * @var RedemptionRequest[]
+     * @var string
      */
-    public $redemptionRequests = [];
-
-    /**
-     * Upgrade requests
-     * 
-     * @var UpgradeRequest[]
-     */
-    public $upgradeRequests = [];
+    public $postalBox;
 }

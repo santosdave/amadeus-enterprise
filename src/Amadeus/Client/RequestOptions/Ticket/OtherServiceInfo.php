@@ -24,77 +24,38 @@
 namespace Amadeus\Client\RequestOptions\Ticket;
 
 use Amadeus\Client\LoadParamsFromArray;
-use Amadeus\Client\RequestOptions\Fare\PricePnr\AwardPricing;
+
 
 /**
- * FrequentFlyer
- *
- * @package Amadeus\Client\RequestOptions\Ticket
- * @author Wycliffe Dev <santosdave86@gmail.com>
+ * OtherServiceInfo - OSI Element
  */
-class FrequentFlyer extends LoadParamsFromArray
+class OtherServiceInfo extends LoadParamsFromArray
 {
-
     /**
-     * Airline code (2 characters)
+     * Airline code
      * 
      * @var string
      */
     public $airlineCode;
 
     /**
-     * Frequent flyer card number (up to 25 characters)
+     * Free text (up to 109 characters)
      * 
      * @var string
      */
-    public $cardNumber;
+    public $text;
 
     /**
-     * Card owner last name
-     * 
-     * @var string
-     */
-    public $lastName;
-
-    /**
-     * Card owner first name
-     * 
-     * @var string
-     */
-    public $firstName;
-
-    /**
-     * Card owner title
-     * 
-     * @var string
-     */
-    public $title;
-
-    /**
-     * Request identifier for mapping
+     * Request identifier
      * 
      * @var string
      */
     public $requestId;
 
     /**
-     * Mileage accrual requests
+     * Associated segments/passengers
      * 
-     * @var MileageRequest[]
+     * @var ElementReference[]
      */
-    public $mileageRequests = [];
-
-    /**
-     * Redemption requests (award bookings)
-     * 
-     * @var RedemptionRequest[]
-     */
-    public $redemptionRequests = [];
-
-    /**
-     * Upgrade requests
-     * 
-     * @var UpgradeRequest[]
-     */
-    public $upgradeRequests = [];
+    public $associations = [];
 }

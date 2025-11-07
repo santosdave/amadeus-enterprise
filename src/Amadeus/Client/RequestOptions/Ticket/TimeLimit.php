@@ -1,7 +1,7 @@
 <?php
 
 /**
- * amadeus-enterprise
+ * amadeus-ws-client
  *
  * Copyright 2015 Amadeus Benelux NV
  *
@@ -24,77 +24,83 @@
 namespace Amadeus\Client\RequestOptions\Ticket;
 
 use Amadeus\Client\LoadParamsFromArray;
-use Amadeus\Client\RequestOptions\Fare\PricePnr\AwardPricing;
+
 
 /**
- * FrequentFlyer
- *
- * @package Amadeus\Client\RequestOptions\Ticket
- * @author Wycliffe Dev <santosdave86@gmail.com>
+ * TimeLimit - Time Limit Element (TK)
  */
-class FrequentFlyer extends LoadParamsFromArray
+class TimeLimit extends LoadParamsFromArray
 {
 
+    const PROCESS_TK = 'TK'; // Ticketing time limit
+    const PROCESS_OP = 'OP'; // Option time limit (ETTL)
+
+    const ACTION_CANCEL = 'XL';
+    const ACTION_QUEUE = 'TL';
+    const ACTION_OK = 'OK';
+    const ACTION_C = 'C'; // Cancel (OP)
+    const ACTION_W = 'W'; // Warn (OP)
+
     /**
-     * Airline code (2 characters)
+     * Time limit date/time
+     * 
+     * @var \DateTime|string
+     */
+    public $dateTime;
+
+    /**
+     * Process type (TK, OP)
      * 
      * @var string
      */
-    public $airlineCode;
+    public $process;
 
     /**
-     * Frequent flyer card number (up to 25 characters)
+     * Action code (XL, TL, OK, C, W)
      * 
      * @var string
      */
-    public $cardNumber;
+    public $action;
 
     /**
-     * Card owner last name
+     * Office ID responsible for processing
      * 
      * @var string
      */
-    public $lastName;
+    public $officeId;
 
     /**
-     * Card owner first name
-     * 
-     * @var string
-     */
-    public $firstName;
-
-    /**
-     * Card owner title
-     * 
-     * @var string
-     */
-    public $title;
-
-    /**
-     * Request identifier for mapping
+     * Request identifier
      * 
      * @var string
      */
     public $requestId;
 
     /**
-     * Mileage accrual requests
+     * Tattoo type
      * 
-     * @var MileageRequest[]
+     * @var string
      */
-    public $mileageRequests = [];
+    public $tattooType;
 
     /**
-     * Redemption requests (award bookings)
+     * Tattoo value
      * 
-     * @var RedemptionRequest[]
+     * @var int
      */
-    public $redemptionRequests = [];
+    public $tattooValue;
 
     /**
-     * Upgrade requests
+     * Line number
      * 
-     * @var UpgradeRequest[]
+     * @var int
      */
-    public $upgradeRequests = [];
+    public $lineNumber;
+
+    /**
+     * Associated segments/passengers
+     * 
+     * @var ElementReference[]
+     */
+    public $associations = [];
 }

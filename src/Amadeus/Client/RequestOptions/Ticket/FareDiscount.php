@@ -24,77 +24,58 @@
 namespace Amadeus\Client\RequestOptions\Ticket;
 
 use Amadeus\Client\LoadParamsFromArray;
-use Amadeus\Client\RequestOptions\Fare\PricePnr\AwardPricing;
 
 /**
- * FrequentFlyer
- *
- * @package Amadeus\Client\RequestOptions\Ticket
- * @author Wycliffe Dev <santosdave86@gmail.com>
+ * FareDiscount - Fare Discount Element (FD)
  */
-class FrequentFlyer extends LoadParamsFromArray
+class FareDiscount extends LoadParamsFromArray
 {
+    /**
+     * Discount codes (up to 3)
+     * 
+     * @var DiscountCode[]
+     */
+    public $discounts = [];
 
     /**
-     * Airline code (2 characters)
+     * Description
      * 
      * @var string
      */
-    public $airlineCode;
+    public $description;
 
     /**
-     * Frequent flyer card number (up to 25 characters)
-     * 
-     * @var string
-     */
-    public $cardNumber;
-
-    /**
-     * Card owner last name
-     * 
-     * @var string
-     */
-    public $lastName;
-
-    /**
-     * Card owner first name
-     * 
-     * @var string
-     */
-    public $firstName;
-
-    /**
-     * Card owner title
-     * 
-     * @var string
-     */
-    public $title;
-
-    /**
-     * Request identifier for mapping
+     * Request identifier
      * 
      * @var string
      */
     public $requestId;
 
     /**
-     * Mileage accrual requests
+     * Tattoo type
      * 
-     * @var MileageRequest[]
+     * @var string
      */
-    public $mileageRequests = [];
+    public $tattooType;
 
     /**
-     * Redemption requests (award bookings)
+     * Tattoo value
      * 
-     * @var RedemptionRequest[]
+     * @var int
      */
-    public $redemptionRequests = [];
+    public $tattooValue;
 
     /**
-     * Upgrade requests
+     * Line number
      * 
-     * @var UpgradeRequest[]
+     * @var int
      */
-    public $upgradeRequests = [];
+    public $lineNumber;
+
+    /**
+     * Associated segments/passengers
+     * 
+     * @var ElementReference[]
+     */
+    public $associations = [];
 }

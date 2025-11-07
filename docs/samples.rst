@@ -2686,6 +2686,36 @@ Process initiated refund:
         new TicketProcessRefundOptions([])
     );
 
+---------------------------
+Ticket_RebookAndRepricePNR
+---------------------------
+
+Rebook and reprice a PNR:
+
+.. code-block:: php
+
+    use Amadeus\Client\RequestOptions\TicketRebookAndRepricePnrOptions;
+    use Amadeus\Client\RequestOptions\Ticket\RebookOptions;
+    use Amadeus\Client\RequestOptions\Pnr\ElementReference;
+
+    $response = $client->ticketRebookAndRepricePnr(
+        new TicketRebookAndRepricePnrOptions([
+            'recordLocator' => 'ABC123', // Your test PNR
+            'actions' => [
+                TicketRebookAndRepricePnrOptions::ACTION_COMMIT
+            ],
+            'receivedFrom' => 'TEST API',
+            'rebooking' => new RebookOptions([
+                'cancellations' => [
+                    new ElementReference(
+                        ElementReference::TYPE_SEGMENT,
+                        2 // Segment tattoo number
+                    )
+                ]
+            ])
+        ])
+    );
+
 ***********
 DocIssuance
 ***********

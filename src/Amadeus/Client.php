@@ -1568,6 +1568,33 @@ class Client extends Base
     }
 
     /**
+     * Ticket_RebookAndRepricePNR
+     *
+     * Performs rebooking and repricing operations on a PNR in a single transaction.
+     * This service allows you to:
+     * - Cancel segments and other PNR elements
+     * - Add new segments (bounds)
+     * - Confirm segment status
+     * - Reprice the itinerary automatically
+     * - Apply replication rules for SSRs, seats, etc.
+     *
+     * @param RequestOptions\TicketRebookAndRepricePnrOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function ticketRebookAndRepricePnr(
+        RequestOptions\TicketRebookAndRepricePnrOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Ticket_RebookAndRepricePNR';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
      * FOP_CreateFormOfPayment
      *
      * @param RequestOptions\FopCreateFopOptions $options

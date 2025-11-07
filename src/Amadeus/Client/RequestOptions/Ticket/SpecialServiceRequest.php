@@ -1,7 +1,7 @@
 <?php
 
 /**
- * amadeus-enterprise
+ * amadeus-ws-client
  *
  * Copyright 2015 Amadeus Benelux NV
  *
@@ -24,77 +24,59 @@
 namespace Amadeus\Client\RequestOptions\Ticket;
 
 use Amadeus\Client\LoadParamsFromArray;
-use Amadeus\Client\RequestOptions\Fare\PricePnr\AwardPricing;
 
 /**
- * FrequentFlyer
- *
- * @package Amadeus\Client\RequestOptions\Ticket
- * @author Wycliffe Dev <santosdave86@gmail.com>
+ * SpecialServiceRequest - SSR Element
  */
-class FrequentFlyer extends LoadParamsFromArray
+class SpecialServiceRequest extends LoadParamsFromArray
 {
 
     /**
-     * Airline code (2 characters)
+     * SSR code (up to 4 characters, e.g., WCHR, VGML, etc.)
+     * 
+     * @var string
+     */
+    public $code;
+
+    /**
+     * Airline code
      * 
      * @var string
      */
     public $airlineCode;
 
     /**
-     * Frequent flyer card number (up to 25 characters)
+     * Number in party / Quantity
+     * 
+     * @var int
+     */
+    public $quantity;
+
+    /**
+     * Status code
      * 
      * @var string
      */
-    public $cardNumber;
+    public $status;
 
     /**
-     * Card owner last name
+     * Free text
      * 
      * @var string
      */
-    public $lastName;
+    public $text;
 
     /**
-     * Card owner first name
-     * 
-     * @var string
-     */
-    public $firstName;
-
-    /**
-     * Card owner title
-     * 
-     * @var string
-     */
-    public $title;
-
-    /**
-     * Request identifier for mapping
+     * Request identifier
      * 
      * @var string
      */
     public $requestId;
 
     /**
-     * Mileage accrual requests
+     * Associated segments/passengers
      * 
-     * @var MileageRequest[]
+     * @var ElementReference[]
      */
-    public $mileageRequests = [];
-
-    /**
-     * Redemption requests (award bookings)
-     * 
-     * @var RedemptionRequest[]
-     */
-    public $redemptionRequests = [];
-
-    /**
-     * Upgrade requests
-     * 
-     * @var UpgradeRequest[]
-     */
-    public $upgradeRequests = [];
+    public $associations = [];
 }

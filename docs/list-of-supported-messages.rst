@@ -60,6 +60,7 @@ This is the list of messages that are at least partially supported at this time:
 - Ticket_UpdateRefund
 - Ticket_IgnoreRefund
 - Ticket_ProcessRefund
+- Ticket_RebookAndRepricePNR
 - DocIssuance_IssueTicket
 - DocIssuance_IssueMiscellaneousDocuments
 - DocIssuance_IssueCombined
