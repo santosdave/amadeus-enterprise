@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\DocRefund\UpdateRefund;
  * TravellerPriorityInfo
  *
  * @package Amadeus\Client\Struct\DocRefund\UpdateRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class TravellerPriorityInfo
 {

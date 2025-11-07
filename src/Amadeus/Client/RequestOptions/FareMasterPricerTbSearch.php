@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\FareMasterPricerExSearchOptions as FareMasterP
  * Request Options for Fare_MasterPricerTravelboardSearch
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareMasterPricerTbSearch extends FareMasterPricerExSearchOptions
 {

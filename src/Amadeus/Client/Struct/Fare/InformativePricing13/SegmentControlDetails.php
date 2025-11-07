@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\InformativePricing13;
  * SegmentControlDetails
  *
  * @package Amadeus\Client\Struct\Fare\InformativePricing13
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SegmentControlDetails
 {

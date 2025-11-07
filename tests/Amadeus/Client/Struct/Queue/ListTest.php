@@ -36,7 +36,7 @@ use Test\Amadeus\BaseTestCase;
  * ListTest
  *
  * @package Amadeus\Client\Struct\Queue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ListTest extends BaseTestCase
 {

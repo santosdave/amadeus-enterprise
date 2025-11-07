@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Ticket\ReqSegOptions;
  * Ticket_ATCShopperMasterPricerTravelBoardSearch request options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class TicketAtcShopperMpTbSearchOptions extends FareMasterPricerTbSearch
 {

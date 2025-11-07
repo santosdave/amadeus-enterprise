@@ -33,7 +33,7 @@ use Amadeus\Client\Struct\Service\IntegratedPricing\PricingOption as ServicePric
  * Provides some basic functionality for all pricing messages which work with 'pricingOptionGroup's
  *
  * @package Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class BasePricingMessage extends BaseWsMessage
 {

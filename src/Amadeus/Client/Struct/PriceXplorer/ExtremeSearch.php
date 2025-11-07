@@ -30,7 +30,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * ExtremeSearch
  *
  * @package Amadeus\Client\Struct\PriceXplorer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ExtremeSearch extends BaseWsMessage
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\DocRefund\CommissionOpt;
  * Commission
  *
  * @package Amadeus\Client\Struct\DocRefund\UpdateRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Commission
 {

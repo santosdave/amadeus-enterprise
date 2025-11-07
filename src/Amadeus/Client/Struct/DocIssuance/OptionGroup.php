@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\DocIssuance\Option;
  * OptionGroup
  *
  * @package Amadeus\Client\Struct\DocIssuance
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class OptionGroup
 {

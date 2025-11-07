@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * SessionTest
  *
  * @package Test\Amadeus\Client\Struct\HeaderV2
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SessionTest extends BaseTestCase
 {

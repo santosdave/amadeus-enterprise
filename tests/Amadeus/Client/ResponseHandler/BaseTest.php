@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * BaseTest
  *
  * @package Test\Amadeus\Client\ResponseHandler
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class BaseTest extends BaseTestCase
 {

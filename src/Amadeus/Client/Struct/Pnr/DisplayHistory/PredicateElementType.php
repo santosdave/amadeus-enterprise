@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\DisplayHistory;
  * PredicateElementType
  *
  * @package Amadeus\Client\Struct\Pnr\DisplayHistory
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PredicateElementType
 {

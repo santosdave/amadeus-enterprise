@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Command_Cryptic
  *
  * @package Amadeus\Client\RequestCreator\Converter\Command
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CrypticConv extends BaseConverter
 {

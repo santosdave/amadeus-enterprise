@@ -33,7 +33,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Basic Request structure for the DocIssuance messages
  *
  * @package Amadeus\Client\Struct\DocIssuance
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DocIssuanceBaseMsg extends BaseWsMessage
 {

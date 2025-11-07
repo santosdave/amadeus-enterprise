@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\HeaderV4;
  * Session Header structure
  *
  * @package Amadeus\Client\Struct\HeaderV4
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Session
 {

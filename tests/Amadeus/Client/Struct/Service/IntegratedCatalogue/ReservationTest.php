@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * ReservationTest
  *
  * @package Test\Amadeus\Client\Struct\Service\IntegratedCatalogue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ReservationTest extends BaseTestCase
 {

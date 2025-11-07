@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * FormOfPaymentTest
  *
  * @package Test\Amadeus\Client\Struct\Fare\PricePnr13
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FormOfPaymentTest extends BaseTestCase
 {

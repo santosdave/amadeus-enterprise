@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * PredicateDetail
  *
  * @package Amadeus\Client\RequestOptions\Pnr\DisplayHistory
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PredicateDetail extends LoadParamsFromArray
 {

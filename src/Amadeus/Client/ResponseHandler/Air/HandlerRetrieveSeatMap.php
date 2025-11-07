@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * Utility class to get proper error messages from an Air_RetrieveSeatMapReply message
  *
  * @package Amadeus\Client\ResponseHandler\Air
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerRetrieveSeatMap extends StandardResponseHandler
 {

@@ -31,7 +31,7 @@ use Amadeus\Client\RequestOptions\Queue\SearchCriteriaOpt;
  * Options available for the Queue_List message.
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class QueueListOptions extends Base
 {

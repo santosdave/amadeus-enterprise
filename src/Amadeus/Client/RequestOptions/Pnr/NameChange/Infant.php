@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Infant accompanying a passenger
  *
  * @package Amadeus\Client\RequestOptions\Pnr\NameChange
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Infant extends LoadParamsFromArray
 {

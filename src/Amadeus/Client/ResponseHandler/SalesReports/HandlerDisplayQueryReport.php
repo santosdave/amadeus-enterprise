@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerDisplayQueryReport
  *
  * @package Amadeus\Client\ResponseHandler\SalesReports
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerDisplayQueryReport extends StandardResponseHandler
 {

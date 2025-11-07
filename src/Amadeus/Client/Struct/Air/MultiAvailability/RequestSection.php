@@ -14,7 +14,7 @@ use Amadeus\Client\RequestOptions\Air\MultiAvailability\RequestOptions;
  * RequestSection
  *
  * @package Amadeus\Client\Struct\Air\MultiAvailability
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RequestSection
 {

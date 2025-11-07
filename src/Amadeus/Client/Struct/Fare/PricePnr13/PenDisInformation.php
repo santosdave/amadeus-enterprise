@@ -30,7 +30,7 @@ use Amadeus\Client\RequestOptions\Fare\PricePnr\ZapOff;
  * PenDisInformation
  *
  * @package Amadeus\Client\Struct\Fare\PricePnr13
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PenDisInformation
 {

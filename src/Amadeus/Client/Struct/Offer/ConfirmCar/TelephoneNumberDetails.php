@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer\ConfirmCar;
  * TelephoneNumberDetails
  *
  * @package Amadeus\Client\Struct\Offer\ConfirmCar
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class TelephoneNumberDetails
 {

@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\Retrieve;
  * Structure class for the Settings message part for PNR_Retrieve messages
  *
  * @package Amadeus\Client\Struct\Pnr\Retrieve
- * @author  Dieter Devlieghere <santosdave86@gmail.com>
+ * @author  Wycliffe Dev <santosdave86@gmail.com>
  */
 class Settings
 {

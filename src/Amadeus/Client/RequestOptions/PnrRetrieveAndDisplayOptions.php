@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Pnr_RetrieveAndDisplay Reques Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PnrRetrieveAndDisplayOptions extends Base
 {

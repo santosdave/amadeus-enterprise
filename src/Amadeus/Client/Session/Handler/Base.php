@@ -40,7 +40,7 @@ use Psr\Log\NullLogger;
  * - decide if a separate authentication message is needed and if so, send it
  *
  * @package Amadeus\Client\Session\Handler
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 abstract class Base implements HandlerInterface, LoggerAwareInterface
 {

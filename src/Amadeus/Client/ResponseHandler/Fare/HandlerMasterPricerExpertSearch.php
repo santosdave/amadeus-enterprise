@@ -27,6 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Fare;
  * HandlerMasterPricerExpertSearch
  *
  * @package Amadeus\Client\ResponseHandler\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerMasterPricerExpertSearch extends HandlerMasterPricerTravelBoardSearch {}

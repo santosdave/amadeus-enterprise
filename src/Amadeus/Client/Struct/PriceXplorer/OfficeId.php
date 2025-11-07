@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\PriceXplorer;
  * Structure class for the officeId message part for PriceXplorer_* messages
  *
  * @package Amadeus\Client\Struct\PriceXplorer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class OfficeId
 {

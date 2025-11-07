@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\MasterPricer;
  * CustomerReferences
  *
  * @package Amadeus\Client\Struct\Fare\MasterPricer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CustomerReferences extends \Amadeus\Client\Struct\Air\MultiAvailability\CustomerReferences
 {

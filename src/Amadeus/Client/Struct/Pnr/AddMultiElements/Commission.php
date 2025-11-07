@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Pnr\Element\ManualCommission;
  * Commission
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Commission
 {

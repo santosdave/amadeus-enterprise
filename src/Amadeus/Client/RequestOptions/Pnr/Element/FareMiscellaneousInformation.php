@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Pnr\Element;
  * Fare Miscellaneous Information
  *
  * @package Amadeus\Client\RequestOptions\Pnr\Element
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareMiscellaneousInformation extends Element
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Fare Family Criteria
  *
  * @package Amadeus\Client\RequestOptions\Fare\MasterPricer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FFCriteria extends LoadParamsFromArray
 {

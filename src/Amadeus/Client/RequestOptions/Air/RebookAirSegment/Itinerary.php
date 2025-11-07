@@ -29,6 +29,6 @@ use Amadeus\Client\RequestOptions\Air\SellFromRecommendation\Itinerary as SellFr
  * Itinerary
  *
  * @package Amadeus\Client\RequestOptions\Air\RebookAirSegment
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Itinerary extends SellFromRecommendationItinerary {}

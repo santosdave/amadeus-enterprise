@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare\PricePnr12;
  * ValidatingCarrier
  *
  * @package Amadeus\Client\Struct\Fare\PricePnr12
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class ValidatingCarrier
 {

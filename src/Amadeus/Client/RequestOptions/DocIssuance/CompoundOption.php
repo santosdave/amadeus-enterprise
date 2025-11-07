@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Compound Options
  *
  * @package Amadeus\Client\RequestOptions\DocIssuance
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CompoundOption extends LoadParamsFromArray
 {

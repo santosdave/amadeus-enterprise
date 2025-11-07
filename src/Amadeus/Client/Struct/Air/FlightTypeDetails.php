@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air;
  * FlightTypeDetails
  *
  * @package Amadeus\Client\Struct\Air
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class FlightTypeDetails
 {

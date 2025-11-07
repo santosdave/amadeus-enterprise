@@ -138,7 +138,7 @@
 							<quantity>1</quantity>
 						</traveller>
 						<passenger>
-							<firstName>DIETER</firstName>
+							<firstName>Wycliffe</firstName>
 							<type>ADT</type>
 						</passenger>
 					</travellerInformation>
@@ -154,7 +154,7 @@
 							<referenceName>Y</referenceName>
 							<displayedName>Y</displayedName>
 							<surname>DEVLIEGHERE</surname>
-							<givenName>DIETER</givenName>
+							<givenName>Wycliffe</givenName>
 						</otherPaxNamesDetails>
 					</enhancedTravellerInformation>
 				</enhancedPassengerData>

@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air;
  * MultiAvailability version 16 and up
  *
  * @package Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MultiAvailability16 extends MultiAvailability
 {

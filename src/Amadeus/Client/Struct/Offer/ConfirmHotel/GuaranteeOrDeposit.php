@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer\ConfirmHotel;
  * GuaranteeOrDeposit
  *
  * @package Amadeus\Client\Struct\Offer\ConfirmHotel
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GuaranteeOrDeposit
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Ticket\ExchangeInfoOptions;
  * ExchangeInformationGroup
  *
  * @package Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ExchangeInformationGroup
 {

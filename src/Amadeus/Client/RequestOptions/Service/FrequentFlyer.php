@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * FrequentFlyer
  *
  * @package Amadeus\Client\RequestOptions\Service
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FrequentFlyer extends LoadParamsFromArray
 {

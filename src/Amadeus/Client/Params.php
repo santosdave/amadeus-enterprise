@@ -34,7 +34,7 @@ use Amadeus\Client\Session;
  * Params
  *
  * @package Amadeus\Client
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Params
 {

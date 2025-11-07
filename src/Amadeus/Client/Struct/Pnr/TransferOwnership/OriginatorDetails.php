@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\TransferOwnership;
  * OriginatorDetails
  *
  * @package Amadeus\Client\Struct\Pnr\TransferOwnership
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class OriginatorDetails
 {

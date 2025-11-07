@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Service\IntegratedPricing;
  * PricingOptionKey
  *
  * @package Amadeus\Client\Struct\Service\IntegratedPricing
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PricingOptionKey
 {

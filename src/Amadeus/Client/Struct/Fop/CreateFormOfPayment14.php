@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Fop\CreateFormOfPayment\FopGroup14;
  * FOP_CreateFormOfPayment message version 14.x and below
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CreateFormOfPayment14 extends CreateFormOfPayment
 {

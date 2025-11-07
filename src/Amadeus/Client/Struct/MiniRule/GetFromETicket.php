@@ -30,7 +30,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * MiniRule_GetFromETicket request structure
  *
  * @package Amadeus\Client\Struct\MiniRule
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GetFromETicket extends BaseWsMessage
 {

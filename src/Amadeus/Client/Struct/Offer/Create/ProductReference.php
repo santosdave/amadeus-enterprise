@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Offer\ProductReference as ProdRefOptions;
  * ProductReference
  *
  * @package Amadeus\Client\Struct\Offer\Create
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ProductReference
 {

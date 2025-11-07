@@ -14,7 +14,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * RequestOptions
  *
  * @package Amadeus\Client\RequestOptions\Air\MultiAvailability
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RequestOptions extends LoadParamsFromArray
 {

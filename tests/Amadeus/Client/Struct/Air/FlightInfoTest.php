@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * FlightInfoTest
  *
  * @package Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FlightInfoTest extends BaseTestCase
 {

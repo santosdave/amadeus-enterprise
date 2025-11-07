@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * MasterPricer Fee Id request options.
  *
  * @package Amadeus\Client\RequestOptions\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MPFeeId extends LoadParamsFromArray
 {

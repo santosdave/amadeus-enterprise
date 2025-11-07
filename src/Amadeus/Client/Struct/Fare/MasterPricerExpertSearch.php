@@ -34,7 +34,7 @@ use Amadeus\Client\Struct\Fare\MasterPricer;
  * Fare_MasterPricerExpertSearch message structure
  *
  * @package Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MasterPricerExpertSearch extends BaseMasterPricerMessage
 {

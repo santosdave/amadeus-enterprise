@@ -27,6 +27,6 @@ namespace Amadeus\Client\Struct\Pnr\NameChange;
  * DateTime
  *
  * @package Amadeus\Client\Struct\Pnr\NameChange
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DateTime extends \Amadeus\Client\Struct\Fare\PricePnr13\DateTime {}

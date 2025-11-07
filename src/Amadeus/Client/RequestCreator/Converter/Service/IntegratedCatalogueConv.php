@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Service_IntegratedCatalogue Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Service
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class IntegratedCatalogueConv extends BaseConverter
 {

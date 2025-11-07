@@ -27,6 +27,6 @@ namespace Amadeus\Client\RequestOptions;
  * Security_SignOut Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SecuritySignOutOptions extends Base {}

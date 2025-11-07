@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\MiniRule;
  * FareRecommendationId
  *
  * @package Amadeus\Client\Struct\MiniRule
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareRecommendationId
 {

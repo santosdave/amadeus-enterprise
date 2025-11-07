@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Fare\InformativePricing\Passenger;
  * PassengersGroup
  *
  * @package Amadeus\Client\Struct\Fare\InformativePricing13
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PassengersGroup
 {

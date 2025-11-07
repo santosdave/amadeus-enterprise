@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\RetrieveAndDisplay;
  * Class PersonalFacts
  *
  * @package Amadeus\Client\Struct\Pnr\RetrieveAndDisplay
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PersonalFacts
 {

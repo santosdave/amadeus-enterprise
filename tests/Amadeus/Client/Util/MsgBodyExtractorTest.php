@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * MsgBodyExtractorTest
  *
  * @package Test\Amadeus\Client\Util
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MsgBodyExtractorTest extends BaseTestCase
 {

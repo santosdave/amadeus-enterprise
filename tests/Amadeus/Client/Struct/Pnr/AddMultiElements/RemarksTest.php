@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * RemarksTest
  *
  * @package Test\Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RemarksTest extends BaseTestCase
 {

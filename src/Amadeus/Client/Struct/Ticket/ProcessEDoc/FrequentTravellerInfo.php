@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Ticket\FrequentFlyer;
  * FrequentTravellerInfo
  *
  * @package Amadeus\Client\Struct\Ticket\ProcessEDoc
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FrequentTravellerInfo
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Pnr\Element;
  * Tour Code element (FT)
  *
  * @package Amadeus\Client\RequestOptions\Pnr\Element
- * @author Dieter Devlieghere <dieter.devlieghere@gmail.com>
+ * @author Wycliffe Dev <Wycliffe.devlieghere@gmail.com>
  */
 class TourCode extends Element
 {

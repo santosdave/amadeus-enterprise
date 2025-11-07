@@ -29,6 +29,6 @@ use Amadeus\Client\Struct\Pnr\AddMultiElements\OriginDestination as AddMultiElem
  * OriginDestinationDetails
  *
  * @package Amadeus\Client\Struct\Air
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class OriginDestinationDetails extends AddMultiElementsOriginDestination {}

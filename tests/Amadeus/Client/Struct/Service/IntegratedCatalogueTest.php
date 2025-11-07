@@ -34,7 +34,7 @@ use Test\Amadeus\BaseTestCase;
  * IntegratedCatalogueTest
  *
  * @package Test\Amadeus\Client\Struct\Service
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class IntegratedCatalogueTest extends BaseTestCase
 {

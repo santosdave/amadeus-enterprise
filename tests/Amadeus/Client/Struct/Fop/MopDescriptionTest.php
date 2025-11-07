@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * MopDescriptionTest
  *
  * @package Test\Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MopDescriptionTest extends BaseTestCase
 {

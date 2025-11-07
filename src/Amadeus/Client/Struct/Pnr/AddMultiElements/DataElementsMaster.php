@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\AddMultiElements;
  * DataElementsMaster
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DataElementsMaster
 {

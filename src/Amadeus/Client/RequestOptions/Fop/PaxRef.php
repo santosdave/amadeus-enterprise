@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * PaxRef
  *
  * @package Amadeus\Client\RequestOptions\Fop
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PaxRef extends LoadParamsFromArray
 {

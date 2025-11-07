@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Basic PNR Segment
  *
  * @package Amadeus\Client\RequestOptions\Pnr
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Segment extends LoadParamsFromArray
 {

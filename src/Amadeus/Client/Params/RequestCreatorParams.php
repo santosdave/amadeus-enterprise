@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * RequestCreatorParams
  *
  * @package Amadeus\Client\Params
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RequestCreatorParams extends LoadParamsFromArray
 {

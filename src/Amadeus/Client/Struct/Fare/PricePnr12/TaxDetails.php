@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\Fare\PricePnr13\TaxType;
  * TaxDetails
  *
  * @package Amadeus\Client\Struct\Fare\PricePnr12
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class TaxDetails
 {

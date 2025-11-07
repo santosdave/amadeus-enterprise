@@ -35,7 +35,7 @@ use Test\Amadeus\BaseTestCase;
  * CreateTSTFromPricingTest
  *
  * @package Test\Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CreateTSTFromPricingTest extends BaseTestCase
 {

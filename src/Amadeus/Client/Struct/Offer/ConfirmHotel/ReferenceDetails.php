@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer\ConfirmHotel;
  * ReferenceDetails
  *
  * @package Amadeus\Client\Struct\Offer\ConfirmHotel
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ReferenceDetails
 {

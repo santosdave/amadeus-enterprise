@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Offer_Verify Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class OfferVerifyOptions extends Base
 {

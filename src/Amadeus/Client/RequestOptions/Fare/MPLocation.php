@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * MasterPricer Location request options
  *
  * @package Amadeus\Client\RequestOptions\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MPLocation extends LoadParamsFromArray
 {

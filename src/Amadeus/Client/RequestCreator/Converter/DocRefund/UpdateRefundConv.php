@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * DocRefund_UpdateRefund request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\DocRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class UpdateRefundConv extends BaseConverter
 {

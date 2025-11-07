@@ -27,6 +27,6 @@ namespace Amadeus\Client\RequestOptions\Service;
  * PaxSegRef
  *
  * @package Amadeus\Client\RequestOptions\Service
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PaxSegRef extends \Amadeus\Client\RequestOptions\Fare\PricePnr\PaxSegRef {}

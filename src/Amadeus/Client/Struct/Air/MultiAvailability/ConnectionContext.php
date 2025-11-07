@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Info\LocationDescription;
  * ConnectionContext
  *
  * @package Amadeus\Client\Struct\Air\MultiAvailability
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ConnectionContext
 {

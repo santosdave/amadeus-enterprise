@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * EncodeDecodeCity
  *
  * @package Amadeus\Client\ResponseHandler\Info
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerEncodeDecodeCity extends StandardResponseHandler
 {

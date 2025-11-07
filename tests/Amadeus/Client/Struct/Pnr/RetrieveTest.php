@@ -33,7 +33,7 @@ use Test\Amadeus\BaseTestCase;
  * RetrieveTest
  *
  * @package Test\Amadeus\Client\Struct\Pnr
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RetrieveTest extends BaseTestCase
 {

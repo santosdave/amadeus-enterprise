@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * MiniRule_GetFromPricingRec
  *
  * @package Amadeus\Client\RequestCreator\Converter\MiniRule
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GetFromPricingRecConv extends BaseConverter
 {

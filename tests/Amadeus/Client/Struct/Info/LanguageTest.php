@@ -15,7 +15,7 @@ use Test\Amadeus\BaseTestCase;
  * LanguageTest
  *
  * @package Test\Amadeus\Client\Struct\Info
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class LanguageTest extends BaseTestCase
 {

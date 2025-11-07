@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * ExtendedPaymentDetailsTest
  *
  * @package Test\Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ExtendedPaymentDetailsTest extends BaseTestCase
 {

@@ -30,7 +30,7 @@ use Amadeus\Client\RequestOptions\Fare\MPFeeId;
  * FareOptions
  *
  * @package Amadeus\Client\Struct\Fare\MasterPricer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareOptions
 {

@@ -27,7 +27,7 @@ namespace Amadeus\Client\Params;
  * AuthParams defines necessary authentication parameters for Amadeus Web Service client authentication.
  *
  * @package Amadeus\Client\Params
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class AuthParams
 {

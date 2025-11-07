@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerConvertCurrency
  *
  * @package Amadeus\Client\ResponseHandler\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerConvertCurrency extends StandardResponseHandler
 {

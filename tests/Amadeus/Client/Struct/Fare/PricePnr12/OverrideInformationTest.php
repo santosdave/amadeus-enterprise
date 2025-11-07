@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * OverrideInformationTest
  *
  * @package Test\Amadeus\Client\Struct\Fare\PricePnr12
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class OverrideInformationTest extends BaseTestCase
 {

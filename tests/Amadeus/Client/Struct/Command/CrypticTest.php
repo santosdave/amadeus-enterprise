@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * CrypticTest
  *
  * @package Test\Amadeus\Client\Struct\Command
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class CrypticTest extends BaseTestCase
 {

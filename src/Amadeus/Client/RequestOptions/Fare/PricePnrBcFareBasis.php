@@ -30,6 +30,6 @@ use Amadeus\Client\RequestOptions\Fare\PricePnr\FareBasis;
  *
  * @deprecated Use Amadeus\Client\RequestOptions\Fare\PricePnr\FareBasis instead.
  * @package Amadeus\Client\RequestOptions\Fare
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class PricePnrBcFareBasis extends FareBasis {}

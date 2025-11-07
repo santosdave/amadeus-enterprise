@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer;
  * PassengerReference
  *
  * @package Amadeus\Client\Struct\Offer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PassengerReference
 {

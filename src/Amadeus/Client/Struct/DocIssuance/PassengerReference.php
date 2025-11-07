@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\DocIssuance;
  * PassengerReference
  *
  * @package Amadeus\Client\Struct\DocIssuance
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PassengerReference
 {

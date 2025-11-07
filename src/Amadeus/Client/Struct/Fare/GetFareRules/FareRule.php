@@ -27,6 +27,6 @@ namespace Amadeus\Client\Struct\Fare\GetFareRules;
  * FareRule
  *
  * @package Amadeus\Client\Struct\Fare\GetFareRules
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareRule {}

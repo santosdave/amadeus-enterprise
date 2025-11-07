@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Air\RetrieveSeatMap;
  * StatusInformation
  *
  * @package Amadeus\Client\Struct\Air\RetrieveSeatMap
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class StatusInformation
 {

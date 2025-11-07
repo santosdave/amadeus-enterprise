@@ -30,7 +30,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Class MoveItem
  *
  * @package Amadeus\Client\Struct\Queue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MoveItem extends BaseWsMessage
 {

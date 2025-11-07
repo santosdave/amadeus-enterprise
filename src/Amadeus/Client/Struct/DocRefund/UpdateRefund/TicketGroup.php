@@ -31,7 +31,7 @@ use Amadeus\Client\Struct\WsMessageUtility;
  * TicketGroup
  *
  * @package Amadeus\Client\Struct\DocRefund\UpdateRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class TicketGroup extends WsMessageUtility
 {

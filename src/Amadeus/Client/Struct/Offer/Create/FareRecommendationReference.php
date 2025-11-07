@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Offer\Create;
  * FareRecommendationReference
  *
  * @package Amadeus\Client\Struct\Offer\Create
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareRecommendationReference
 {

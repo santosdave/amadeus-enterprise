@@ -27,6 +27,6 @@ namespace Amadeus\Client\RequestOptions\Service;
  * FormOfPayment
  *
  * @package Amadeus\Client\RequestOptions\Service
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FormOfPayment extends \Amadeus\Client\RequestOptions\Fare\PricePnr\FormOfPayment {}

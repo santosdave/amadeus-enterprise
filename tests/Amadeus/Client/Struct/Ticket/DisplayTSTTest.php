@@ -34,7 +34,7 @@ use Test\Amadeus\BaseTestCase;
  * DisplayTSTTest
  *
  * @package Test\Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DisplayTSTTest extends BaseTestCase
 {

@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * FareFamilySegmentTest
  *
  * @package Test\Amadeus\Client\Struct\Fare\MasterPricer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareFamilySegmentTest extends BaseTestCase
 {

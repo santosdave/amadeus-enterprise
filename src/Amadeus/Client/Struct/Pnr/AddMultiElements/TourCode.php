@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Pnr\Element;
  * TourCode
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <dieter.devlieghere@gmail.com>
+ * @author Wycliffe Dev <Wycliffe.devlieghere@gmail.com>
  */
 class TourCode
 {

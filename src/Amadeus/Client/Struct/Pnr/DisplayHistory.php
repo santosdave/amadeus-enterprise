@@ -34,7 +34,7 @@ use Amadeus\Client\Struct\Pnr\DisplayHistory\ScrollingDetails;
  * DisplayHistory
  *
  * @package Amadeus\Client\Struct\Pnr
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DisplayHistory extends BaseWsMessage
 {

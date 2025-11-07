@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * SourceTypeTest
  *
  * @package Test\Amadeus\Client\Struct\Fare\InformativePricing13
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SourceTypeTest extends BaseTestCase
 {

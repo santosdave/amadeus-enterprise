@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Offer\PassengerDef;
  * PaxReference
  *
  * @package Amadeus\Client\Struct\Offer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PaxReference
 {

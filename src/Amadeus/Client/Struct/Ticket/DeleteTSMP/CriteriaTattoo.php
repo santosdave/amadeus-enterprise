@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\DeleteTSMP;
  * CriteriaTattoo
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CriteriaTattoo
 {

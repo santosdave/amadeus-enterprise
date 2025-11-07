@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Traveller in a PNR
  *
  * @package Amadeus\Client\RequestOptions\Pnr
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Traveller extends LoadParamsFromArray
 {

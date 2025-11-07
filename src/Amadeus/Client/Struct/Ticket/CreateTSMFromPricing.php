@@ -14,7 +14,7 @@ use Amadeus\Client\RequestOptions\TicketCreateTsmFromPricingOptions;
  * Ticket_CreateTSMFromPricing request structure
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CreateTSMFromPricing extends CreateTSTFromPricing
 {

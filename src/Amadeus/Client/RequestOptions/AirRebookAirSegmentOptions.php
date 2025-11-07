@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Air\RebookAirSegment\Itinerary;
  * Air_RebookAirSegment Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class AirRebookAirSegmentOptions extends Base
 {

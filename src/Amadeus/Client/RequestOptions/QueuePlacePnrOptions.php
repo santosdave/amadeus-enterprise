@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * Queue_PlacePnr Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class QueuePlacePnrOptions extends Base
 {

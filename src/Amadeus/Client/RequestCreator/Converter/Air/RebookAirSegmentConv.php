@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Air_RebookAirSegment Request Converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Air
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RebookAirSegmentConv extends BaseConverter
 {

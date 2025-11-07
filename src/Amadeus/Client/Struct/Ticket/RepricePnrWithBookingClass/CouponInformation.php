@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass;
  * CouponInformation
  *
  * @package Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CouponInformation
 {

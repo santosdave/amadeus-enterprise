@@ -27,6 +27,6 @@ namespace Amadeus\Client\Struct\Service;
  * Service_IntegratedCatalogue request structure
  *
  * @package Amadeus\Client\Struct\Service
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class IntegratedCatalogue extends IntegratedPricing {}

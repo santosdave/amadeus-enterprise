@@ -30,7 +30,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Authenticate
  *
  * @package Amadeus\Client\Struct\Security
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Authenticate extends BaseWsMessage
 {

@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Pnr\AddMultiElements;
  * FreeFormatTour
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <dieter.devlieghere@gmail.com>
+ * @author Wycliffe Dev <Wycliffe.devlieghere@gmail.com>
  */
 class FreeFormatTour
 {

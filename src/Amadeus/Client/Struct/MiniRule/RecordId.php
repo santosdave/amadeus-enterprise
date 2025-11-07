@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\MiniRule;
  * RecordId
  *
  * @package Amadeus\Client\Struct\MiniRule
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RecordId
 {

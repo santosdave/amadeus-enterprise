@@ -28,7 +28,7 @@ namespace Amadeus\Client\Struct\Ticket\ProcessEDoc;
  *
  * @package Amadeus\Client\Struct\Ticket\ProcessEDoc
  * @author Farah Hourani <farahhourani94@gmail.com>
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MessageFunctionDetails
 {

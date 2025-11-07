@@ -32,7 +32,7 @@ use Test\Amadeus\BaseTestCase;
  * CheckRulesTest
  *
  * @package Test\Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CheckRulesTest extends BaseTestCase
 {

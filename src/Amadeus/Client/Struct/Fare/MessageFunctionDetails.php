@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fare;
  * MessageFunctionDetails
  *
  * @package Amadeus\Client\Struct\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MessageFunctionDetails
 {

@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\SalesReports\DisplayQueryReport;
  * AgentUserDetails
  *
  * @package Amadeus\Client\Struct\SalesReports\DisplayQueryReport
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class AgentUserDetails
 {

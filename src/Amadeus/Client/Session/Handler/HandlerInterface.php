@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Interface for session handlers
  *
  * @package Amadeus\Client\Session\Handler
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 interface HandlerInterface
 {

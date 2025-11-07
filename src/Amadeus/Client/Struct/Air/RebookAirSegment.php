@@ -31,7 +31,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Air_RebookAirSegment request structure
  *
  * @package Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RebookAirSegment extends BaseWsMessage
 {

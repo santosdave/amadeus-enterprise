@@ -27,6 +27,6 @@ namespace Amadeus\Client\ResponseHandler\PNR;
  * HandlerAddMultiElements
  *
  * @package Amadeus\Client\ResponseHandler\PNR
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerAddMultiElements extends HandlerRetrieve {}

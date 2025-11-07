@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Itinerary
  *
  * @package Amadeus\Client\RequestOptions\Air\SellFromRecommendation
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class Itinerary extends LoadParamsFromArray
 {

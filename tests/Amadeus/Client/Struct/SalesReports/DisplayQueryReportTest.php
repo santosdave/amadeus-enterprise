@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * DisplayQueryReportTest
  *
  * @package Test\Amadeus\Client\Struct\SalesReports
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DisplayQueryReportTest extends BaseTestCase
 {

@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Queue_RemoveItem Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Queue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RemoveItemConv extends BaseConverter
 {

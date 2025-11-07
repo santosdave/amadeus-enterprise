@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Ticket_DisplayTST Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DisplayTSTConv extends BaseConverter
 {

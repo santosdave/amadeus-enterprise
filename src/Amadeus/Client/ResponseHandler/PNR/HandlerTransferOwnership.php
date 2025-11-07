@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerTransferOwnership
  *
  * @package Amadeus\Client\ResponseHandler\PNR
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerTransferOwnership extends StandardResponseHandler
 {

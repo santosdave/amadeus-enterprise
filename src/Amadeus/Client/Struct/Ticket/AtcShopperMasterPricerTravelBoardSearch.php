@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\Ticket\CheckEligibility\TicketChangeInfo;
  * Ticket_ATCShopperMasterPricerTravelBoardSearch message structure
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class AtcShopperMasterPricerTravelBoardSearch extends MasterPricerTravelBoardSearch
 {

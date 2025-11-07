@@ -32,7 +32,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * HandlerCreateFormOfPayment
  *
  * @package Amadeus\Client\ResponseHandler\FOP
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerCreateFormOfPayment extends StandardResponseHandler
 {

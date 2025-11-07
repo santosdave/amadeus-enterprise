@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\HeaderV2;
  * Soap Header V2 Session header structure
  *
  * @package Amadeus\Client\Struct\HeaderV2
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Session
 {

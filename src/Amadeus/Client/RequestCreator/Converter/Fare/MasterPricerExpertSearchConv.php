@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Fare_MasterPricerExpertSearch Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MasterPricerExpertSearchConv extends BaseConverter
 {

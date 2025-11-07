@@ -27,6 +27,6 @@ namespace Amadeus\Client\Struct\Ticket\CheckEligibility;
  * FormOfPaymentByPassenger
  *
  * @package Amadeus\Client\Struct\Ticket\CheckEligibility
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FormOfPaymentByPassenger {}

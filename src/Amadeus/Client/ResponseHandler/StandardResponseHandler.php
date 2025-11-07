@@ -31,7 +31,7 @@ use Amadeus\Client\Session\Handler\SendResult;
  * The standard response handler for an individual message. Includes some basic functionality to build on.
  *
  * @package Amadeus\Client\ResponseHandler
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 abstract class StandardResponseHandler implements MessageResponseHandler
 {

@@ -29,7 +29,7 @@ namespace Amadeus\Client\Session\Handler;
  * An object used to return the result of the Session Handler sendMessage()
  *
  * @package Amadeus\Client\Session\Handler
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SendResult
 {

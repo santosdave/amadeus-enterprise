@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Queue_PlacePNR Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Queue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PlacePNRConv extends BaseConverter
 {

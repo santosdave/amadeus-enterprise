@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * ReissueConfirmedPricingConv
  *
  * @package Amadeus\Client\RequestCreator\Converter\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ReissueConfirmedPricingConv extends BaseConverter
 {

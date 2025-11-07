@@ -36,7 +36,7 @@ use Test\Amadeus\BaseTestCase;
  * SellFromRecommendationTest
  *
  * @package Test\Amadeus\Client\Struct\Air
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class SellFromRecommendationTest extends BaseTestCase
 {

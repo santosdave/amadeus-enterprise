@@ -30,7 +30,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * FlightInfo
  *
  * @package Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FlightInfo extends BaseWsMessage
 {

@@ -33,6 +33,6 @@ use Amadeus\Client\LoadParamsFromArray;
  * Will try to map keys in array to property names and fill in matching properties.
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 abstract class Base extends LoadParamsFromArray implements RequestOptionsInterface {}

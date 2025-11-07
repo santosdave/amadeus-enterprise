@@ -38,7 +38,7 @@ use Test\Amadeus\BaseTestCase;
  * IssueMiscellaneousDocumentsTest
  *
  * @package Test\Amadeus\Client\Struct\DocIssuance
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class IssueMiscellaneousDocumentsTest extends BaseTestCase
 {

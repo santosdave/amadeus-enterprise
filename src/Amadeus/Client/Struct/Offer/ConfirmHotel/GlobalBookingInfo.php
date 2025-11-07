@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Offer\PassengerReference;
  * GlobalBookingInfo
  *
  * @package Amadeus\Client\Struct\Offer\ConfirmHotel
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GlobalBookingInfo
 {

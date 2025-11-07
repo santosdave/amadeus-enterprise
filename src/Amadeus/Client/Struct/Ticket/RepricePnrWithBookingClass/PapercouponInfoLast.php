@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass;
  * PapercouponInfoLast
  *
  * @package Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PapercouponInfoLast
 {

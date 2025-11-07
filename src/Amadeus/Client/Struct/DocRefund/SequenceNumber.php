@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\DocRefund;
  * SequenceNumber
  *
  * @package Amadeus\Client\Struct\DocRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SequenceNumber
 {

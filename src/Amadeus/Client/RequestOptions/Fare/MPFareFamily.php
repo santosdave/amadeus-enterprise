@@ -31,7 +31,7 @@ use Amadeus\Client\RequestOptions\Fare\MasterPricer\FFOtherCriteria;
  * MasterPricer Fare Family request options.
  *
  * @package Amadeus\Client\RequestOptions\Fare
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MPFareFamily extends LoadParamsFromArray
 {

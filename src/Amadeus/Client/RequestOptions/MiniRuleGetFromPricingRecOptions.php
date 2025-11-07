@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * MiniRule_GetFromPricingRec Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class MiniRuleGetFromPricingRecOptions extends Base
 {

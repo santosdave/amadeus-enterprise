@@ -12,7 +12,7 @@ namespace Amadeus\Client\Struct\Air\MultiAvailability;
  * FlightIdentification
  *
  * @package Amadeus\Client\Struct\Air\MultiAvailability
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FlightIdentification
 {

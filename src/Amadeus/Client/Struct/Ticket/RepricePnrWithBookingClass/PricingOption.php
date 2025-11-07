@@ -39,7 +39,7 @@ use Amadeus\Client\Struct\Fare\PricePnr13\TaxInformation;
  * PricingOption
  *
  * @package Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PricingOption
 {

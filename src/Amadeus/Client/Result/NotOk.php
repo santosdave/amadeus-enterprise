@@ -27,7 +27,7 @@ namespace Amadeus\Client\Result;
  * NotOk
  *
  * @package Amadeus\Client\Result
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class NotOk
 {

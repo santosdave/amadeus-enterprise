@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\Fare\MPLocation;
  * DepartureLocalization
  *
  * @package Amadeus\Client\Struct\Fare\MasterPricer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DepartureLocalization
 {

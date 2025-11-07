@@ -30,7 +30,7 @@ use Amadeus\Client\RequestOptions\Pnr\Retrieve\FrequentTraveller as FrequentTrav
  * FrequentTraveller
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FrequentTraveller
 {

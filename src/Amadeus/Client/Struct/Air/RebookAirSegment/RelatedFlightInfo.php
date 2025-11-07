@@ -29,6 +29,6 @@ use Amadeus\Client\Struct\Air\RelatedproductInformation;
  * RelatedFlightInfo
  *
  * @package Amadeus\Client\Struct\Air\RebookAirSegment
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RelatedFlightInfo extends RelatedproductInformation {}

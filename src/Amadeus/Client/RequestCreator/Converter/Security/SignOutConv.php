@@ -31,7 +31,7 @@ use Amadeus\Client\Struct\Security;
  * SignOut
  *
  * @package Amadeus\Client\RequestCreator\Converter\Security
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SignOutConv extends BaseConverter
 {

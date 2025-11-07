@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * DocIssuance_IssueCombined Request options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DocIssuanceIssueCombinedOptions extends DocIssuanceIssueTicketOptions
 {

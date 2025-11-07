@@ -32,7 +32,7 @@ use Amadeus\Client\Struct\Pnr\NameChange\TransactionCode;
  * PNR_NameChange Request stucture
  *
  * @package Amadeus\Client\Struct\Pnr
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class NameChange extends BaseWsMessage
 {

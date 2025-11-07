@@ -30,7 +30,7 @@ use Amadeus\Client\LoadParamsFromArray;
  *
  *
  * @package Amadeus\Client\RequestOptions\Ticket
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ReqSegOptions extends LoadParamsFromArray
 {

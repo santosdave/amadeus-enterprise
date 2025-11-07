@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Offer_CreateOffer Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Offer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class CreateOfferConv extends BaseConverter
 {

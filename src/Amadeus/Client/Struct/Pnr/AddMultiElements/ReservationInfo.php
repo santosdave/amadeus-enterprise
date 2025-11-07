@@ -27,6 +27,6 @@ namespace Amadeus\Client\Struct\Pnr\AddMultiElements;
  * ReservationInfo
  *
  * @package Amadeus\Client\Struct\Pnr\AddMultiElements
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ReservationInfo extends \Amadeus\Client\Struct\Pnr\ReservationInfo {}

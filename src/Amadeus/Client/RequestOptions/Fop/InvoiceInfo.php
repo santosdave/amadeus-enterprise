@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * InvoiceInfo
  *
  * @package Amadeus\Client\RequestOptions\Fop
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class InvoiceInfo extends LoadParamsFromArray
 {

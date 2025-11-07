@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Fare Family
  *
  * @package Amadeus\Client\RequestOptions\Fare\PricePnr
- * @author  Dieter Devlieghere <santosdave86@gmail.com>
+ * @author  Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareFamily extends LoadParamsFromArray
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Fop\FopGroup;
  * FopGroup14
  *
  * @package Amadeus\Client\Struct\Fop\CreateFormOfPayment
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FopGroup14 extends FopGroup
 {

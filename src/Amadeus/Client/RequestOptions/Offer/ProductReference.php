@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * ProductReference
  *
  * @package Amadeus\Client\RequestOptions\Offer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ProductReference extends LoadParamsFromArray
 {

@@ -33,7 +33,7 @@ use Test\Amadeus\BaseTestCase;
  * InitRefundTest
  *
  * @package Test\Amadeus\Client\Struct\DocRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class InitRefundTest extends BaseTestCase
 {

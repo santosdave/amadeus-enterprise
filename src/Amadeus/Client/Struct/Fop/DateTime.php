@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fop;
  * DateTime
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class DateTime extends \Amadeus\Client\Struct\Fare\PricePnr13\DateTime
 {

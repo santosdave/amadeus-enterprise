@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Fop;
  * SliderConversion
  *
  * @package Amadeus\Client\Struct\Fop
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SliderConversion
 {

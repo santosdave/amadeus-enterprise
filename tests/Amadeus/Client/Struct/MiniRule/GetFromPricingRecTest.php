@@ -33,7 +33,7 @@ use Test\Amadeus\BaseTestCase;
  * GetFromPricingRecTest
  *
  * @package Test\Amadeus\Client\Struct\MiniRule
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GetFromPricingRecTest extends BaseTestCase
 {

@@ -36,7 +36,7 @@ use Amadeus\Client\ResponseHandler\Base as ResponseHandlerBase;
  * Responsible for loading constructor params etc.
  *
  * @package Amadeus\Client
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Base
 {

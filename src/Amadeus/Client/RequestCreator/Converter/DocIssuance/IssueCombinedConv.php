@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * DocIssuance_IssueCombined Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\DocIssuance
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class IssueCombinedConv extends BaseConverter
 {

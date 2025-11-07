@@ -32,7 +32,7 @@ namespace Amadeus\Client;
  * to those properties.
  *
  * @package Amadeus\Client
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class LoadParamsFromArray
 {

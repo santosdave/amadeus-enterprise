@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\AirFlightInfoOptions;
  * GeneralFlightInfo
  *
  * @package Amadeus\Client\Struct\Air
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GeneralFlightInfo
 {

@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Ticket\RepricePnrWithBookingClass\CouponDetails;
  * PaperCouponOfDocNumber
  *
  * @package Amadeus\Client\Struct\DocRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class PaperCouponOfDocNumber
 {

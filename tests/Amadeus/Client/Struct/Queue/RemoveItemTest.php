@@ -34,7 +34,7 @@ use Test\Amadeus\BaseTestCase;
  * RemoveItemTest
  *
  * @package Test\Amadeus\Client\Struct\Queue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RemoveItemTest extends BaseTestCase
 {

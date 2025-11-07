@@ -29,7 +29,7 @@ use Amadeus\Client;
  * SoapHeader2: Session Handler for web service applications using Amadeus WS Soap Header v2.
  *
  * @package Amadeus\Client\Session\Handler
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class SoapHeader2 extends Base
 {

@@ -29,6 +29,6 @@ use Amadeus\Client\LoadParamsFromArray;
  * TickGroupRef
  *
  * @package Amadeus\Client\RequestOptions\DocRefund
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class TickGroupRef extends LoadParamsFromArray {}

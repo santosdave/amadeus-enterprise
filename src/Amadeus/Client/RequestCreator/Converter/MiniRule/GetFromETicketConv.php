@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * MiniRule_GetFromETicket request creator
  *
  * @package Amadeus\Client\RequestCreator\Converter\MiniRule
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GetFromETicketConv extends BaseConverter
 {

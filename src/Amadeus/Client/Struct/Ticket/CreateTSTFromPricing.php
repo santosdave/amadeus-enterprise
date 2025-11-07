@@ -33,7 +33,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * Ticket_CreateTSTFromPricing
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author dieter <santosdave86@gmail.com>
+ * @author Wycliffe <santosdave86@gmail.com>
  */
 class CreateTSTFromPricing extends BaseWsMessage
 {

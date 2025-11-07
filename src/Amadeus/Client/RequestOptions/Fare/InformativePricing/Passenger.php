@@ -29,7 +29,7 @@ use Amadeus\Client\LoadParamsFromArray;
  * Passenger
  *
  * @package Amadeus\Client\RequestOptions\Fare\InformativePricing
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Passenger extends LoadParamsFromArray
 {

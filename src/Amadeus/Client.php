@@ -37,7 +37,7 @@ use Amadeus\Client\Session\Handler\UnsupportedOperationException;
  * - support older versions of SoapHeader (1)
  *
  * @package Amadeus
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Client extends Base
 {

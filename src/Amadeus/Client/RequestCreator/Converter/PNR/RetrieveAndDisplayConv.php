@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * PNR_AddMultiElements Request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\PNR
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class RetrieveAndDisplayConv extends BaseConverter
 {

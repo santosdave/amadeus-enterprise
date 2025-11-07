@@ -29,7 +29,7 @@ use Amadeus\Client\RequestOptions\DocIssuanceIssueCombinedOptions;
  * DocIssuance_IssueCombined Request structure
  *
  * @package Amadeus\Client\Struct\DocIssuance
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class IssueCombined extends IssueTicket
 {

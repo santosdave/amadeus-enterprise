@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Fare\PricePnr13\DateTime;
  * Dates
  *
  * @package Amadeus\Client\Struct\Queue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Dates
 {

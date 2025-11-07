@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * AgeTest
  *
  * @package Test\Amadeus\Client\Struct\Offer\ConfirmHotel
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class AgeTest extends BaseTestCase
 {

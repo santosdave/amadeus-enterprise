@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * GetFromETicketTest
  *
  * @package Test\Amadeus\Client\Struct\MiniRule
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class GetFromETicketTest extends BaseTestCase
 {

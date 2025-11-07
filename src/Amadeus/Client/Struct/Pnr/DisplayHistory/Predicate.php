@@ -31,7 +31,7 @@ use Amadeus\Client\RequestOptions\Pnr\DisplayHistory\PredicateType;
  * Predicate
  *
  * @package Amadeus\Client\Struct\Pnr\DisplayHistory
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class Predicate
 {

@@ -33,7 +33,7 @@ use Test\Amadeus\BaseTestCase;
  * Authenticate
  *
  * @package Amadeus\Client\Struct\Security
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class AuthenticateTest extends BaseTestCase
 {

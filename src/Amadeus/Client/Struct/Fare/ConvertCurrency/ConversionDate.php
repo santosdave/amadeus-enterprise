@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\Pnr\AddMultiElements\DateAndTimeDetails;
  * ConversionDate
  *
  * @package Amadeus\Client\Struct\Fare\ConvertCurrency
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ConversionDate
 {

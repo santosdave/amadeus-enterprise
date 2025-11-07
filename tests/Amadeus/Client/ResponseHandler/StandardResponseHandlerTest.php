@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * StandardResponseHandlerTest
  *
  * @package Test\Amadeus\Client\ResponseHandler
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class StandardResponseHandlerTest extends BaseTestCase
 {

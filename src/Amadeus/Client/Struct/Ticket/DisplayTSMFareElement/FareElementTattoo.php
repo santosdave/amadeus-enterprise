@@ -27,7 +27,7 @@ namespace Amadeus\Client\Struct\Ticket\DisplayTSMFareElement;
  * FareElementTattoo
  *
  * @package Amadeus\Client\Struct\Ticket\DisplayTSMFareElement
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class FareElementTattoo
 {

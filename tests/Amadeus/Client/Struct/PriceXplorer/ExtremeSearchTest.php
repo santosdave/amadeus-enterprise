@@ -30,7 +30,7 @@ use Test\Amadeus\BaseTestCase;
  * ExtremeSearchTest
  *
  * @package Amadeus\Client\Struct\PriceXplorer
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ExtremeSearchTest extends BaseTestCase
 {

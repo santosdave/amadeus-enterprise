@@ -27,6 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Queue;
  * HandlerPlacePNR
  *
  * @package Amadeus\Client\ResponseHandler\Queue
- * @author Dieter Devlieghere <santosdave86@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class HandlerPlacePNR extends HandlerList {}
