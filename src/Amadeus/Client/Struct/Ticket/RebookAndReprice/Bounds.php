@@ -38,7 +38,7 @@ class Bounds
      * 
      * @var Bound[]
      */
-    public $bound = [];
+    public $Bound = [];
 
     /**
      * Bounds constructor
@@ -48,7 +48,7 @@ class Bounds
     public function __construct(array $bounds)
     {
         foreach ($bounds as $boundInfo) {
-            $this->bound[] = new Bound($boundInfo);
+            $this->Bound[] = new Bound($boundInfo);
         }
     }
 }

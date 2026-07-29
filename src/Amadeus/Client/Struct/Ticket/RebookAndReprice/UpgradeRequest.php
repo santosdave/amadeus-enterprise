@@ -28,68 +28,68 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class UpgradeRequest
 {
-    public $operatingCompanies;
-    public $status;
-    public $validated;
-    public $comment;
-    public $awardCode;
-    public $redemptionQualifier;
-    public $promotionCode;
-    public $certificateNumber;
-    public $originalClass;
-    public $upgradeClass;
-    public $requestID;
-    public $tattooType;
-    public $tattooValue;
-    public $lineNumber;
-    public $associations;
+    public $OperatingCompanies;
+    public $Status;
+    public $Validated;
+    public $Comment;
+    public $AwardCode;
+    public $RedemptionQualifier;
+    public $PromotionCode;
+    public $CertificateNumber;
+    public $OriginalClass;
+    public $UpgradeClass;
+    public $RequestID;
+    public $TattooType;
+    public $TattooValue;
+    public $LineNumber;
+    public $Associations;
 
     public function __construct($request)
     {
         if (!empty($request->operatingCompanies)) {
-            $this->operatingCompanies = implode(',', $request->operatingCompanies);
+            $this->OperatingCompanies = implode(',', $request->operatingCompanies);
         }
         if (!empty($request->status)) {
-            $this->status = $request->status;
+            $this->Status = $request->status;
         }
         if (isset($request->validated)) {
-            $this->validated = $request->validated;
+            $this->Validated = $request->validated;
         }
         if (!empty($request->comment)) {
-            $this->comment = $request->comment;
+            $this->Comment = $request->comment;
         }
         if (!empty($request->awardCode)) {
-            $this->awardCode = $request->awardCode;
+            $this->AwardCode = $request->awardCode;
         }
         if (!empty($request->redemptionQualifier)) {
-            $this->redemptionQualifier = $request->redemptionQualifier;
+            $this->RedemptionQualifier = $request->redemptionQualifier;
         }
         if (!empty($request->promotionCode)) {
-            $this->promotionCode = $request->promotionCode;
+            $this->PromotionCode = $request->promotionCode;
         }
         if (!empty($request->certificateNumber)) {
-            $this->certificateNumber = $request->certificateNumber;
+            $this->CertificateNumber = $request->certificateNumber;
         }
         if (!empty($request->originalClass)) {
-            $this->originalClass = $request->originalClass;
+            $this->OriginalClass = $request->originalClass;
         }
         if (!empty($request->upgradeClass)) {
-            $this->upgradeClass = $request->upgradeClass;
+            $this->UpgradeClass = $request->upgradeClass;
         }
         if (!empty($request->requestId)) {
-            $this->requestID = $request->requestId;
+            $this->RequestID = $request->requestId;
         }
         if (!empty($request->tattooType)) {
-            $this->tattooType = $request->tattooType;
+            $this->TattooType = $request->tattooType;
         }
         if (!empty($request->tattooValue)) {
-            $this->tattooValue = $request->tattooValue;
+            $this->TattooValue = $request->tattooValue;
         }
         if (!empty($request->lineNumber)) {
-            $this->lineNumber = $request->lineNumber;
+            $this->LineNumber = $request->lineNumber;
         }
         if (!empty($request->associations)) {
-            $this->associations = new Associations($request->associations);
+            $this->Associations = new Associations($request->associations);
         }
     }
 }

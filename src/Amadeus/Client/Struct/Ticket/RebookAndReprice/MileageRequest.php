@@ -28,20 +28,20 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class MileageRequest
 {
-    public $operatingCompanies;
-    public $requestID;
-    public $associations;
+    public $OperatingCompanies;
+    public $RequestID;
+    public $Associations;
 
     public function __construct($request)
     {
         if (!empty($request->operatingCompanies)) {
-            $this->operatingCompanies = implode(',', $request->operatingCompanies);
+            $this->OperatingCompanies = implode(',', $request->operatingCompanies);
         }
         if (!empty($request->requestId)) {
-            $this->requestID = $request->requestId;
+            $this->RequestID = $request->requestId;
         }
         if (!empty($request->associations)) {
-            $this->associations = new Associations($request->associations);
+            $this->Associations = new Associations($request->associations);
         }
     }
 }

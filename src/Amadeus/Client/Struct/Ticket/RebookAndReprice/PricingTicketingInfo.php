@@ -28,37 +28,36 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class PricingTicketingInfo
 {
-    public $number;
-    public $type;
-    public $fareBasis;
-    public $upsellRecoID = [];
-    public $fareFamily = [];
-    public $tourCode;
-
+    public $Number;
+    public $Type;
+    public $FareBasis;
+    public $UpsellRecoID = [];
+    public $FareFamily = [];
+    public $TourCode;
     public function __construct($info)
     {
         if (!empty($info->ticketNumber)) {
-            $this->number = $info->ticketNumber;
+            $this->Number = $info->ticketNumber;
         }
         if (!empty($info->ticketType)) {
-            $this->type = $info->ticketType;
+            $this->Type = $info->ticketType;
         }
         if (!empty($info->fareBasisCode)) {
-            $this->fareBasis = new PricingFareBasis(
+            $this->FareBasis = new PricingFareBasis(
                 $info->fareBasisCode,
                 $info->ticketDesignator ?? null
             );
         }
         if (!empty($info->upsellRecoIds)) {
-            $this->upsellRecoID = $info->upsellRecoIds;
+            $this->UpsellRecoID = $info->upsellRecoIds;
         }
         if (!empty($info->fareFamilies)) {
             foreach ($info->fareFamilies as $ff) {
-                $this->fareFamily[] = new PricingFareFamily($ff->name, $ff->owner);
+                $this->FareFamily[] = new PricingFareFamily($ff->name, $ff->owner);
             }
         }
         if (!empty($info->tourCode)) {
-            $this->tourCode = $info->tourCode;
+            $this->TourCode = $info->tourCode;
         }
     }
 }

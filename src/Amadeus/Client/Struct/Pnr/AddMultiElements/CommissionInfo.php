@@ -52,18 +52,15 @@ class CommissionInfo
      */
     public $remitIndicator;
 
-    /**
-     * CommissionInfo constructor.
-     *
-     * @param int|null $percentage
-     * @param int|null $amount
-     * @param string|null $vatIndicator
-     * @param string|null $remitIndicator
-     */
+
     public function __construct($percentage, $amount, $vatIndicator = null, $remitIndicator = null)
     {
-        $this->percentage = $percentage;
-        $this->amount = $amount;
+        if ($percentage !== null) {
+            $this->percentage = $percentage;
+        }
+        if ($amount !== null) {
+            $this->amount = $amount;
+        }
         $this->vatIndicator = $vatIndicator;
         $this->remitIndicator = $remitIndicator;
     }

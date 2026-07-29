@@ -1590,7 +1590,6 @@ class Client extends Base
         $messageOptions = []
     ) {
         $msgName = 'Ticket_RebookAndRepricePNR';
-
         return $this->callMessage($msgName, $options, $messageOptions);
     }
 
@@ -1976,8 +1975,6 @@ class Client extends Base
         $messageOptions = $this->makeMessageOptions($messageOptions, $endSession);
 
         $this->lastMessage = $messageName;
-
-
 
         $sendResult = $this->sessionHandler->sendMessage(
             $messageName,

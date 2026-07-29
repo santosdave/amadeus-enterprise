@@ -25,20 +25,33 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingBooking
 {
-    public $cabin = [];
-    public $class = [];
-    public $validation;
+    public $Cabin = [];
+    public $Class = [];
+    public $Validation;
+    public $ResidualValue = [];
+    public $CheckinCoupon;
+    public $Operation;
 
     public function __construct($booking)
     {
         if (!empty($booking->cabins)) {
-            $this->cabin = $booking->cabins;
+            $this->Cabin = $booking->cabins;
         }
         if (!empty($booking->classes)) {
-            $this->class = $booking->classes;
+            $this->Class = $booking->classes;
         }
         if (!empty($booking->validation)) {
-            $this->validation = $booking->validation;
+            $this->Validation = $booking->validation;
+        }
+
+        if (!empty($booking->residualValue)) {
+            $this->ResidualValue = $booking->residualValue;
+        }
+        if (isset($booking->checkinCoupon)) {
+            $this->CheckinCoupon = $booking->checkinCoupon;
+        }
+        if (!empty($booking->operation)) {
+            $this->Operation = $booking->operation;
         }
     }
 }

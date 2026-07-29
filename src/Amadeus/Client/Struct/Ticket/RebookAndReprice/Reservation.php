@@ -37,7 +37,7 @@ class Reservation
      * 
      * @var string
      */
-    public $bookingIdentifier;
+    public $BookingIdentifier;
 
     /**
      * Reservation constructor
@@ -46,6 +46,6 @@ class Reservation
      */
     public function __construct($recordLocator)
     {
-        $this->bookingIdentifier = $recordLocator;
+        $this->BookingIdentifier = $recordLocator;
     }
 }

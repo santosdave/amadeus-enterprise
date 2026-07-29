@@ -39,32 +39,40 @@ use Amadeus\Client\Struct\Ticket\RebookAndReprice\Repricing;
 class RebookAndRepricePNR extends BaseWsMessage
 {
     /**
+     * Actions to perform (root level attribute)
+     * Allowed values: COMMIT, QTDISPLAY, FULLDISPLAY, SANITIZE
+     * 
+     * @var string
+     */
+    public $Actions;
+
+    /**
      * Reservation information
      * 
      * @var Reservation
      */
-    public $reservation;
+    public $Reservation;
 
     /**
      * Commit options
      * 
      * @var Commit
      */
-    public $commit;
+    public $Commit;
 
     /**
      * Rebooking options
      * 
      * @var Rebooking
      */
-    public $rebooking;
+    public $Rebooking;
 
     /**
      * Repricing options
      * 
      * @var Repricing
      */
-    public $repricing;
+    public $Repricing;
 
     /**
      * RebookAndRepricePNR constructor
@@ -73,14 +81,19 @@ class RebookAndRepricePNR extends BaseWsMessage
      */
     public function __construct(TicketRebookAndRepricePnrOptions $options)
     {
+        // Set Actions attribute at root level (comma-separated string)
+        if (!empty($options->actions)) {
+            $this->Actions = is_array($options->actions) ? implode(',', $options->actions) : $options->actions;
+        }
+
         // Load reservation information
         if (!empty($options->recordLocator)) {
-            $this->reservation = new Reservation($options->recordLocator);
+            $this->Reservation = new Reservation($options->recordLocator);
         }
 
         // Load commit options
         if (!empty($options->ignoreWarnings) || !empty($options->receivedFrom)) {
-            $this->commit = new Commit(
+            $this->Commit = new Commit(
                 $options->ignoreWarnings,
                 $options->receivedFrom
             );
@@ -88,12 +101,12 @@ class RebookAndRepricePNR extends BaseWsMessage
 
         // Load rebooking options
         if (!empty($options->rebooking)) {
-            $this->rebooking = new Rebooking($options->rebooking);
+            $this->Rebooking = new Rebooking($options->rebooking);
         }
 
         // Load repricing options
         if (!empty($options->repricing)) {
-            $this->repricing = new Repricing($options->repricing);
+            $this->Repricing = new Repricing($options->repricing);
         }
     }
 }

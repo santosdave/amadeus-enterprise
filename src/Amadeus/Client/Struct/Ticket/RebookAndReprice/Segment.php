@@ -59,7 +59,7 @@ class Segment
      * 
      * @var string
      */
-    public $requestID;
+    public $RequestID;
 
     /**
      * Tattoo type
@@ -139,7 +139,7 @@ class Segment
 
         // Reference attributes
         if (!empty($segmentInfo->requestId)) {
-            $this->requestID = $segmentInfo->requestId;
+            $this->RequestID = $segmentInfo->requestId;
         }
 
         if (!empty($segmentInfo->tattooType)) {
@@ -164,10 +164,11 @@ class Segment
 
         // Flight identifier
         if (!empty($segmentInfo->operatingFlightNumber)) {
-            $this->identifier = new Identifier(
-                $segmentInfo->operatingFlightNumber,
-                $segmentInfo->flightNumberSuffix
-            );
+            // $this->identifier = new Identifier(
+            //     $segmentInfo->operatingFlightNumber,
+            //     $segmentInfo->flightNumberSuffix
+            // );
+            $this->identifier = $segmentInfo->operatingFlightNumber;
         }
 
         // Marketing information (partner info)

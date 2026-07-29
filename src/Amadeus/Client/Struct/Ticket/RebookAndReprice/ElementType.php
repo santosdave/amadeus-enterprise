@@ -33,7 +33,7 @@ class ElementType
      * 
      * @var string
      */
-    public $value;
+    public $Value;
 
     /**
      * ElementType constructor
@@ -42,6 +42,6 @@ class ElementType
      */
     public function __construct($value)
     {
-        $this->value = $value;
+        $this->Value = $value;
     }
 }

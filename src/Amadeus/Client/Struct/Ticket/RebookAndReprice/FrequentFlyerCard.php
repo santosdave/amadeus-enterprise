@@ -33,43 +33,43 @@ class FrequentFlyerCard
      * 
      * @var string
      */
-    public $companyCode;
+    public $CompanyCode;
 
     /**
      * Card number (up to 25 chars)
      * 
      * @var string
      */
-    public $cardNumber;
+    public $CardNumber;
 
     /**
      * Request identifier
      * 
      * @var string
      */
-    public $requestID;
+    public $RequestID;
 
     /**
      * Card owner information
      * 
      * @var Owner
      */
-    public $owner;
+    public $Owner;
 
     /**
      * FrequentFlyerCard constructor
      */
     public function __construct($companyCode, $cardNumber, $lastName = null, $firstName = null, $title = null, $requestId = null)
     {
-        $this->companyCode = $companyCode;
-        $this->cardNumber = $cardNumber;
+        $this->CompanyCode = $companyCode;
+        $this->CardNumber = $cardNumber;
 
         if (!empty($requestId)) {
-            $this->requestID = $requestId;
+            $this->RequestID = $requestId;
         }
 
         if (!empty($lastName) || !empty($firstName) || !empty($title)) {
-            $this->owner = new Owner($lastName, $firstName, $title);
+            $this->Owner = new Owner($lastName, $firstName, $title);
         }
     }
 }

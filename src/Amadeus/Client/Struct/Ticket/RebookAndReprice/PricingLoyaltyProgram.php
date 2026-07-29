@@ -26,32 +26,32 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingLoyaltyProgram
 {
-    public $type;
-    public $providerCode;
-    public $number;
-    public $tierLevel;
-    public $priorityCode;
-    public $point;
+    public $Type;
+    public $ProviderCode;
+    public $Number;
+    public $TierLevel;
+    public $PriorityCode;
+    public $Point;
 
     public function __construct($loyalty)
     {
         if (!empty($loyalty->type)) {
-            $this->type = $loyalty->type;
+            $this->Type = $loyalty->type;
         }
         if (!empty($loyalty->providerCode)) {
-            $this->providerCode = $loyalty->providerCode;
+            $this->ProviderCode = $loyalty->providerCode;
         }
         if (!empty($loyalty->number)) {
-            $this->number = $loyalty->number;
+            $this->Number = $loyalty->number;
         }
         if (!empty($loyalty->tierLevel)) {
-            $this->tierLevel = $loyalty->tierLevel;
+            $this->TierLevel = $loyalty->tierLevel;
         }
         if (!empty($loyalty->priorityCode)) {
-            $this->priorityCode = $loyalty->priorityCode;
+            $this->PriorityCode = $loyalty->priorityCode;
         }
         if (!empty($loyalty->points)) {
-            $this->point = new PricingPoint($loyalty->points);
+            $this->Point = new PricingPoint($loyalty->points);
         }
     }
 }

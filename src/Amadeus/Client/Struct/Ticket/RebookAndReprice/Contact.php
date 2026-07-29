@@ -42,42 +42,42 @@ class Contact
      * 
      * @var Associations
      */
-    public $associations;
+    public $Associations;
 
     /**
      * Contact description/value
      * 
      * @var Description
      */
-    public $description;
+    public $Description;
 
     /**
      * Address information
      * 
      * @var ContactAddress
      */
-    public $address;
+    public $Address;
 
     /**
      * Contact category
      * 
      * @var Category
      */
-    public $category;
+    public $Category;
 
     /**
      * Office permissions
      * 
      * @var Permissions
      */
-    public $permissions;
+    public $Permissions;
 
     /**
      * Request identifier
      * 
      * @var string
      */
-    public $requestID;
+    public $RequestID;
 
     /**
      * Contact constructor
@@ -87,7 +87,7 @@ class Contact
     public function __construct(ContactOptions $options)
     {
         // Description (required)
-        $this->description = new Description(
+        $this->Description = new Description(
             $options->value,
             $options->overseasCode,
             $options->areaCode,
@@ -97,7 +97,7 @@ class Contact
         );
 
         // Category (required)
-        $this->category = new Category(
+        $this->Category = new Category(
             $options->physicalType,
             $options->useType,
             $options->purpose
@@ -105,22 +105,22 @@ class Contact
 
         // Address (optional)
         if (!empty($options->address)) {
-            $this->address = new ContactAddress($options->address);
+            $this->Address = new ContactAddress($options->address);
         }
 
         // Associations (optional)
         if (!empty($options->associations)) {
-            $this->associations = new Associations($options->associations);
+            $this->Associations = new Associations($options->associations);
         }
 
         // Permissions (optional)
         if (!empty($options->permissions)) {
-            $this->permissions = new Permissions($options->permissions);
+            $this->Permissions = new Permissions($options->permissions);
         }
 
         // Request ID (optional)
         if (!empty($options->requestId)) {
-            $this->requestID = $options->requestId;
+            $this->RequestID = $options->requestId;
         }
     }
 }

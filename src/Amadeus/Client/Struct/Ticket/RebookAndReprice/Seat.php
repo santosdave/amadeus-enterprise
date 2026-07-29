@@ -30,65 +30,65 @@ use Amadeus\Client\RequestOptions\Ticket\SeatRequest as SeatOptions;
  */
 class Seat
 {
-    public $type;
-    public $seatNbr = [];
-    public $characteristics = [];
-    public $areaOfPreference = [];
-    public $nonSmoking;
-    public $smoking;
-    public $seatLocation;
-    public $quantity;
-    public $boardingPassStatus;
-    public $description;
-    public $requestID;
-    public $associations;
+    public $Type;
+    public $SeatNbr = [];
+    public $Characteristics = [];
+    public $AreaOfPreference = [];
+    public $NonSmoking;
+    public $Smoking;
+    public $SeatLocation;
+    public $Quantity;
+    public $BoardingPassStatus;
+    public $Description;
+    public $RequestID;
+    public $Associations;
 
     public function __construct(SeatOptions $options)
     {
         if (!empty($options->type)) {
-            $this->type = $options->type;
+            $this->Type = $options->type;
         }
 
         // Seat numbers (max 9)
         if (!empty($options->seatNumbers)) {
             foreach ($options->seatNumbers as $seatNumber) {
-                $this->seatNbr[] = $seatNumber;
+                $this->SeatNbr[] = $seatNumber;
             }
         }
 
         // Characteristics
         if (!empty($options->characteristics)) {
-            $this->characteristics = $options->characteristics;
+            $this->Characteristics = $options->characteristics;
         }
 
         // Areas of preference
         if (!empty($options->areasOfPreference)) {
-            $this->areaOfPreference = $options->areasOfPreference;
+            $this->AreaOfPreference = $options->areasOfPreference;
         }
 
         if (isset($options->nonSmoking)) {
-            $this->nonSmoking = $options->nonSmoking;
+            $this->NonSmoking = $options->nonSmoking;
         }
         if (isset($options->smoking)) {
-            $this->smoking = $options->smoking;
+            $this->Smoking = $options->smoking;
         }
         if (!empty($options->seatLocation)) {
-            $this->seatLocation = $options->seatLocation;
+            $this->SeatLocation = $options->seatLocation;
         }
         if (!empty($options->quantity)) {
-            $this->quantity = $options->quantity;
+            $this->Quantity = $options->quantity;
         }
         if (!empty($options->boardingPassStatus)) {
-            $this->boardingPassStatus = $options->boardingPassStatus;
+            $this->BoardingPassStatus = $options->boardingPassStatus;
         }
         if (!empty($options->description)) {
-            $this->description = $options->description;
+            $this->Description = $options->description;
         }
         if (!empty($options->requestId)) {
-            $this->requestID = $options->requestId;
+            $this->RequestID = $options->requestId;
         }
         if (!empty($options->associations)) {
-            $this->associations = new Associations($options->associations);
+            $this->Associations = new Associations($options->associations);
         }
     }
 }

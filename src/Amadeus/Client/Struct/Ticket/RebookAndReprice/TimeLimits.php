@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class TimeLimits
 {
-    public $timeLimit = [];
-    
+    public $TimeLimit = [];
+
     public function __construct(array $timeLimits)
     {
         foreach ($timeLimits as $timeLimit) {
-            $this->timeLimit[] = new TimeLimit($timeLimit);
+            $this->TimeLimit[] = new TimeLimit($timeLimit);
         }
     }
 }

@@ -25,16 +25,16 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingFormOfPayment
 {
-    public $code;
-    public $card;
+    public $Code;
+    public $Card;
 
     public function __construct($fop)
     {
         if (!empty($fop->code)) {
-            $this->code = $fop->code;
+            $this->Code = $fop->code;
         }
         if (!empty($fop->card)) {
-            $this->card = new PricingCard($fop->card);
+            $this->Card = new PricingCard($fop->card);
         }
     }
 }

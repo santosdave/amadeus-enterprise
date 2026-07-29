@@ -38,8 +38,8 @@ class FrequentFlyers
      * 
      * @var FrequentFlyer[]
      */
-    public $frequentFlyer = [];
-    
+    public $FrequentFlyer = [];
+
     /**
      * FrequentFlyers constructor
      * 
@@ -48,7 +48,7 @@ class FrequentFlyers
     public function __construct(array $frequentFlyers)
     {
         foreach ($frequentFlyers as $ff) {
-            $this->frequentFlyer[] = new FrequentFlyer($ff);
+            $this->FrequentFlyer[] = new FrequentFlyer($ff);
         }
     }
 }

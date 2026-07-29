@@ -25,16 +25,16 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingCustomization
 {
-    public $requestedDescription;
-    public $filter;
+    public $RequestedDescription;
+    public $Filter;
 
     public function __construct($custom)
     {
         if (!empty($custom->requestedDescription)) {
-            $this->requestedDescription = $custom->requestedDescription;
+            $this->RequestedDescription = $custom->requestedDescription;
         }
         if (!empty($custom->filter)) {
-            $this->filter = new PricingFilter($custom->filter);
+            $this->Filter = new PricingFilter($custom->filter);
         }
     }
 }

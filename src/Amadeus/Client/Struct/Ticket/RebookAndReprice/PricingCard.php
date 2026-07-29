@@ -25,24 +25,24 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingCard
 {
-    public $number;
-    public $vendorCode;
-    public $expiryDate;
-    public $subType;
+    public $Number;
+    public $VendorCode;
+    public $ExpiryDate;
+    public $SubType;
 
     public function __construct($card)
     {
         if (!empty($card->number)) {
-            $this->number = $card->number;
+            $this->Number = $card->number;
         }
         if (!empty($card->vendorCode)) {
-            $this->vendorCode = $card->vendorCode;
+            $this->VendorCode = $card->vendorCode;
         }
         if (!empty($card->expiryDate)) {
-            $this->expiryDate = $card->expiryDate;
+            $this->ExpiryDate = $card->expiryDate;
         }
         if (!empty($card->subType)) {
-            $this->subType = $card->subType;
+            $this->SubType = $card->subType;
         }
     }
 }

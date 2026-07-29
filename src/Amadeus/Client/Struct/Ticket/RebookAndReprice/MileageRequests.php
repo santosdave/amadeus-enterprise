@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class MileageRequests
 {
-    public $mileageRequest = [];
+    public $MileageRequest = [];
 
     public function __construct(array $requests)
     {
         foreach ($requests as $request) {
-            $this->mileageRequest[] = new MileageRequest($request);
+            $this->MileageRequest[] = new MileageRequest($request);
         }
     }
 }

@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class OtherServicesInformation
 {
-    public $otherServiceInformation = [];
-    
+    public $OtherServiceInformation = [];
+
     public function __construct(array $osis)
     {
         foreach ($osis as $osi) {
-            $this->otherServiceInformation[] = new OtherServiceInformation($osi);
+            $this->OtherServiceInformation[] = new OtherServiceInformation($osi);
         }
     }
 }

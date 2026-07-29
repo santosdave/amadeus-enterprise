@@ -30,35 +30,35 @@ use Amadeus\Client\RequestOptions\Ticket\SpecialServiceRequest as SSROptions;
  */
 class SpecialServiceRequest
 {
-    public $code;
-    public $serviceProviderCode;
-    public $nIP;
-    public $status;
-    public $text;
-    public $requestID;
-    public $associations;
+    public $Code;
+    public $ServiceProviderCode;
+    public $NIP;
+    public $Status;
+    public $Text;
+    public $RequestID;
+    public $Associations;
 
     public function __construct(SSROptions $options)
     {
-        $this->code = $options->code;
+        $this->Code = $options->code;
 
         if (!empty($options->airlineCode)) {
-            $this->serviceProviderCode = $options->airlineCode;
+            $this->ServiceProviderCode = $options->airlineCode;
         }
         if (!empty($options->quantity)) {
-            $this->nIP = (string) $options->quantity;
+            $this->NIP = (string) $options->quantity;
         }
         if (!empty($options->status)) {
-            $this->status = $options->status;
+            $this->Status = $options->status;
         }
         if (!empty($options->text)) {
-            $this->text = $options->text;
+            $this->Text = $options->text;
         }
         if (!empty($options->requestId)) {
-            $this->requestID = $options->requestId;
+            $this->RequestID = $options->requestId;
         }
         if (!empty($options->associations)) {
-            $this->associations = new Associations($options->associations);
+            $this->Associations = new Associations($options->associations);
         }
     }
 }

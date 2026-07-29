@@ -36,30 +36,29 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class Description
 {
-    public $value;
-    public $overseasCode;
-    public $areaCode;
-    public $airlineCode;
-    public $thirdParty;
-    public $language;
-
+    public $Value;
+    public $OverseasCode;
+    public $AreaCode;
+    public $AirlineCode;
+    public $ThirdParty;
+    public $Language;
     public function __construct($value, $overseasCode = null, $areaCode = null, $airlineCode = null, $thirdParty = null, $language = null)
     {
-        $this->value = $value;
+        $this->Value = $value;
         if (!empty($overseasCode)) {
-            $this->overseasCode = $overseasCode;
+            $this->OverseasCode = $overseasCode;
         }
         if (!empty($areaCode)) {
-            $this->areaCode = $areaCode;
+            $this->AreaCode = $areaCode;
         }
         if (!empty($airlineCode)) {
-            $this->airlineCode = $airlineCode;
+            $this->AirlineCode = $airlineCode;
         }
         if (isset($thirdParty)) {
-            $this->thirdParty = $thirdParty;
+            $this->ThirdParty = $thirdParty;
         }
         if (!empty($language)) {
-            $this->language = $language;
+            $this->Language = $language;
         }
     }
 }

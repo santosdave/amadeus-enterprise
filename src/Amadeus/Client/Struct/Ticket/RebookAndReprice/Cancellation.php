@@ -38,7 +38,7 @@ class Cancellation
      * 
      * @var Ref[]
      */
-    public $ref = [];
+    public $Ref = [];
 
     /**
      * Cancellation constructor
@@ -48,7 +48,7 @@ class Cancellation
     public function __construct(array $references)
     {
         foreach ($references as $reference) {
-            $this->ref[] = new Ref(
+            $this->Ref[] = new Ref(
                 $reference->tattooType,
                 $reference->tattooValue,
                 $reference->requestId,

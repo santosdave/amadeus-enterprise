@@ -28,36 +28,36 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class RedemptionRequest
 {
-    public $comment;
-    public $awardCode;
-    public $redemptionQualifier;
-    public $promotionCode;
-    public $certificateNumber;
-    public $requestID;
-    public $associations;
+    public $Comment;
+    public $AwardCode;
+    public $RedemptionQualifier;
+    public $PromotionCode;
+    public $CertificateNumber;
+    public $RequestID;
+    public $Associations;
 
     public function __construct($request)
     {
         if (!empty($request->comment)) {
-            $this->comment = $request->comment;
+            $this->Comment = $request->comment;
         }
         if (!empty($request->awardCode)) {
-            $this->awardCode = $request->awardCode;
+            $this->AwardCode = $request->awardCode;
         }
         if (!empty($request->redemptionQualifier)) {
-            $this->redemptionQualifier = $request->redemptionQualifier;
+            $this->RedemptionQualifier = $request->redemptionQualifier;
         }
         if (!empty($request->promotionCode)) {
-            $this->promotionCode = $request->promotionCode;
+            $this->PromotionCode = $request->promotionCode;
         }
         if (!empty($request->certificateNumber)) {
-            $this->certificateNumber = $request->certificateNumber;
+            $this->CertificateNumber = $request->certificateNumber;
         }
         if (!empty($request->requestId)) {
-            $this->requestID = $request->requestId;
+            $this->RequestID = $request->requestId;
         }
         if (!empty($request->associations)) {
-            $this->associations = new Associations($request->associations);
+            $this->Associations = new Associations($request->associations);
         }
     }
 }

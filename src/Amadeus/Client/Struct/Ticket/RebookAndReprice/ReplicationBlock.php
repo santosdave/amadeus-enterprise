@@ -35,21 +35,21 @@ class ReplicationBlock
      * 
      * @var ElementType[]
      */
-    public $elementType = [];
+    public $ElementType = [];
 
     /**
      * Source elements (from)
      * 
      * @var Associations
      */
-    public $from;
+    public $From;
 
     /**
      * Destination elements (to)
      * 
      * @var Associations
      */
-    public $to;
+    public $To;
 
     /**
      * ReplicationBlock constructor
@@ -61,18 +61,18 @@ class ReplicationBlock
         // Load element types
         if (!empty($options->elementTypes)) {
             foreach ($options->elementTypes as $elementType) {
-                $this->elementType[] = new ElementType($elementType);
+                $this->ElementType[] = new ElementType($elementType);
             }
         }
 
         // Load from references
         if (!empty($options->fromReferences)) {
-            $this->from = new Associations($options->fromReferences);
+            $this->From = new Associations($options->fromReferences);
         }
 
         // Load to references
         if (!empty($options->toReferences)) {
-            $this->to = new Associations($options->toReferences);
+            $this->To = new Associations($options->toReferences);
         }
     }
 }

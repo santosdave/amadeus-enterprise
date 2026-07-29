@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class Permissions
 {
-    public $officeID = [];
+    public $OfficeID = [];
 
     public function __construct(array $permissions)
     {
         foreach ($permissions as $permission) {
-            $this->officeID[] = new OfficeID(
+            $this->OfficeID[] = new OfficeID(
                 $permission->officeId,
                 $permission->accessMode,
                 $permission->accessExtension

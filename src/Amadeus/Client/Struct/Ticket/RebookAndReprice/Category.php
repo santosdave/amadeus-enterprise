@@ -35,18 +35,18 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class Category
 {
-    public $physicalType;
-    public $useType;
-    public $purpose;
+    public $PhysicalType;
+    public $UseType;
+    public $Purpose;
 
     public function __construct($physicalType, $useType = null, $purpose = null)
     {
-        $this->physicalType = $physicalType;
+        $this->PhysicalType = $physicalType;
         if (!empty($useType)) {
-            $this->useType = $useType;
+            $this->UseType = $useType;
         }
         if (!empty($purpose)) {
-            $this->purpose = $purpose;
+            $this->Purpose = $purpose;
         }
     }
 }

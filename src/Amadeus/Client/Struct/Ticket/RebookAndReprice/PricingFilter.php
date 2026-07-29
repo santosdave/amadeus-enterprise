@@ -25,20 +25,20 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingFilter
 {
-    public $operation;
-    public $onlyIssuable;
-    public $type;
+    public $Operation;
+    public $OnlyIssuable;
+    public $Type;
 
     public function __construct($filter)
     {
         if (!empty($filter->operation)) {
-            $this->operation = $filter->operation;
+            $this->Operation = $filter->operation;
         }
         if (isset($filter->onlyIssuable)) {
-            $this->onlyIssuable = $filter->onlyIssuable;
+            $this->OnlyIssuable = $filter->onlyIssuable;
         }
         if (!empty($filter->type)) {
-            $this->type = $filter->type;
+            $this->Type = $filter->type;
         }
     }
 }

@@ -35,7 +35,7 @@ class ItineraryPricingOptions
      * 
      * @var ItineraryPricingOption[]
      */
-    public $itineraryPricingOption = [];
+    public $ItineraryPricingOption = [];
 
     /**
      * ItineraryPricingOptions constructor
@@ -45,7 +45,7 @@ class ItineraryPricingOptions
     public function __construct(array $pricingOptions)
     {
         foreach ($pricingOptions as $option) {
-            $this->itineraryPricingOption[] = new ItineraryPricingOption($option);
+            $this->ItineraryPricingOption[] = new ItineraryPricingOption($option);
         }
     }
 }

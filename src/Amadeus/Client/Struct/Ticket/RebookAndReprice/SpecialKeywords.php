@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class SpecialKeywords
 {
-    public $specialKeyword = [];
-    
+    public $SpecialKeyword = [];
+
     public function __construct(array $keywords)
     {
         foreach ($keywords as $keyword) {
-            $this->specialKeyword[] = new SpecialKeyword($keyword);
+            $this->SpecialKeyword[] = new SpecialKeyword($keyword);
         }
     }
 }

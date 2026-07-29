@@ -38,21 +38,21 @@ class Bound
      * 
      * @var string
      */
-    public $nIP;
+    public $NIP;
 
     /**
      * Action code (segment status)
      * 
      * @var string
      */
-    public $actionCode;
+    public $ActionCode;
 
     /**
      * Array of segments
      * 
      * @var Segment[]
      */
-    public $segment = [];
+    public $Segment = [];
 
     /**
      * Bound constructor
@@ -62,16 +62,16 @@ class Bound
     public function __construct(BoundInfo $boundInfo)
     {
         if (!empty($boundInfo->nip)) {
-            $this->nIP = (string) $boundInfo->nip;
+            $this->NIP = (string) $boundInfo->nip;
         }
 
         if (!empty($boundInfo->actionCode)) {
-            $this->actionCode = $boundInfo->actionCode;
+            $this->ActionCode = $boundInfo->actionCode;
         }
 
         if (!empty($boundInfo->segments)) {
             foreach ($boundInfo->segments as $segmentInfo) {
-                $this->segment[] = new Segment($segmentInfo);
+                $this->Segment[] = new Segment($segmentInfo);
             }
         }
     }

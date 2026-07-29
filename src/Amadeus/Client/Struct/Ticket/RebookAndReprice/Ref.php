@@ -37,7 +37,7 @@ class Ref
      * 
      * @var string
      */
-    public $requestID;
+    public $RequestID;
 
     /**
      * Type of tattoo (PT=Passenger, ST=Segment, etc.)
@@ -45,7 +45,7 @@ class Ref
      * 
      * @var string
      */
-    public $tattooType;
+    public $TattooType;
 
     /**
      * Value of tattoo (element number)
@@ -53,14 +53,14 @@ class Ref
      * 
      * @var int
      */
-    public $tattooValue;
+    public $TattooValue;
 
     /**
      * Line number in cryptic display
      * 
      * @var int
      */
-    public $lineNumber;
+    public $LineNumber;
 
     /**
      * Ref constructor
@@ -77,19 +77,19 @@ class Ref
         $lineNumber = null
     ) {
         if (!empty($tattooType)) {
-            $this->tattooType = $tattooType;
+            $this->TattooType = $tattooType;
         }
 
         if (!empty($tattooValue)) {
-            $this->tattooValue = $tattooValue;
+            $this->TattooValue = $tattooValue;
         }
 
         if (!empty($requestId)) {
-            $this->requestID = $requestId;
+            $this->RequestID = $requestId;
         }
 
         if (!empty($lineNumber)) {
-            $this->lineNumber = $lineNumber;
+            $this->LineNumber = $lineNumber;
         }
     }
 }

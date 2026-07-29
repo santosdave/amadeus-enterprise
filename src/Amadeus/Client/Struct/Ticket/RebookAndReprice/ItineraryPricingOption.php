@@ -32,19 +32,19 @@ use Amadeus\Client\RequestOptions\Ticket\ItineraryPricingOption as PricingOption
  */
 class ItineraryPricingOption
 {
-    public $ticketingInfo;
-    public $serviceProvider = [];
-    public $negotiatedFare = [];
-    public $taxAndFees;
-    public $booking;
-    public $fareDetermination;
-    public $loyaltyProgram = [];
-    public $discount;
-    public $geographicalInfo;
-    public $customization;
-    public $reprice;
-    public $otherOptions;
-    public $associatedPNRElement = [];
+    public $TicketingInfo;
+    public $ServiceProvider = [];
+    public $NegotiatedFare = [];
+    public $TaxAndFees;
+    public $Booking;
+    public $FareDetermination;
+    public $LoyaltyProgram = [];
+    public $Discount;
+    public $GeographicalInfo;
+    public $Customization;
+    public $Reprice;
+    public $OtherOptions;
+    public $AssociatedPNRElement = [];
 
     /**
      * ItineraryPricingOption constructor
@@ -55,74 +55,84 @@ class ItineraryPricingOption
     {
         // Ticketing info
         if (!empty($options->ticketingInfo)) {
-            $this->ticketingInfo = new PricingTicketingInfo($options->ticketingInfo);
+            $this->TicketingInfo = new PricingTicketingInfo($options->ticketingInfo);
         }
 
         // Service providers
         if (!empty($options->serviceProviders)) {
             foreach ($options->serviceProviders as $provider) {
-                $this->serviceProvider[] = $provider;
+                if (is_string($provider)) {
+                    $this->ServiceProvider[] = new ServiceProvider($provider, null, 'VC');
+                } else {
+                    $this->ServiceProvider[] = $provider;
+                }
             }
         }
 
         // Negotiated fares
         if (!empty($options->negotiatedFares)) {
             foreach ($options->negotiatedFares as $negFare) {
-                $this->negotiatedFare[] = new PricingNegotiatedFare($negFare);
+                $this->NegotiatedFare[] = new PricingNegotiatedFare($negFare);
             }
         }
 
         // Tax and fees
         if (!empty($options->taxAndFees)) {
-            $this->taxAndFees = new PricingTaxAndFees($options->taxAndFees);
+            $this->TaxAndFees = new PricingTaxAndFees($options->taxAndFees);
         }
 
         // Booking options
         if (!empty($options->booking)) {
-            $this->booking = new PricingBooking($options->booking);
+            $this->Booking = new PricingBooking($options->booking);
         }
 
         // Fare determination
         if (!empty($options->fareDetermination)) {
-            $this->fareDetermination = new PricingFareDetermination($options->fareDetermination);
+            $this->FareDetermination = new PricingFareDetermination($options->fareDetermination);
         }
 
         // Loyalty programs
         if (!empty($options->loyaltyPrograms)) {
             foreach ($options->loyaltyPrograms as $loyalty) {
-                $this->loyaltyProgram[] = new PricingLoyaltyProgram($loyalty);
+                $this->LoyaltyProgram[] = new PricingLoyaltyProgram($loyalty);
             }
         }
 
         // Discount
         if (!empty($options->discount)) {
-            $this->discount = new PricingDiscount($options->discount);
+            $this->Discount = new PricingDiscount($options->discount);
         }
 
         // Geographical info
         if (!empty($options->geographicalInfo)) {
-            $this->geographicalInfo = new PricingGeographicalInfo($options->geographicalInfo);
+            $this->GeographicalInfo = new PricingGeographicalInfo($options->geographicalInfo);
         }
 
         // Customization
         if (!empty($options->customization)) {
-            $this->customization = new PricingCustomization($options->customization);
+            $this->Customization = new PricingCustomization($options->customization);
         }
 
         // Reprice options
         if (!empty($options->repriceOptions)) {
-            $this->reprice = new PricingReprice($options->repriceOptions);
+            $this->Reprice = new PricingReprice($options->repriceOptions);
         }
 
         // Other options
         if (!empty($options->otherOptions)) {
-            $this->otherOptions = new PricingOtherOptions($options->otherOptions);
+            foreach ($options->otherOptions as $other) {
+                $this->OtherOptions = new PricingOtherOptions($other);
+            }
         }
 
         // Associated elements
         if (!empty($options->associatedElements)) {
-            foreach ($options->associatedElements as $element) {
-                $this->associatedPNRElement[] = new PricingAssociatedElement($element);
+            $elements = is_array($options->associatedElements)
+                ? $options->associatedElements
+                : [$options->associatedElements];  // ← wrap single object in array
+
+            foreach ($elements as $element) {
+                $this->AssociatedPNRElement[] = new PricingAssociatedElement($element);
             }
         }
     }
