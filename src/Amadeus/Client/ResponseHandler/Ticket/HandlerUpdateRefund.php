@@ -27,8 +27,6 @@ namespace Amadeus\Client\ResponseHandler\Ticket;
  * HandlerUpdateRefund
  *
  * @package Amadeus\Client\ResponseHandler\Ticket
- * @author Vladimir Kikot <shoxyoyo@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
-class HandlerUpdateRefund extends HandlerInitRefund
-{
-}
+class HandlerUpdateRefund extends HandlerInitRefund {}

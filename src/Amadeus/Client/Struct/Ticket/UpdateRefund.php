@@ -31,7 +31,7 @@ use Amadeus\Client\Struct\Ticket\UpdateRefund\ContractBundle;
  * UpdateRefund request structure
  *
  * @package Amadeus\Client\Struct\Ticket
- * @author Vladimir Kikot <shoxyoyo@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class UpdateRefund extends BaseWsMessage
 {
