@@ -81,9 +81,15 @@ class RebookAndRepricePNR extends BaseWsMessage
      */
     public function __construct(TicketRebookAndRepricePnrOptions $options)
     {
-        // Set Actions attribute at root level (comma-separated string)
+        // Left off entirely when no action is wanted. The schema marks Actions required,
+        // but the certification dry runs omitted it and Amadeus priced them, so omission
+        // is the proven way to ask for a quote — an empty Actions="" is not.
+        //
+        // Space separated, not comma: the schema types it as xs:list.
         if (!empty($options->actions)) {
-            $this->Actions = is_array($options->actions) ? implode(',', $options->actions) : $options->actions;
+            $this->Actions = is_array($options->actions)
+                ? implode(' ', $options->actions)
+                : $options->actions;
         }
 
         // Load reservation information

@@ -71,6 +71,17 @@ class Bound
 
         if (!empty($boundInfo->segments)) {
             foreach ($boundInfo->segments as $segmentInfo) {
+                // RequestID reaches this element through the same unprefixed
+                // attributeGroup that ext-soap cannot resolve, so a segment that carries
+                // one is emitted as a literal fragment. Amadeus echoes RequestID back on
+                // the repriced segments, which is how a reply is matched to what was
+                // asked for, so it is not optional in practice.
+                if (!empty($segmentInfo->requestId)) {
+                    $this->Segment[] = Segment::asFragment($segmentInfo);
+
+                    continue;
+                }
+
                 $this->Segment[] = new Segment($segmentInfo);
             }
         }

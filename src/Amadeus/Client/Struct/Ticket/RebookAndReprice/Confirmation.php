@@ -36,7 +36,7 @@ class Confirmation
     /**
      * Array of element references to confirm
      * 
-     * @var Ref[]
+     * @var \SoapVar[]
      */
     public $Ref = [];
 
@@ -48,12 +48,10 @@ class Confirmation
     public function __construct(array $references)
     {
         foreach ($references as $reference) {
-            $this->Ref[] = new Ref(
-                $reference->tattooType,
-                $reference->tattooValue,
-                $reference->requestId,
-                $reference->lineNumber
-            );
+            // Same encoder limitation as Cancellation: attributes reached through an
+            // unprefixed attributeGroup in a chameleon schema are dropped, so the element
+            // is emitted as a literal fragment instead.
+            $this->Ref[] = Cancellation::asFragment($reference);
         }
     }
 }
