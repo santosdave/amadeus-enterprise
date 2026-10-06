@@ -1353,6 +1353,23 @@ Convert 200 Euro to US Dollars in the exchange rate of 25th December 2015 *(this
         ])
     );
 
+-------------------
+Fare_RepriceOBFees
+-------------------
+
+Reprice the OB fees (e.g. credit card surcharge) of TST number 2 of the PNR in context.
+The form of payment must already be present in the PNR:
+
+.. code-block:: php
+
+    use Amadeus\Client\RequestOptions\FareRepriceObFeesOptions;
+
+    $repriceResult = $client->fareRepriceObFees(
+        new FareRepriceObFeesOptions([
+            'tstNumber' => 2
+        ])
+    );
+
 ***
 Air
 ***
@@ -2713,6 +2730,22 @@ Rebook and reprice a PNR:
                     )
                 ]
             ])
+        ])
+    );
+
+-----------------------------
+Ticket_UpdateTSTFromOBPricing
+-----------------------------
+
+Apply the OB fees calculated by a ``Fare_RepriceOBFees`` call to TST number 2:
+
+.. code-block:: php
+
+    use Amadeus\Client\RequestOptions\TicketUpdateTstFromObPricingOptions;
+
+    $updateResult = $client->ticketUpdateTstFromObPricing(
+        new TicketUpdateTstFromObPricingOptions([
+            'tstNumbers' => [2]
         ])
     );
 

@@ -21,29 +21,35 @@
  * @license https://opensource.org/licenses/Apache-2.0 Apache 2.0
  */
 
-namespace Amadeus\Client\RequestOptions;
+namespace Amadeus\Client\Struct\Fare\RepriceOBFees;
 
 /**
- * Ticket_UpdateTSTFromOBPricing Request Options
+ * StatusInformation
  *
- * Applies the result of a Fare_RepriceOBFees call to existing TST(s).
- *
- * @package Amadeus\Client\RequestOptions
+ * @package Amadeus\Client\Struct\Fare\RepriceOBFees
  * @author Kiti Chigiri
  */
-class TicketUpdateTstFromObPricingOptions extends Base
+class StatusInformation
 {
     /**
-     * Record locator of the PNR (optional - defaults to the PNR in context)
+     * Original issue fare information
+     */
+    const INDICATOR_ORIGINAL_ISSUE_FARE = '730';
+
+    /**
+     * self::INDICATOR_*
      *
      * @var string
      */
-    public $pnrRecordLocator;
+    public $indicator;
 
     /**
-     * Numbers of the TST(s) to update
+     * StatusInformation constructor.
      *
-     * @var int[]
+     * @param string $indicator
      */
-    public $tstNumbers = [];
+    public function __construct($indicator)
+    {
+        $this->indicator = $indicator;
+    }
 }

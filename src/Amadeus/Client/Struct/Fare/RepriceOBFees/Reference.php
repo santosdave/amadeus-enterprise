@@ -21,29 +21,42 @@
  * @license https://opensource.org/licenses/Apache-2.0 Apache 2.0
  */
 
-namespace Amadeus\Client\RequestOptions;
+namespace Amadeus\Client\Struct\Fare\RepriceOBFees;
 
 /**
- * Ticket_UpdateTSTFromOBPricing Request Options
+ * Reference
  *
- * Applies the result of a Fare_RepriceOBFees call to existing TST(s).
- *
- * @package Amadeus\Client\RequestOptions
+ * @package Amadeus\Client\Struct\Fare\RepriceOBFees
  * @author Kiti Chigiri
  */
-class TicketUpdateTstFromObPricingOptions extends Base
+class Reference
 {
     /**
-     * Record locator of the PNR (optional - defaults to the PNR in context)
+     * TST reference number
+     */
+    const TYPE_TST = 'TST';
+
+    /**
+     * self::TYPE_*
      *
      * @var string
      */
-    public $pnrRecordLocator;
+    public $referenceType;
 
     /**
-     * Numbers of the TST(s) to update
-     *
-     * @var int[]
+     * @var int
      */
-    public $tstNumbers = [];
+    public $uniqueReference;
+
+    /**
+     * Reference constructor.
+     *
+     * @param int $reference
+     * @param string $type
+     */
+    public function __construct($reference, $type = self::TYPE_TST)
+    {
+        $this->uniqueReference = $reference;
+        $this->referenceType = $type;
+    }
 }

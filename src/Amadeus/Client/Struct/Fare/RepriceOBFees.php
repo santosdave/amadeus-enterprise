@@ -1,57 +1,57 @@
 <?php
 
-declare(strict_types=1);
+/**
+ * amadeus-enterprise
+ *
+ * Copyright 2015 Amadeus Benelux NV
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @package Amadeus
+ * @license https://opensource.org/licenses/Apache-2.0 Apache 2.0
+ */
 
 namespace Amadeus\Client\Struct\Fare;
 
 use Amadeus\Client\RequestOptions\FareRepriceObFeesOptions;
 use Amadeus\Client\Struct\BaseWsMessage;
+use Amadeus\Client\Struct\Fare\RepriceOBFees\AllFaresInfoGroup;
 
 /**
- * Fare_RepriceOBFees 11.1 (TPOBRQ_11_1_1A).
+ * Fare_RepriceOBFees request structure
  *
- * D-285: shaped exactly as every operation in the Amadeus user guide
- * (docs/amadeus/UG_WBS_Fare_RepriceOBFees_11.1.pdf, 5.1-5.4) names its TST:
+ * The message works on the PNR in context and names the TST to reprice
+ * in allFaresInfoGroup. Amadeus expects one pricing request per TST.
  *
- *     <allFaresInfoGroup>
- *       <statusInfo><statusInformation><indicator>730</indicator></statusInformation></statusInfo>
- *       <reference><referenceType>TST</referenceType><uniqueReference>n</uniqueReference></reference>
- *     </allFaresInfoGroup>
- *
- * 730 = original issue fare information. No record locator: the message works on the PNR in context.
- * No FOP override and no fee options: the card FP is already in the PNR.
+ * @package Amadeus\Client\Struct\Fare
+ * @author Kiti Chigiri
  */
 class RepriceOBFees extends BaseWsMessage
 {
-    public const INDICATOR_ORIGINAL_ISSUE_FARE = '730';
+    /**
+     * @var AllFaresInfoGroup[]
+     */
+    public $allFaresInfoGroup = [];
 
-    public const REFERENCE_TYPE_TST = 'TST';
-
-    /** @var list<object> */
-    public array $allFaresInfoGroup = [];
-
+    /**
+     * RepriceOBFees constructor.
+     *
+     * @param FareRepriceObFeesOptions $params
+     */
     public function __construct(FareRepriceObFeesOptions $params)
     {
-        $tsts = array_values(array_filter(
-            array_map('intval', $params->tstNumbers),
-            static fn (int $n): bool => $n > 0
-        ));
-
-        // "One pricing request per TST" (user guide §1.1). No TST is the empty body that faulted.
-        if (count($tsts) !== 1) {
-            throw new \InvalidArgumentException(
-                'Fare_RepriceOBFees names exactly one TST per request; got '.count($tsts).'.'
-            );
+        if (!empty($params->tstNumber)) {
+            $this->allFaresInfoGroup[] = new AllFaresInfoGroup($params->tstNumber);
         }
-
-        $this->allFaresInfoGroup[] = (object) [
-            'statusInfo' => (object) [
-                'statusInformation' => (object) ['indicator' => self::INDICATOR_ORIGINAL_ISSUE_FARE],
-            ],
-            'reference' => (object) [
-                'referenceType' => self::REFERENCE_TYPE_TST,
-                'uniqueReference' => $tsts[0],
-            ],
-        ];
     }
 }
