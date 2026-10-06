@@ -25,14 +25,14 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingFareBasis
 {
-    public $fareBasisCode;
-    public $ticketDesignator;
+    public $FareBasisCode;
+    public $TicketDesignator;
 
     public function __construct($fareBasisCode, $ticketDesignator = null)
     {
-        $this->fareBasisCode = $fareBasisCode;
+        $this->FareBasisCode = $fareBasisCode;
         if (!empty($ticketDesignator)) {
-            $this->ticketDesignator = $ticketDesignator;
+            $this->TicketDesignator = $ticketDesignator;
         }
     }
 }

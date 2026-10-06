@@ -30,23 +30,22 @@ use Amadeus\Client\RequestOptions\Ticket\OtherServiceInfo as OSIOptions;
  */
 class OtherServiceInformation
 {
-    public $serviceProviderCode;
-    public $text;
-    public $requestID;
-    public $associations;
+    public $ServiceProviderCode;
+    public $Text;
+    public $RequestID;
+    public $Associations;
 
     public function __construct(OSIOptions $options)
     {
-        $this->text = $options->text;
-
+        $this->Text = $options->text;
         if (!empty($options->airlineCode)) {
-            $this->serviceProviderCode = $options->airlineCode;
+            $this->ServiceProviderCode = $options->airlineCode;
         }
         if (!empty($options->requestId)) {
-            $this->requestID = $options->requestId;
+            $this->RequestID = $options->requestId;
         }
         if (!empty($options->associations)) {
-            $this->associations = new Associations($options->associations);
+            $this->Associations = new Associations($options->associations);
         }
     }
 }

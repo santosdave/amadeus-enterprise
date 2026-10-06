@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class RedemptionRequests
 {
-    public $redemptionRequest = [];
+    public $RedemptionRequest = [];
 
     public function __construct(array $requests)
     {
         foreach ($requests as $request) {
-            $this->redemptionRequest[] = new RedemptionRequest($request);
+            $this->RedemptionRequest[] = new RedemptionRequest($request);
         }
     }
 }

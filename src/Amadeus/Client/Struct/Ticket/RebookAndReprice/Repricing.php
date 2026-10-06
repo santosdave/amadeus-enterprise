@@ -38,7 +38,7 @@ class Repricing
      * 
      * @var ItineraryPricingOptions
      */
-    public $itineraryPricingOptions;
+    public $ItineraryPricingOptions;
 
     /**
      * Repricing constructor
@@ -48,7 +48,7 @@ class Repricing
     public function __construct(RepricingOptions $options)
     {
         if (!empty($options->pricingOptions)) {
-            $this->itineraryPricingOptions = new ItineraryPricingOptions(
+            $this->ItineraryPricingOptions = new ItineraryPricingOptions(
                 $options->pricingOptions
             );
         }

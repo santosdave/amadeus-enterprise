@@ -33,7 +33,7 @@ class Associations
      * 
      * @var Ref[]
      */
-    public $ref = [];
+    public $Ref = [];
 
     /**
      * Associations constructor
@@ -43,7 +43,7 @@ class Associations
     public function __construct(array $references)
     {
         foreach ($references as $reference) {
-            $this->ref[] = new Ref(
+            $this->Ref[] = new Ref(
                 $reference->tattooType,
                 $reference->tattooValue,
                 $reference->requestId,

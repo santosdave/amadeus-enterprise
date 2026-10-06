@@ -31,7 +31,7 @@ use Test\Amadeus\BaseTestCase;
  * UpdateRefundTest
  *
  * @package Test\Amadeus\Client\Struct\Ticket
- * @author Vladimir Kikot <shoxyoyo@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class UpdateRefundTest extends BaseTestCase
 {

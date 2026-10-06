@@ -25,20 +25,20 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingParameter
 {
-    public $code;
-    public $name;
-    public $value;
+    public $Code;
+    public $Name;
+    public $Value;
 
     public function __construct($param)
     {
         if (!empty($param->code)) {
-            $this->code = $param->code;
+            $this->Code = $param->code;
         }
         if (!empty($param->name)) {
-            $this->name = $param->name;
+            $this->Name = $param->name;
         }
         if (!empty($param->value)) {
-            $this->value = $param->value;
+            $this->Value = $param->value;
         }
     }
 }

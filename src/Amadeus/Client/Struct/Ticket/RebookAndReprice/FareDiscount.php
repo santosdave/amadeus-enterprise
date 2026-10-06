@@ -35,49 +35,49 @@ class FareDiscount
      * 
      * @var Discount[]
      */
-    public $discount = [];
+    public $Discount = [];
 
     /**
      * Description
      * 
      * @var string
      */
-    public $description;
+    public $Description;
 
     /**
      * Request identifier
      * 
      * @var string
      */
-    public $requestID;
+    public $RequestID;
 
     /**
      * Tattoo type
      * 
      * @var string
      */
-    public $tattooType;
+    public $TattooType;
 
     /**
      * Tattoo value
      * 
      * @var int
      */
-    public $tattooValue;
+    public $TattooValue;
 
     /**
      * Line number
      * 
      * @var int
      */
-    public $lineNumber;
+    public $LineNumber;
 
     /**
      * Associations
      * 
      * @var Associations
      */
-    public $associations;
+    public $Associations;
 
     /**
      * FareDiscount constructor
@@ -89,29 +89,29 @@ class FareDiscount
         // Discount codes (max 3)
         if (!empty($options->discounts)) {
             foreach ($options->discounts as $discount) {
-                if (count($this->discount) < 3) {
-                    $this->discount[] = new Discount($discount->code);
+                if (count($this->Discount) < 3) {
+                    $this->Discount[] = new Discount($discount->code);
                 }
             }
         }
 
         if (!empty($options->description)) {
-            $this->description = $options->description;
+            $this->Description = $options->description;
         }
         if (!empty($options->requestId)) {
-            $this->requestID = $options->requestId;
+            $this->RequestID = $options->requestId;
         }
         if (!empty($options->tattooType)) {
-            $this->tattooType = $options->tattooType;
+            $this->TattooType = $options->tattooType;
         }
         if (!empty($options->tattooValue)) {
-            $this->tattooValue = $options->tattooValue;
+            $this->TattooValue = $options->tattooValue;
         }
         if (!empty($options->lineNumber)) {
-            $this->lineNumber = $options->lineNumber;
+            $this->LineNumber = $options->lineNumber;
         }
         if (!empty($options->associations)) {
-            $this->associations = new Associations($options->associations);
+            $this->Associations = new Associations($options->associations);
         }
     }
 }

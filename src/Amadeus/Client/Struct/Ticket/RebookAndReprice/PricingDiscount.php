@@ -25,16 +25,16 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingDiscount
 {
-    public $code;
-    public $operation;
+    public $Code;
+    public $Operation;
 
     public function __construct($discount)
     {
         if (!empty($discount->code)) {
-            $this->code = $discount->code;
+            $this->Code = $discount->code;
         }
         if (!empty($discount->operation)) {
-            $this->operation = $discount->operation;
+            $this->Operation = $discount->operation;
         }
     }
 }

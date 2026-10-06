@@ -30,29 +30,29 @@ use Amadeus\Client\RequestOptions\Ticket\Remark as RemarkOptions;
  */
 class Remark
 {
-    public $type;
-    public $category;
-    public $content;
-    public $requestID;
-    public $associations;
-    public $security;
+    public $Type;
+    public $Category;
+    public $Content;
+    public $RequestID;
+    public $Associations;
+    public $Security;
 
     public function __construct(RemarkOptions $options)
     {
-        $this->type = $options->type;
-        $this->content = $options->content;
+        $this->Type = $options->type;
+        $this->Content = $options->content;
 
         if (!empty($options->category)) {
-            $this->category = $options->category;
+            $this->Category = $options->category;
         }
         if (!empty($options->requestId)) {
-            $this->requestID = $options->requestId;
+            $this->RequestID = $options->requestId;
         }
         if (!empty($options->associations)) {
-            $this->associations = new Associations($options->associations);
+            $this->Associations = new Associations($options->associations);
         }
         if (!empty($options->security)) {
-            $this->security = new Security($options->security);
+            $this->Security = new Security($options->security);
         }
     }
 }

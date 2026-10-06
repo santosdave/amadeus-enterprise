@@ -25,21 +25,21 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingFareDetermination
 {
-    public $pricingLogic;
-    public $currencyCode;
-    public $formOfPayment = [];
+    public $PricingLogic;
+    public $CurrencyCode;
+    public $FormOfPayment = [];
 
     public function __construct($fareDet)
     {
         if (!empty($fareDet->pricingLogic)) {
-            $this->pricingLogic = $fareDet->pricingLogic;
+            $this->PricingLogic = $fareDet->pricingLogic;
         }
         if (!empty($fareDet->currencyCode)) {
-            $this->currencyCode = $fareDet->currencyCode;
+            $this->CurrencyCode = $fareDet->currencyCode;
         }
         if (!empty($fareDet->formOfPayments)) {
             foreach ($fareDet->formOfPayments as $fop) {
-                $this->formOfPayment[] = new PricingFormOfPayment($fop);
+                $this->FormOfPayment[] = new PricingFormOfPayment($fop);
             }
         }
     }

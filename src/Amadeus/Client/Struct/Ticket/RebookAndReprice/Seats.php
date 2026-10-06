@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class Seats
 {
-    public $seat = [];
+    public $Seat = [];
 
     public function __construct(array $seats)
     {
         foreach ($seats as $seat) {
-            $this->seat[] = new Seat($seat);
+            $this->Seat[] = new Seat($seat);
         }
     }
 }

@@ -33,7 +33,7 @@ class Discount
      * 
      * @var string
      */
-    public $code;
+    public $Code;
 
     /**
      * Discount constructor
@@ -42,6 +42,6 @@ class Discount
      */
     public function __construct($code)
     {
-        $this->code = $code;
+        $this->Code = $code;
     }
 }

@@ -35,40 +35,40 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class ContactAddress
 {
-    public $line;
-    public $complement;
-    public $zip;
-    public $countryCode;
-    public $cityName;
-    public $stateCode;
-    public $stateName;
-    public $postalBox;
+    public $Line;
+    public $Complement;
+    public $Zip;
+    public $CountryCode;
+    public $CityName;
+    public $StateCode;
+    public $StateName;
+    public $PostalBox;
 
     public function __construct($address)
     {
         if (!empty($address->line)) {
-            $this->line = $address->line;
+            $this->Line = $address->line;
         }
         if (!empty($address->complement)) {
-            $this->complement = $address->complement;
+            $this->Complement = $address->complement;
         }
         if (!empty($address->zip)) {
-            $this->zip = $address->zip;
+            $this->Zip = $address->zip;
         }
         if (!empty($address->countryCode)) {
-            $this->countryCode = $address->countryCode;
+            $this->CountryCode = $address->countryCode;
         }
         if (!empty($address->cityName)) {
-            $this->cityName = $address->cityName;
+            $this->CityName = $address->cityName;
         }
         if (!empty($address->stateCode)) {
-            $this->stateCode = $address->stateCode;
+            $this->StateCode = $address->stateCode;
         }
         if (!empty($address->stateName)) {
-            $this->stateName = $address->stateName;
+            $this->StateName = $address->stateName;
         }
         if (!empty($address->postalBox)) {
-            $this->postalBox = $address->postalBox;
+            $this->PostalBox = $address->postalBox;
         }
     }
 }

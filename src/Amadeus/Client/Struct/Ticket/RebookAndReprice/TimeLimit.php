@@ -30,47 +30,47 @@ use Amadeus\Client\RequestOptions\Ticket\TimeLimit as TimeLimitOptions;
  */
 class TimeLimit
 {
-    public $time;
-    public $process;
-    public $action;
-    public $officeID;
-    public $requestID;
-    public $tattooType;
-    public $tattooValue;
-    public $lineNumber;
-    public $associations;
+    public $Time;
+    public $Process;
+    public $Action;
+    public $OfficeID;
+    public $RequestID;
+    public $TattooType;
+    public $TattooValue;
+    public $LineNumber;
+    public $Associations;
 
     public function __construct(TimeLimitOptions $options)
     {
-        $this->process = $options->process;
-        $this->action = $options->action;
+        $this->Process = $options->process;
+        $this->Action = $options->action;
 
         // Date/time
         if (!empty($options->dateTime)) {
             if ($options->dateTime instanceof \DateTime) {
-                $this->time = $options->dateTime->format('Y-m-d\TH:i:s');
+                $this->Time = $options->dateTime->format('Y-m-d\TH:i:s');
             } else {
-                $this->time = $options->dateTime;
+                $this->Time = $options->dateTime;
             }
         }
 
         if (!empty($options->officeId)) {
-            $this->officeID = $options->officeId;
+            $this->OfficeID = $options->officeId;
         }
         if (!empty($options->requestId)) {
-            $this->requestID = $options->requestId;
+            $this->RequestID = $options->requestId;
         }
         if (!empty($options->tattooType)) {
-            $this->tattooType = $options->tattooType;
+            $this->TattooType = $options->tattooType;
         }
         if (!empty($options->tattooValue)) {
-            $this->tattooValue = $options->tattooValue;
+            $this->TattooValue = $options->tattooValue;
         }
         if (!empty($options->lineNumber)) {
-            $this->lineNumber = $options->lineNumber;
+            $this->LineNumber = $options->lineNumber;
         }
         if (!empty($options->associations)) {
-            $this->associations = new Associations($options->associations);
+            $this->Associations = new Associations($options->associations);
         }
     }
 }

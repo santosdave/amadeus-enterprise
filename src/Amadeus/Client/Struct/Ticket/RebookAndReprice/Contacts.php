@@ -38,7 +38,7 @@ class Contacts
      * 
      * @var Contact[]
      */
-    public $contact = [];
+    public $Contact = [];
 
     /**
      * Contacts constructor
@@ -48,7 +48,7 @@ class Contacts
     public function __construct(array $contacts)
     {
         foreach ($contacts as $contact) {
-            $this->contact[] = new Contact($contact);
+            $this->Contact[] = new Contact($contact);
         }
     }
 }

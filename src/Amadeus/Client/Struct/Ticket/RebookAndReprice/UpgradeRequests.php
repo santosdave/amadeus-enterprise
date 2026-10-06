@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class UpgradeRequests
 {
-    public $upgradeRequest = [];
+    public $UpgradeRequest = [];
 
     public function __construct(array $requests)
     {
         foreach ($requests as $request) {
-            $this->upgradeRequest[] = new UpgradeRequest($request);
+            $this->UpgradeRequest[] = new UpgradeRequest($request);
         }
     }
 }

@@ -38,21 +38,21 @@ class Bound
      * 
      * @var string
      */
-    public $nIP;
+    public $NIP;
 
     /**
      * Action code (segment status)
      * 
      * @var string
      */
-    public $actionCode;
+    public $ActionCode;
 
     /**
      * Array of segments
      * 
      * @var Segment[]
      */
-    public $segment = [];
+    public $Segment = [];
 
     /**
      * Bound constructor
@@ -62,16 +62,27 @@ class Bound
     public function __construct(BoundInfo $boundInfo)
     {
         if (!empty($boundInfo->nip)) {
-            $this->nIP = (string) $boundInfo->nip;
+            $this->NIP = (string) $boundInfo->nip;
         }
 
         if (!empty($boundInfo->actionCode)) {
-            $this->actionCode = $boundInfo->actionCode;
+            $this->ActionCode = $boundInfo->actionCode;
         }
 
         if (!empty($boundInfo->segments)) {
             foreach ($boundInfo->segments as $segmentInfo) {
-                $this->segment[] = new Segment($segmentInfo);
+                // RequestID reaches this element through the same unprefixed
+                // attributeGroup that ext-soap cannot resolve, so a segment that carries
+                // one is emitted as a literal fragment. Amadeus echoes RequestID back on
+                // the repriced segments, which is how a reply is matched to what was
+                // asked for, so it is not optional in practice.
+                if (!empty($segmentInfo->requestId)) {
+                    $this->Segment[] = Segment::asFragment($segmentInfo);
+
+                    continue;
+                }
+
+                $this->Segment[] = new Segment($segmentInfo);
             }
         }
     }

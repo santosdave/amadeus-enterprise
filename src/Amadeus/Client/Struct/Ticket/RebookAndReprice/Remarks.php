@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class Remarks
 {
-    public $remark = [];
+    public $Remark = [];
 
     public function __construct(array $remarks)
     {
         foreach ($remarks as $remark) {
-            $this->remark[] = new Remark($remark);
+            $this->Remark[] = new Remark($remark);
         }
     }
 }

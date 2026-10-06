@@ -29,7 +29,7 @@ use Amadeus\Client\Struct\BaseWsMessage;
  * ContractBundle request structure
  *
  * @package Amadeus\Client\Struct\Ticket\UpdateRefund
- * @author Vladimir Kikot <shoxyoyo@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class ContractBundle extends BaseWsMessage
 {

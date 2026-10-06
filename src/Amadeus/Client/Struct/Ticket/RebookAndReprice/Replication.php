@@ -39,7 +39,7 @@ class Replication
      * 
      * @var ReplicationBlock[]
      */
-    public $replicationBlock = [];
+    public $ReplicationBlock = [];
 
     /**
      * Replication constructor
@@ -49,7 +49,7 @@ class Replication
     public function __construct(array $replications)
     {
         foreach ($replications as $replication) {
-            $this->replicationBlock[] = new ReplicationBlock($replication);
+            $this->ReplicationBlock[] = new ReplicationBlock($replication);
         }
     }
 }

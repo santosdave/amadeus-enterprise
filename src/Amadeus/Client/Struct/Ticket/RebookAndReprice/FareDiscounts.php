@@ -35,7 +35,7 @@ class FareDiscounts
      * 
      * @var FareDiscount[]
      */
-    public $fareDiscount = [];
+    public $FareDiscount = [];
 
     /**
      * FareDiscounts constructor
@@ -45,7 +45,7 @@ class FareDiscounts
     public function __construct(array $fareDiscounts)
     {
         foreach ($fareDiscounts as $fd) {
-            $this->fareDiscount[] = new FareDiscount($fd);
+            $this->FareDiscount[] = new FareDiscount($fd);
         }
     }
 }

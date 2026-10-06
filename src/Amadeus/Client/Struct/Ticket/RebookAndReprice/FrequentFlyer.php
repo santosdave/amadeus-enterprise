@@ -35,28 +35,28 @@ class FrequentFlyer
      * 
      * @var FrequentFlyerCard
      */
-    public $frequentFlyerCard;
+    public $FrequentFlyerCard;
 
     /**
      * Mileage requests
      * 
      * @var MileageRequests
      */
-    public $mileageRequests;
+    public $MileageRequests;
 
     /**
      * Redemption requests
      * 
      * @var RedemptionRequests
      */
-    public $redemptionRequests;
+    public $RedemptionRequests;
 
     /**
      * Upgrade requests
      * 
      * @var UpgradeRequests
      */
-    public $upgradeRequests;
+    public $UpgradeRequests;
 
     /**
      * FrequentFlyer constructor
@@ -66,7 +66,7 @@ class FrequentFlyer
     public function __construct(FrequentFlyerOptions $options)
     {
         // Main FF card
-        $this->frequentFlyerCard = new FrequentFlyerCard(
+        $this->FrequentFlyerCard = new FrequentFlyerCard(
             $options->airlineCode,
             $options->cardNumber,
             $options->lastName,
@@ -77,17 +77,17 @@ class FrequentFlyer
 
         // Mileage requests
         if (!empty($options->mileageRequests)) {
-            $this->mileageRequests = new MileageRequests($options->mileageRequests);
+            $this->MileageRequests = new MileageRequests($options->mileageRequests);
         }
 
         // Redemption requests
         if (!empty($options->redemptionRequests)) {
-            $this->redemptionRequests = new RedemptionRequests($options->redemptionRequests);
+            $this->RedemptionRequests = new RedemptionRequests($options->redemptionRequests);
         }
 
         // Upgrade requests
         if (!empty($options->upgradeRequests)) {
-            $this->upgradeRequests = new UpgradeRequests($options->upgradeRequests);
+            $this->UpgradeRequests = new UpgradeRequests($options->upgradeRequests);
         }
     }
 }

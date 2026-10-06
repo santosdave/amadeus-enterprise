@@ -25,20 +25,23 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingAssociatedElement
 {
-    public $type;
-    public $tattoo;
-    public $refIds;
+    public $Type;
+    public $Tattoo;
+    public $RefIDs;
 
     public function __construct($element)
     {
+        if (!is_object($element)) {
+            return;
+        }
         if (!empty($element->type)) {
-            $this->type = $element->type;
+            $this->Type = $element->type;
         }
         if (!empty($element->tattoo)) {
-            $this->tattoo = $element->tattoo;
+            $this->Tattoo = $element->tattoo;
         }
         if (!empty($element->refIds)) {
-            $this->refIds = $element->refIds;
+            $this->RefIDs = $element->refIds;
         }
     }
 }

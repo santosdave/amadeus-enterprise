@@ -28,12 +28,12 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class SpecialServiceRequests
 {
-    public $specialServiceRequest = [];
-    
+    public $SpecialServiceRequest = [];
+
     public function __construct(array $ssrs)
     {
         foreach ($ssrs as $ssr) {
-            $this->specialServiceRequest[] = new SpecialServiceRequest($ssr);
+            $this->SpecialServiceRequest[] = new SpecialServiceRequest($ssr);
         }
     }
 }

@@ -25,17 +25,17 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingGeographicalInfo
 {
-    public $routeIndicator;
-    public $place = [];
+    public $RouteIndicator;
+    public $Place = [];
 
     public function __construct($geo)
     {
         if (!empty($geo->routeIndicator)) {
-            $this->routeIndicator = $geo->routeIndicator;
+            $this->RouteIndicator = $geo->routeIndicator;
         }
         if (!empty($geo->places)) {
             foreach ($geo->places as $place) {
-                $this->place[] = new PricingPlace($place);
+                $this->Place[] = new PricingPlace($place);
             }
         }
     }

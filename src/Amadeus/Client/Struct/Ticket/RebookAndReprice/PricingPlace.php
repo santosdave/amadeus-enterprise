@@ -26,16 +26,16 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingPlace
 {
-    public $locationCode;
-    public $type;
+    public $LocationCode;
+    public $Type;
 
     public function __construct($place)
     {
         if (!empty($place->locationCode)) {
-            $this->locationCode = $place->locationCode;
+            $this->LocationCode = $place->locationCode;
         }
         if (!empty($place->type)) {
-            $this->type = $place->type;
+            $this->Type = $place->type;
         }
     }
 }

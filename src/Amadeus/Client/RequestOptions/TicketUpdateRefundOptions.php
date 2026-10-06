@@ -27,7 +27,7 @@ namespace Amadeus\Client\RequestOptions;
  * TicketUpdateRefundOptions Request Options
  *
  * @package Amadeus\Client\RequestOptions
- * @author Vladimir Kikot <shoxyoyo@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class TicketUpdateRefundOptions extends Base
 {

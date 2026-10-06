@@ -33,32 +33,32 @@ class Owner
      * 
      * @var string
      */
-    public $lastName;
+    public $LastName;
 
     /**
      * First name
      * 
      * @var string
      */
-    public $firstName;
+    public $FirstName;
 
     /**
      * Title
      * 
      * @var string
      */
-    public $title;
+    public $Title;
 
     public function __construct($lastName = null, $firstName = null, $title = null)
     {
         if (!empty($lastName)) {
-            $this->lastName = $lastName;
+            $this->LastName = $lastName;
         }
         if (!empty($firstName)) {
-            $this->firstName = $firstName;
+            $this->FirstName = $firstName;
         }
         if (!empty($title)) {
-            $this->title = $title;
+            $this->Title = $title;
         }
     }
 }

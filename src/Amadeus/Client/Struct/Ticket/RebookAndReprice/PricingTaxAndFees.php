@@ -25,27 +25,27 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingTaxAndFees
 {
-    public $tax = [];
-    public $fee = [];
-    public $dateTime;
+    public $Tax = [];
+    public $Fee = [];
+    public $DateTime;
 
     public function __construct($taxFees)
     {
         if (!empty($taxFees->exemptions)) {
             foreach ($taxFees->exemptions as $exemption) {
-                $this->tax[] = new PricingTax($exemption);
+                $this->Tax[] = new PricingTax($exemption);
             }
         }
         if (!empty($taxFees->fees)) {
             foreach ($taxFees->fees as $fee) {
-                $this->fee[] = new PricingFee($fee);
+                $this->Fee[] = new PricingFee($fee);
             }
         }
         if (!empty($taxFees->dateTime)) {
             if ($taxFees->dateTime instanceof \DateTime) {
-                $this->dateTime = $taxFees->dateTime->format('Y-m-d\TH:i:s');
+                $this->DateTime = $taxFees->dateTime->format('Y-m-d\TH:i:s');
             } else {
-                $this->dateTime = $taxFees->dateTime;
+                $this->DateTime = $taxFees->dateTime;
             }
         }
     }

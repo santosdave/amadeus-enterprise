@@ -59,7 +59,7 @@ class Segment
      * 
      * @var string
      */
-    public $requestID;
+    public $RequestID;
 
     /**
      * Tattoo type
@@ -139,7 +139,7 @@ class Segment
 
         // Reference attributes
         if (!empty($segmentInfo->requestId)) {
-            $this->requestID = $segmentInfo->requestId;
+            $this->RequestID = $segmentInfo->requestId;
         }
 
         if (!empty($segmentInfo->tattooType)) {
@@ -164,10 +164,11 @@ class Segment
 
         // Flight identifier
         if (!empty($segmentInfo->operatingFlightNumber)) {
-            $this->identifier = new Identifier(
-                $segmentInfo->operatingFlightNumber,
-                $segmentInfo->flightNumberSuffix
-            );
+            // $this->identifier = new Identifier(
+            //     $segmentInfo->operatingFlightNumber,
+            //     $segmentInfo->flightNumberSuffix
+            // );
+            $this->identifier = $segmentInfo->operatingFlightNumber;
         }
 
         // Marketing information (partner info)
@@ -196,5 +197,90 @@ class Segment
                 $segmentInfo->arrivalTerminal
             );
         }
+    }
+
+    /** The namespace Segment itself belongs to. */
+    const NAMESPACE_MESSAGE = 'http://xml.amadeus.com/2010/06/Ticket_RebookAndRepricePNR_v1';
+
+    /** The namespace AirSegmentType's children belong to. */
+    const NAMESPACE_RETAILING = 'http://xml.amadeus.com/2010/06/Retailing_Types_v2';
+
+    /**
+     * The whole element as a literal fragment, so RequestID survives encoding.
+     *
+     * RequestID comes from <xs:attributeGroup ref="CommonIdentifierAttributes"/>, written
+     * unprefixed in a chameleon schema; ext-soap cannot resolve that once the chameleon
+     * has been re-namespaced and drops the attribute without a word. The rest of the
+     * element encodes correctly, so this reproduces it exactly rather than changing it —
+     * same element and child namespaces as the certified requests.
+     *
+     * @param \Amadeus\Client\RequestOptions\Ticket\SegmentInfo $segmentInfo
+     * @return \SoapVar
+     */
+    public static function asFragment($segmentInfo)
+    {
+        $attributes = [
+            'bkgClass' => $segmentInfo->bookingClass,
+            'segmentStatus' => $segmentInfo->segmentStatus,
+            'isOpenSegment' => isset($segmentInfo->isOpenSegment)
+                ? ($segmentInfo->isOpenSegment ? 'true' : 'false')
+                : null,
+            'RequestID' => $segmentInfo->requestId,
+        ];
+
+        $rendered = '';
+
+        foreach ($attributes as $name => $value) {
+            if ($value === null || $value === '') {
+                continue;
+            }
+
+            $rendered .= ' ' . $name . '="'
+                . htmlspecialchars((string) $value, ENT_QUOTES | ENT_XML1, 'UTF-8') . '"';
+        }
+
+        $children = '';
+        $ns = ' xmlns="' . self::NAMESPACE_RETAILING . '"';
+
+        if (!empty($segmentInfo->operatingAirline)) {
+            $children .= '<serviceProvider' . $ns . ' code="'
+                . htmlspecialchars((string) $segmentInfo->operatingAirline, ENT_QUOTES | ENT_XML1, 'UTF-8') . '"/>';
+        }
+
+        if (!empty($segmentInfo->operatingFlightNumber)) {
+            $children .= '<identifier' . $ns . '>'
+                . htmlspecialchars((string) $segmentInfo->operatingFlightNumber, ENT_QUOTES | ENT_XML1, 'UTF-8')
+                . '</identifier>';
+        }
+
+        $children .= self::point('start', $ns, $segmentInfo->departureLocation, $segmentInfo->departureDateTime);
+        $children .= self::point('end', $ns, $segmentInfo->arrivalLocation, $segmentInfo->arrivalDateTime);
+
+        return new \SoapVar(
+            '<Segment xmlns="' . self::NAMESPACE_MESSAGE . '"' . $rendered . '>' . $children . '</Segment>',
+            XSD_ANYXML
+        );
+    }
+
+    /**
+     * A start or end point: the location code as text, the time as an attribute.
+     */
+    private static function point($element, $ns, $location, $dateTime)
+    {
+        if (empty($location)) {
+            return '';
+        }
+
+        $when = '';
+
+        if (!empty($dateTime)) {
+            $when = ' dateTime="' . ($dateTime instanceof \DateTime
+                ? $dateTime->format('Y-m-d\TH:i:s')
+                : htmlspecialchars((string) $dateTime, ENT_QUOTES | ENT_XML1, 'UTF-8')) . '"';
+        }
+
+        return '<' . $element . $ns . $when . '>'
+            . '<locationCode>' . htmlspecialchars((string) $location, ENT_QUOTES | ENT_XML1, 'UTF-8') . '</locationCode>'
+            . '</' . $element . '>';
     }
 }

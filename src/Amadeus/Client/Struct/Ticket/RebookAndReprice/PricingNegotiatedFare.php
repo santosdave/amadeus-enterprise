@@ -25,16 +25,16 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingNegotiatedFare
 {
-    public $type;
-    public $corporate = [];
+    public $Type;
+    public $Corporate = [];
 
     public function __construct($negFare)
     {
         if (!empty($negFare->type)) {
-            $this->type = $negFare->type;
+            $this->Type = $negFare->type;
         }
         if (!empty($negFare->corporateCodes)) {
-            $this->corporate = $negFare->corporateCodes;
+            $this->Corporate = $negFare->corporateCodes;
         }
     }
 }

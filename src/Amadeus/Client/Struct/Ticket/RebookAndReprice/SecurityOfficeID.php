@@ -28,16 +28,16 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
  */
 class SecurityOfficeID
 {
-    public $officeId;
-    public $accessMode;
-    public $accessExtension;
+    public $OfficeId;
+    public $AccessMode;
+    public $AccessExtension;
 
     public function __construct($officeId, $accessMode, $accessExtension = null)
     {
-        $this->officeId = $officeId;
-        $this->accessMode = $accessMode;
+        $this->OfficeId = $officeId;
+        $this->AccessMode = $accessMode;
         if (isset($accessExtension)) {
-            $this->accessExtension = $accessExtension;
+            $this->AccessExtension = $accessExtension;
         }
     }
 }

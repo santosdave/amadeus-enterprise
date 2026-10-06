@@ -25,24 +25,24 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingTax
 {
-    public $amountType;
-    public $currencyCode;
-    public $amount;
-    public $type;
+    public $AmountType;
+    public $CurrencyCode;
+    public $Amount;
+    public $Type;
 
     public function __construct($tax)
     {
         if (!empty($tax->amountType)) {
-            $this->amountType = $tax->amountType;
+            $this->AmountType = $tax->amountType;
         }
         if (!empty($tax->currencyCode)) {
-            $this->currencyCode = $tax->currencyCode;
+            $this->CurrencyCode = $tax->currencyCode;
         }
         if (!empty($tax->amount)) {
-            $this->amount = $tax->amount;
+            $this->Amount = $tax->amount;
         }
         if (!empty($tax->taxCode)) {
-            $this->type = $tax->taxCode;
+            $this->Type = $tax->taxCode;
         }
     }
 }

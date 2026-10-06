@@ -31,7 +31,7 @@ use Amadeus\Client\Struct;
  * Ticket_UpdateRefund request converter
  *
  * @package Amadeus\Client\RequestCreator\Converter\Ticket
- * @author Vladimir Kikot <shoxyoyo@gmail.com>
+ * @author Wycliffe Dev <santosdave86@gmail.com>
  */
 class UpdateRefundConv extends BaseConverter
 {

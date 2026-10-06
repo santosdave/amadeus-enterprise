@@ -29,7 +29,8 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 class ServiceProvider
 {
     /**
-     * Airline code (2-3 characters)
+     * Airline code (2-3 characters) - attribute for Bounds/Segment
+     * Text content for ItineraryPricingOptions
      * 
      * @var string
      */
@@ -40,13 +41,32 @@ class ServiceProvider
      * 
      * @var string
      */
-    public $name;
+    public $Name;
 
-    public function __construct($code, $name = null)
+    /**
+     * Service provider type (e.g., 'VC' for Virtual Carrier)
+     * Only used in ItineraryPricingOptions context
+     * 
+     * @var string
+     */
+    public $Type;
+
+    /**
+     * Element text content (for ItineraryPricingOptions with Type attribute)
+     * 
+     * @var string
+     */
+    public $_;
+
+    public function __construct($code, $name = null, $type = null)
     {
         $this->code = $code;
+        $this->_ = $code;
         if (!empty($name)) {
-            $this->name = $name;
+            $this->Name = $name;
+        }
+        if (!empty($type)) {
+            $this->Type = $type;
         }
     }
 }

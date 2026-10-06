@@ -25,11 +25,11 @@ namespace Amadeus\Client\Struct\Ticket\RebookAndReprice;
 
 class PricingPoint
 {
-    public $value;
-    public $type;
+    public $Value;
+    public $Type;
 
     public function __construct($points)
     {
-        $this->value = $points;
+        $this->Value = $points;
     }
 }

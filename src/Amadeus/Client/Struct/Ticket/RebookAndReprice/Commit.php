@@ -37,7 +37,7 @@ class Commit
      * 
      * @var bool
      */
-    public $ignoreWarningsOption;
+    public $IgnoreWarningsOption;
 
     /**
      * Identification string for operation logging purposes
@@ -45,7 +45,7 @@ class Commit
      * 
      * @var string
      */
-    public $receivedFrom;
+    public $ReceivedFrom;
 
     /**
      * Commit constructor
@@ -55,10 +55,10 @@ class Commit
      */
     public function __construct($ignoreWarnings = true, $receivedFrom = null)
     {
-        $this->ignoreWarningsOption = $ignoreWarnings;
+        $this->IgnoreWarningsOption = $ignoreWarnings;
 
         if (!empty($receivedFrom)) {
-            $this->receivedFrom = $receivedFrom;
+            $this->ReceivedFrom = $receivedFrom;
         }
     }
 }

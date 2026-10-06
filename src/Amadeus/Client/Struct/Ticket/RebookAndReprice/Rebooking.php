@@ -38,91 +38,91 @@ class Rebooking
      * 
      * @var Cancellation
      */
-    public $cancellation;
+    public $Cancellation;
 
     /**
      * List of PNR elements to confirm (change status to HK)
      * 
      * @var Confirmation
      */
-    public $confirmation;
+    public $Confirmation;
 
     /**
      * Element replication rules
      * 
      * @var Replication
      */
-    public $replication;
+    public $Replication;
 
     /**
      * New segment bounds to add
      * 
      * @var Bounds
      */
-    public $bounds;
+    public $Bounds;
 
     /**
      * Frequent flyer information
      * 
      * @var FrequentFlyers
      */
-    public $frequentFlyers;
+    public $FrequentFlyers;
 
     /**
      * Contact information
      * 
      * @var Contacts
      */
-    public $contacts;
+    public $Contacts;
 
     /**
      * Special service requests
      * 
      * @var SpecialServiceRequests
      */
-    public $specialServiceRequests;
+    public $SpecialServiceRequests;
 
     /**
      * Seat requests
      * 
      * @var Seats
      */
-    public $seats;
+    public $Seats;
 
     /**
      * Other service information
      * 
      * @var OtherServicesInformation
      */
-    public $otherServicesInformation;
+    public $OtherServicesInformation;
 
     /**
      * Special keywords
      * 
      * @var SpecialKeywords
      */
-    public $specialKeywords;
+    public $SpecialKeywords;
 
     /**
      * Remarks
      * 
      * @var Remarks
      */
-    public $remarks;
+    public $Remarks;
 
     /**
      * Time limits
      * 
      * @var TimeLimits
      */
-    public $timeLimits;
+    public $TimeLimits;
 
     /**
      * Fare discounts
      * 
      * @var FareDiscounts
      */
-    public $fareDiscounts;
+    public $FareDiscounts;
 
     /**
      * Rebooking constructor
@@ -133,71 +133,71 @@ class Rebooking
     {
         // Load cancellations
         if (!empty($options->cancellations)) {
-            $this->cancellation = new Cancellation($options->cancellations);
+            $this->Cancellation = new Cancellation($options->cancellations);
         }
 
         // Load confirmations
         if (!empty($options->confirmations)) {
-            $this->confirmation = new Confirmation($options->confirmations);
+            $this->Confirmation = new Confirmation($options->confirmations);
         }
 
         // Load replications
         if (!empty($options->replications)) {
-            $this->replication = new Replication($options->replications);
+            $this->Replication = new Replication($options->replications);
         }
 
         // Load bounds (new segments)
         if (!empty($options->bounds)) {
-            $this->bounds = new Bounds($options->bounds);
+            $this->Bounds = new Bounds($options->bounds);
         }
 
         // Load frequent flyers
         if (!empty($options->frequentFlyers)) {
-            $this->frequentFlyers = new FrequentFlyers($options->frequentFlyers);
+            $this->FrequentFlyers = new FrequentFlyers($options->frequentFlyers);
         }
 
         // Load contacts
         if (!empty($options->contacts)) {
-            $this->contacts = new Contacts($options->contacts);
+            $this->Contacts = new Contacts($options->contacts);
         }
 
         // Load special service requests
         if (!empty($options->specialServiceRequests)) {
-            $this->specialServiceRequests = new SpecialServiceRequests(
+            $this->SpecialServiceRequests = new SpecialServiceRequests(
                 $options->specialServiceRequests
             );
         }
 
         // Load seats
         if (!empty($options->seats)) {
-            $this->seats = new Seats($options->seats);
+            $this->Seats = new Seats($options->seats);
         }
 
         // Load other services information
         if (!empty($options->otherServicesInformation)) {
-            $this->otherServicesInformation = new OtherServicesInformation(
+            $this->OtherServicesInformation = new OtherServicesInformation(
                 $options->otherServicesInformation
             );
         }
 
         // Load special keywords
         if (!empty($options->specialKeywords)) {
-            $this->specialKeywords = new SpecialKeywords($options->specialKeywords);
+            $this->SpecialKeywords = new SpecialKeywords($options->specialKeywords);
         }
 
         // Load remarks
         if (!empty($options->remarks)) {
-            $this->remarks = new Remarks($options->remarks);
+            $this->Remarks = new Remarks($options->remarks);
         }
 
         // Load time limits
         if (!empty($options->timeLimits)) {
-            $this->timeLimits = new TimeLimits($options->timeLimits);
+            $this->TimeLimits = new TimeLimits($options->timeLimits);
         }
 
         // Load fare discounts
         if (!empty($options->fareDiscounts)) {
-            $this->fareDiscounts = new FareDiscounts($options->fareDiscounts);
+            $this->FareDiscounts = new FareDiscounts($options->fareDiscounts);
         }
     }
 }

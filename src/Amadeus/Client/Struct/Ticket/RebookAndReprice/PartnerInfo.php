@@ -49,7 +49,8 @@ class PartnerInfo
         }
 
         if (!empty($flightNumber)) {
-            $this->identifier = new Identifier($flightNumber, $suffix);
+            // $this->identifier = new Identifier($flightNumber, $suffix);
+            $this->identifier = $flightNumber;
         }
     }
 }
