@@ -649,6 +649,44 @@ class Client extends Base
     }
 
     /**
+     * Fare_RepriceOBFees
+     *
+     * @param RequestOptions\FareRepriceObFeesOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function fareRepriceObFees(
+        RequestOptions\FareRepriceObFeesOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Fare_RepriceOBFees';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
+     * Ticket_UpdateTSTFromOBPricing
+     *
+     * @param RequestOptions\TicketUpdateTstFromObPricingOptions $options
+     * @param array $messageOptions (OPTIONAL)
+     * @return Result
+     * @throws Client\InvalidMessageException
+     * @throws Client\RequestCreator\MessageVersionUnsupportedException
+     * @throws Exception
+     */
+    public function ticketUpdateTstFromObPricing(
+        RequestOptions\TicketUpdateTstFromObPricingOptions $options,
+        $messageOptions = []
+    ) {
+        $msgName = 'Ticket_UpdateTSTFromOBPricing';
+
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
+
+    /**
      * Fare_PricePnrWithLowerFares
      *
      * @param RequestOptions\FarePricePnrWithLowerFaresOptions $options

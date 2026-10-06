@@ -32,6 +32,7 @@ This is the list of messages that are at least partially supported at this time:
 - Fare_CheckRules
 - Fare_GetFareRules
 - Fare_GetFareFamilyDescription
+- Fare_RepriceOBFees
 - Air_MultiAvailability
 - Air_SellFromRecommendation
 - Air_FlightInfo
@@ -61,6 +62,7 @@ This is the list of messages that are at least partially supported at this time:
 - Ticket_IgnoreRefund
 - Ticket_ProcessRefund
 - Ticket_RebookAndRepricePNR
+- Ticket_UpdateTSTFromOBPricing
 - DocIssuance_IssueTicket
 - DocIssuance_IssueMiscellaneousDocuments
 - DocIssuance_IssueCombined
